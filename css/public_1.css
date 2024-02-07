@@ -49,3 +49,11 @@
 --button-background-color: #fff;
 --button-border-color: #fff;
 }
+
+.domains-list p {
+  text-align: center; 
+  align: justify;
+  font-size: 16px; 
+  color: #000000;
+  font-weight: strong;
+}
