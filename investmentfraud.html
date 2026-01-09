@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Инвестиционни измами | Investment Fraud Alert</title>
     <meta name="description" content="Списък с домейни за инвестиционни измами - ГДБОП Киберпрестъпност">
+    <link rel="icon" href="images/favicon.png" />
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -127,8 +128,8 @@
                     <img 
                       src="images/logo.png" 
                       alt="ГДБОП Logo" 
-                      // Using h-48 for mobile (responsive) and specific md:h-[300px]
-                      className={`h-48 md:h-[300px] w-auto object-contain transition-all duration-700 cubic-bezier(0.175, 0.885, 0.32, 1.275) ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}
+                      // Using h-48 for mobile (responsive) and specific md:h-[200px]
+                      className={`h-48 md:h-[200px] w-auto object-contain transition-all duration-700 cubic-bezier(0.175, 0.885, 0.32, 1.275) ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-50'}`}
                       onLoad={() => setIsLoaded(true)}
                       onError={(e) => {
                         e.currentTarget.src = "https://www.gdbop.bg/images/logo.png"; // Fallback to live URL if local missing
