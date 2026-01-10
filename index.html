@@ -1,612 +1,643 @@
 <!DOCTYPE html>
-<html class="desktop " prefix="og: https://ogp.me/ns#"
-   lang="bg-bg"
-   dir="ltr"       itemscope itemtype="https://schema.org/WebSite"
-   data-page-type="pageBlank">
-   <head>
-      <!-- Google tag (gtag.js) -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-W008ZCNG1M"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+<html lang="bg">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Начало - Киберпрестъпност ГДБОП</title>
+    <meta name="description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, съвети за киберсигурност">
+        <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' 
+    https://cdn.tailwindcss.com 
+    https://unpkg.com 
+    https://esm.sh 
+    https://www.tiktok.com;
+    style-src 'self' 'unsafe-inline' 
+    https://fonts.googleapis.com 
+    https://cdn.tailwindcss.com;
+    font-src 'self' https://fonts.gstatic.com;
+    img-src 'self' https: data:;
+    frame-src https://www.tiktok.com;
+    connect-src 'self' https://esm.sh;
+    ">
+    <link rel="icon" href="images/favicon.png" />
 
-        gtag('config', 'G-W008ZCNG1M');
-      </script>
-      <title>Начало - Киберпрестъпност ГДБОП</title>
-      <link rel="alternate" href="index.html" hreflang="x-default" />
-      <link rel="alternate" href="index.html" hreflang="bg-bg" />
-      <link rel="alternate" href="https://www.cybercrime.bg/en" hreflang="en-us" />
-      <meta itemprop="name" content="Начало - Киберпрестъпност ГДБОП">
-      <meta name="twitter:title" content="Начало - Киберпрестъпност ГДБОП">
-      <meta name="twitter:card" content="summary"/>
-      <meta property="og:title" content="Начало - Киберпрестъпност ГДБОП"/>
-      <meta property="og:url" content="index.html">
-      <meta property="og:type" content="website"/>
-      <meta name="description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, киберпрестъпления, компютърни престъпления, подаване на сигнал за киберпрестъпление, киберсигурност, интернет измами">
-      <meta itemprop="description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, киберпрестъпления,  компютърни престъпления, подаване на сигнал за киберпрестъпление, киберсигурност, интернет измами">
-      <meta name="twitter:description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, киберпрестъпления,  компютърни престъпления, подаване на сигнал за киберпрестъпление, киберсигурност, интернет измами">
-      <meta property="og:description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, киберпрестъпления,  компютърни престъпления, подаване на сигнал за киберпрестъпление, киберсигурност, интернет измами"/>
-      <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-      <link href="index.html" rel="canonical" />
-      <script type="application/ld+json">
-         {
-           "@context": "https://schema.org/",
-           "@type": "Organization",
-           "name": "Киберпрестъпност ГДБОП",
-           "url": "https://www.cybercrime.bg"
-         }
+    <!-- Tailwind CSS -->
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Babel for in-browser JSX/TS transformation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js">integrity="sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd" crossorigin="anonymous"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              'gdbop-blue': '#47a8f6',
+              'gdbop-dark': '#0f172a', // slate-900
+              'police-blue': '#0055ff',
+              'police-red': '#ff0000',
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'scan': 'scan 4s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              scan: {
+                '0%': { top: '-10%' },
+                '100%': { top: '110%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
 
+    <!-- Import Map for React and Lucide -->
+    <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@0.263.1",
+    "react": "https://esm.sh/react@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+<body class="bg-gdbop-dark text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gdbop-blue selection:text-white">
+    <div id="root"></div>
 
-      </script>
-      <meta name="image" content="images/logo.png">
-      <meta property="og:image" content="images/logo.png"/>
-      <meta property="og:image:secure_url" content="images/logo.png"/>
-      <meta property="og:image:width" content="639"/>
-      <meta property="og:image:height" content="767"/>
-      <meta itemprop="image" content="images/logo.png">
-      <meta name="twitter:image" content="images/logo.png">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=0"/>
-      <meta name="HandheldFriendly" content="true"/>
-      <meta name="format-detection" content="telephone=no"/>
-      <meta name="apple-mobile-web-app-capable" content="YES"/>
-      <meta name="robots" content="index, follow"/>
-      <link rel="icon" type="image/png"
-         href="images/favicon.png"/>
-      <link rel="preload" href="https://fonts.googleapis.com/css?family=Alegreya:400,600,700,800|Alegreya+Sans:400,600,700,800|Alegreya+Sans+SC:400,600,700,800|Alegreya+SC:400,600,700,800|Amatic+SC:400,600,700,800|Caveat:400,600,700,800|EB+Garamond:400,600,700,800|Fira+Mono:400,600,700,800|Fira+Sans:400,600,700,800|Lato:400,300,300italic,700,700italic,400italic:400,600,700,800|Lobster:400,600,700,800|Merriweather:400,600,700,800|Montserrat:400,600,700,800|Open+Sans:400,600,700,800|Pacifico:400,600,700,800|Pangolin:400,600,700,800|Playfair+Display:400,600,700,800|Playfair+Display+SC:400,600,700,800|PT+Mono:400,600,700,800|PT+Sans:400,600,700,800|PT+Serif:400,600,700,800|Roboto:400,600,700,800|Roboto+Mono:400,600,700,800|Ruslan+Display:400,600,700,800|Source+Sans+Pro:400,600,700,800|Yeseva+One&amp;amp;subset=cyrillic,greek" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
-      <link rel="preload" as="style" type="text/css" href="css/public.css">
-      <link rel="stylesheet" type="text/css" href="css/public.css">
-      <link rel="stylesheet" type="text/css" href="css/public_0.css">
-      <link rel="preload" as="style" type="text/css" href="css/public_0.css">
-      <link rel="preload" as="style" type="text/css" href="css/public_1.css">
-      <link rel="stylesheet" type="text/css" href="css/public_1.css">
-      <link rel="preload" as="style" type="text/css" href="fonts/common.css">
-      <link rel="stylesheet" as="style" type="text/css" href="fonts/common.css">
-      
-   </head>
-   <body class="desktop  txlive " >
-      <div class="main-container">
-         <div class="main-body">
-            <div class="main-layout
-               ">
-               <div class="layers-container">
-                  <div class="layer">
-                     <div class="off-canvas right-alignment off-canvas-container"
-                        style="display:none; background:#f7f7f7; width:20vw;">
-                        <div class="off-canvas-close uci-close"
-                           style="color:#999;"></div>
-                        <div class="off-canvas-inner-container native-scroll-box y-scroll">
-                           <div class="uc-row-wrapper">
-                              <div
-                                 class="uc-row   last                        backgroundCover
-                                 " data-id="19"
-                                 style="   background:rgba(0, 0, 0, 0.02); "
-                                 >
-                                 <div id="r19" class="row-container ">
-                                    <div class="row mainRow "
-                                       style="">
-                                       <div
-                                          class="column col-sm-12 "
-                                          dataColumn-id="34"
-                                          style="     "
-                                          >
-                                          <div class="column-container "
-                                             style=" margin-:0vh; " aria-label="column" role="contentinfo">
-                                             <div
-                                                class="module-container   only-mobile   align-center ModuleNavigation
-                                                first                              "
-                                                aria-label="module container" role="contentinfo"
-                                                id="m51"
-                                                >
-                                                <div
-                                                   class="   module ModuleNavigation "
-                                                   dataModule-id="51"
-                                                   >
-                                                   <input type="hidden" class="standard-navigation">
-                                                   <style>
-                                                      #navigation-51 > .standard-view > .navigation > .page > .page-children {
-                                                      background: #f1f1f1;
-                                                      }
-                                                      #navigation-51 > .standard-view > .navigation > .page > .page-children > .page > ul {
-                                                      background: #f1f1f1;
-                                                      }
-                                                      #navigation-51 .navigation > li.has-childes.page > ul a {
-                                                      padding: 0 15px;
-                                                      }
-                                                      #navigation-51 > nav > ul li:hover > ul {
-                                                      display: block;
-                                                      }
-                                                      #navigation-51 .navigation > li.has-childes.page > ul.page-children:after {
-                                                      height: 10px;
-                                                      }
-                                                      #navigation-51 ul.open-to-top::after {
-                                                      position: absolute;
-                                                      bottom: -10px;
-                                                      }
-                                                      #navigation-51 .page a {
-                                                      color: #353535;
-                                                      font-size: 14px;
-                                                      font-weight: 400;
-                                                      letter-spacing: 0px;
-                                                      text-transform: none;
-                                                      }
-                                                      #navigation-51 > nav > ul > li.page:not(:last-child) {
-                                                      margin-bottom: 20px;
-                                                      }
-                                                      #navigation-51 > nav > ul > li:first-child:nth-last-child(1) {
-                                                      margin-bottom: 40px;
-                                                      }
-                                                      #navigation-51 li.page > a:hover {
-                                                      color: #f1f1f1 !important;
-                                                      }
-                                                      #navigation-51 li.page.active > a {
-                                                      color: #353535;
-                                                      }
-                                                      #navigation-51 li.page.active > a:hover {
-                                                      color: #f1f1f1 !important;
-                                                      }
-                                                      #navigation-51 li.page.active > a {
-                                                      color: #353535;
-                                                      }
-                                                      #navigation-51 li.page.active > a:hover {
-                                                      color: #f1f1f1 !important;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children li.page a {
-                                                      color: #353535;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children > li.page a:hover,
-                                                      #navigation-51 li.page > ul.page-children > li.page > ul.page-children > li.page a:hover {
-                                                      color: #959595     !important;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children > li.page.active > a,
-                                                      #navigation-51 li.page > ul.page-children > li.page > ul.page-children > li.page.active > a {
-                                                      color: #353535;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children > li.page.active > a:hover,
-                                                      #navigation-51 li.page > ul.page-children > li.page > ul.page-children > li.page.active > a:hover {
-                                                      color: #959595     !important;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children:before,
-                                                      #navigation-51 li.page > ul.page-children > li.has-childes > .page-children.pagesArrows > li:first-child:before {
-                                                      color: #f1f1f1;
-                                                      }
-                                                      #navigation-51 li.page > ul.page-children > li.page > a {
-                                                      color: #353535;
-                                                      font-size: 12px;
-                                                      }
-                                                      #navigation-51 li.page ul.page-children .page {
-                                                      padding-top: 5px;
-                                                      padding-bottom: 5px;
-                                                      }
-                                                      #navigation-51 li.page ul.page-children .page:last-child {
-                                                      padding-bottom: 5px;
-                                                      }
-                                                      #navigation-51 li.has-childes.page > a > .uci-dropdown-arrow-down {
-                                                      font-size: 8px;
-                                                      line-height: 10px;
-                                                      }
-                                                      #navigation-51 li.has-childes.page > .page-children.pagesArrows > .has-childes > a > .uci-dropdown-arrow-down {
-                                                      font-size: 7px;
-                                                      line-height: 12px;
-                                                      }
-                                                      #navigation-51 li.has-childes.page > .page-children li > a,
-                                                      #navigation-51 li.has-childes.page > .page-children li {
-                                                      text-align: center;
-                                                      }
-                                                      #navigation-51 li.page {
-                                                      text-align: center ;;
-                                                      }
-                                                   </style>
-                                                   <div id="navigation-51"
-                                                      class="navigation-inner
-                                                      clickable-dropdown          in-canvas         vertical standard
-                                                      "
-                                                      data-stretch-labels=""
-                                                      >
-                                                      <nav class="standard-view ">
-                                                         <ul class="navigation" style="font-family: &#039;&#039;Lato&#039;&#039;;" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
-                                                         </ul>
-                                                      </nav>
-                                                   </div>
+    <script type="text/babel" data-type="module" data-presets="react,typescript">
+        import React, { useState, useEffect, useRef } from 'react';
+        import { createRoot } from 'react-dom/client';
+        import { 
+            Lock, MailWarning, TrendingDown, ShieldAlert, Skull, 
+            ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone, 
+            MessageCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink 
+        } from 'lucide-react';
+
+        // --- CONSTANTS ---
+        const TIPS_DATA = [
+            {
+                id: 'passwords',
+                title: 'ПАРОЛИ',
+                icon: Lock,
+                content: 'Използвайте комбинация от малки и големи букви, цифри и специални знаци. Изберете парола над 10 знака. Не използвайте имена, телефонен номер, рождени дати, повтарящи се или визуално еднакви символи. Не използвайте една и съща парола за няколко различни профила. Не споделяйте паролата си с никого. Запишете паролата си на сигурно място. Сменяйте периодично паролите си.',
+                linkText: 'Изберете парола от нашият генератор ineedpass.com',
+                linkUrl: 'https://ineedpass.com/'
+            },
+            {
+                id: 'phishing',
+                title: 'ФИШИНГ',
+                icon: MailWarning,
+                content: 'Игнорирайте имейли или други съобщения от съмнителен източник. Помнете, че държавни институции, банки и фирми почти никога няма да искат от Вас да изпратите лични данни в имейл или чат. Бъдете изключително внимателни при сваляне и активиране на файлове, прикачени към имейли със стресиращ текст или подканящи за незабавно действие.'
+            },
+            {
+                id: 'investment',
+                title: 'ИНВЕСТИЦИОННИ ИЗМАМИ',
+                icon: TrendingDown,
+                content: 'Доверете се на проверени, доказали се и известни компании и платформи за инвестиции. Не предоставяйте своите имена и телефон на сайтове и инвестиционни платформи, които привидно предлагат висока доходност. Преустановете комуникацията с лица, които постоянно искат да захранвате виртуалната си сметка. Не предоставяйте отдалечен достъп до своя компютър или телефон на непознати лица.',
+                linkText: 'Вижте списъка с измамни платформи и сайтове тук',
+                linkUrl: 'https://cybercrime.bg/investmentfraud.html'
+            },
+            {
+                id: 'personal_data',
+                title: 'ЛИЧНИ ДАННИ',
+                icon: ShieldAlert,
+                content: 'Не споделяйте лични данни, потребителски имена и пароли, данни от банкови карти или други платежни инструменти при онлайн комуникация, освен ако не сте изрично сигурни къде ги изпращате. Ограничете до минимум информацията, която споделяте за себе си онлайн.'
+            },
+            {
+                id: 'piracy',
+                title: 'НЕ ПОЛЗВАЙТЕ ПИРАТСКИ СОФТУЕР',
+                icon: Skull,
+                content: 'Използването на нелицензирани или кракнати програми почти винаги води рискове от заразяване на Вашето устройство с компютърен вирус. Потърсете безплатна или по-евтина алтернатива на програмата или услугата, която желаете да ползвате.'
+            },
+            {
+                id: 'antivirus',
+                title: 'АНТИВИРУСНА ПРОГРАМА',
+                icon: ShieldCheck,
+                content: 'Изберете съвременна и надеждна антивирусна програма за своите устройства, която редовно обновявайте. Заложете на световноизвестни и проверени решения. Сканирайте редовно своите устройства за киберзаплахи.'
+            },
+            {
+                id: 'money',
+                title: 'НАГЛЕЖДАЙТЕ ПАРИТЕ СИ',
+                icon: Eye,
+                content: 'Редовно следете движението по Вашите банкови сметки или други виртуални активи. Вземете незабавни мерки, ако установите неоторизиран превод като се свържете с Вашата банка или разплащателна услуга.'
+            },
+            {
+                id: 'updates',
+                title: 'ОПЕРАЦИОННА СИСТЕМА И ПРОГРАМИ',
+                icon: RefreshCw,
+                content: 'Използвайте съвременна операционна система и програми, които редовно обновявайте. Остарелият софтуер по презумпция е по-лесна мишена за хакерите. Проверете настройките на своя компютър или телефон, за да ги обновите до последната версия.'
+            },
+            {
+                id: 'backup',
+                title: 'АРХИВИРАНЕ',
+                icon: HardDrive,
+                content: 'Регулярно създавайте резервни копия на файлове, чието съдържание е от особена важност. Съхранявайте тези копия в офлайн среда. По този начин можете лесно да възстановите данните си, ако устройството Ви изчезне или стане жертва на рансъмуер.'
+            },
+            {
+                id: '2fa',
+                title: 'ДВУСТЕПЕННА ВЕРИФИКАЦИЯ/2FA',
+                icon: Smartphone,
+                content: 'Включете опцията за двустепенна верификация, когато това е възможно. Това гарантира допълнителна сигурност за Вашия профил и възможност да си върнете контрола над него при евентуално компрометиране.'
+            },
+            {
+                id: 'netiquette',
+                title: 'НЕТИКЕТ',
+                icon: MessageCircle,
+                content: 'Комуникирайте учтиво и сдържано онлайн. Не обиждайте и не ругайте. Отнасяйте се с другите, както искате да се отнасят с Вас. Не споделяйте чужди лични данни или снимки, без изрично разрешение. Доверявайте се на надеждни източници на информация и не споделяйте лекомислено фалшиви или непроверени новини.'
+            }
+        ];
+
+        // --- COMPONENTS ---
+
+        // 3D Cyber Cube Background
+        const CyberCube = () => {
+            const canvasRef = useRef(null);
+
+            useEffect(() => {
+                const canvas = canvasRef.current;
+                if (!canvas) return;
+
+                const ctx = canvas.getContext('2d');
+                if (!ctx) return;
+
+                let animationFrameId;
+                
+                let width = window.innerWidth;
+                let height = window.innerHeight;
+                canvas.width = width;
+                canvas.height = height;
+
+                // Cube Vertices [-1, 1]
+                const createCubePoints = () => [
+                    {x: -1, y: -1, z: -1}, {x: 1, y: -1, z: -1},
+                    {x: 1, y: 1, z: -1}, {x: -1, y: 1, z: -1},
+                    {x: -1, y: -1, z: 1}, {x: 1, y: -1, z: 1},
+                    {x: 1, y: 1, z: 1}, {x: -1, y: 1, z: 1}
+                ];
+
+                const edges = [
+                    [0,1], [1,2], [2,3], [3,0], // back
+                    [4,5], [5,6], [6,7], [7,4], // front
+                    [0,4], [1,5], [2,6], [3,7]  // connecting
+                ];
+
+                const pointsOuter = createCubePoints();
+                const pointsInner = createCubePoints(); 
+
+                let angleX = 0;
+                let angleY = 0;
+
+                const rotate = (p, ax, ay) => {
+                    // Rotate Y
+                    let x = p.x * Math.cos(ay) - p.z * Math.sin(ay);
+                    let z = p.x * Math.sin(ay) + p.z * Math.cos(ay);
+                    let y = p.y;
+                    
+                    // Rotate X
+                    let yNew = y * Math.cos(ax) - z * Math.sin(ax);
+                    z = y * Math.sin(ax) + z * Math.cos(ax);
+                    y = yNew;
+
+                    return {x, y, z};
+                }
+
+                const drawCube = (points, size, color, lw, rotX, rotY, isInner = false) => {
+                    ctx.strokeStyle = color;
+                    ctx.lineWidth = lw;
+                    ctx.lineCap = 'round';
+                    
+                    // Perspective projection constants
+                    const cameraDist = 4; // Camera distance from center
+                    
+                    const projected = points.map(p => {
+                        const rotated = rotate(p, rotX, rotY);
+                        const scale = cameraDist / (cameraDist - rotated.z);
+                        
+                        return {
+                            x: rotated.x * size * scale + width / 2,
+                            y: rotated.y * size * scale + height / 2,
+                            z: rotated.z 
+                        };
+                    });
+
+                    // Draw edges
+                    ctx.beginPath();
+                    edges.forEach(edge => {
+                        const p1 = projected[edge[0]];
+                        const p2 = projected[edge[1]];
+                        ctx.moveTo(p1.x, p1.y);
+                        ctx.lineTo(p2.x, p2.y);
+                    });
+                    ctx.stroke();
+
+                    // Draw Nodes
+                    ctx.fillStyle = '#0f172a';
+                    projected.forEach(p => {
+                        ctx.beginPath();
+                        ctx.arc(p.x, p.y, lw * 1.5, 0, Math.PI * 2);
+                        ctx.fill();
+                        ctx.stroke();
+                    });
+                };
+
+                const render = () => {
+                    ctx.clearRect(0, 0, width, height);
+
+                    // Use a fraction of the viewport for size to ensure it fits
+                    const sizeBase = Math.min(width, height) * 0.22;
+
+                    // Outer Cube
+                    ctx.shadowBlur = 15;
+                    ctx.shadowColor = 'rgba(71, 168, 246, 0.5)';
+                    drawCube(pointsOuter, sizeBase, 'rgba(71, 168, 246, 0.6)', 1.5, angleX, angleY);
+
+                    // Inner Cube
+                    ctx.shadowBlur = 5;
+                    ctx.shadowColor = 'rgba(71, 168, 246, 0.8)';
+                    // Rotate inner cube in reverse and faster
+                    drawCube(pointsInner, sizeBase * 0.5, 'rgba(71, 168, 246, 0.9)', 1, -angleX * 1.5, -angleY * 1.2, true);
+
+                    angleX += 0.003;
+                    angleY += 0.005;
+
+                    animationFrameId = requestAnimationFrame(render);
+                };
+
+                render();
+
+                const handleResize = () => {
+                    width = window.innerWidth;
+                    height = window.innerHeight;
+                    canvas.width = width;
+                    canvas.height = height;
+                };
+
+                window.addEventListener('resize', handleResize);
+                return () => {
+                    window.removeEventListener('resize', handleResize);
+                    cancelAnimationFrame(animationFrameId);
+                };
+            }, []);
+
+            return <canvas ref={canvasRef} className="fixed top-0 left-0 w-full h-full -z-10" />;
+        };
+
+        // Police Lights Effect
+        const PoliceLights = () => {
+            return (
+                <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+                    {/* Blue Ambient - Top Left */}
+                    <div className="absolute -top-40 -left-40 w-96 h-96 bg-police-blue rounded-full opacity-10 blur-[100px] animate-pulse-slow"></div>
+                    {/* Red Ambient - Bottom Right */}
+                    <div className="absolute -bottom-40 -right-40 w-96 h-96 bg-police-red rounded-full opacity-10 blur-[100px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+                </div>
+            );
+        };
+
+        // Scanlines Overlay
+        const Scanlines = () => (
+            <div 
+                className="fixed top-0 left-0 right-0 bottom-0 pointer-events-none z-50 bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0.1))] bg-[length:100%_4px]"
+            />
+        );
+
+        // Header Component
+        const Header = () => {
+            const [isLoaded, setIsLoaded] = useState(false);
+
+            return (
+                <header className="relative pt-12 pb-8 px-4 flex flex-col items-center justify-center z-10">
+                    <div className="relative mb-6">
+                        {/* Glowing ring behind logo */}
+                        <div className="absolute inset-0 bg-gdbop-blue rounded-full blur-[40px] opacity-20 animate-pulse"></div>
+                        <img 
+                            src="images/logo.png" 
+                            alt="ГДБОП Logo" 
+                            className={`relative h-48 md:h-56 w-auto object-contain drop-shadow-2xl transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+                            onLoad={() => setIsLoaded(true)}
+                            onError={(e) => {
+                                e.currentTarget.style.display = 'none';
+                            }}
+                        />
+                    </div>
+                    
+                    <div className="text-center space-y-2 animate-float">
+                        <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-gdbop-blue to-white drop-shadow-lg uppercase">
+                            Борба с киберпрестъпността
+                        </h1>
+                        <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-slate-400 uppercase">
+                            ГДБОП-МВР
+                        </h2>
+                    </div>
+
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gdbop-blue to-transparent opacity-50"></div>
+                </header>
+            );
+        };
+
+        // TikTok Feed Component (UPDATED VISUALS)
+        const TikTokFeed = () => {
+            const embedRef = useRef(null);
+
+            useEffect(() => {
+                // Function to load the TikTok SDK
+                const loadTikTokSDK = () => {
+                    // Check if script is already present
+                    if (document.getElementById('tiktok-embed-script')) {
+                        // If script exists, try to re-trigger the load for dynamic content
+                        if (window.tiktok && window.tiktok.embed) {
+                            window.tiktok.embed.load();
+                        }
+                        return;
+                    }
+
+                    const script = document.createElement('script');
+                    script.id = 'tiktok-embed-script';
+                    script.src = 'https://www.tiktok.com/embed.js';
+                    script.async = true;
+                    document.body.appendChild(script);
+                };
+
+                loadTikTokSDK();
+            }, []);
+
+            return (
+                <section className="container mx-auto px-4 py-16 z-10 relative">
+                     <div className="flex items-center justify-center mb-12 gap-4">
+                        <Siren className="text-police-blue animate-pulse drop-shadow-[0_0_10px_rgba(0,85,255,0.8)]" size={36} />
+                        <h3 className="text-3xl md:text-5xl font-bold text-white text-center drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] uppercase tracking-widest">
+                            <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gdbop-blue to-white">
+                                Видео Канал
+                            </span>
+                        </h3>
+                        <Siren className="text-police-red animate-pulse drop-shadow-[0_0_10px_rgba(255,0,0,0.8)]" size={36} />
+                    </div>
+
+                    <div className="flex justify-center perspective-[2000px]">
+                        {/* 3D Wrapper */}
+                        <div className="relative group w-full max-w-7xl transition-all duration-700 transform hover:[transform:rotateX(2deg)_scale(1.01)]">
+                            
+                            {/* Ambient Glow */}
+                            <div className="absolute -inset-4 bg-gradient-to-r from-police-blue via-purple-600 to-police-red rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000 animate-pulse-slow"></div>
+                            
+                            {/* Main Frame Chassis */}
+                            <div className="relative bg-slate-950 rounded-[2rem] p-3 shadow-2xl ring-1 ring-white/10 border-t border-slate-800">
+                                
+                                {/* Metallic Bezel / Frame Border */}
+                                <div className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-950 rounded-[1.5rem] p-2 shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),0_10px_20px_rgba(0,0,0,0.5)] border border-slate-600">
+                                    
+                                    {/* Inner Screen Container (Recessed) */}
+                                    <div className="relative bg-black rounded-xl overflow-hidden border border-slate-800 shadow-[inset_0_0_40px_rgba(0,0,0,1)]">
+                                        
+                                        {/* Top UI Bar */}
+                                        <div className="h-12 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 relative z-20">
+                                            <div className="flex items-center gap-4">
+                                                <div className="flex gap-2">
+                                                    <div className="w-3 h-3 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.8)]"></div>
+                                                    <div className="w-3 h-3 rounded-full bg-amber-500 opacity-50"></div>
+                                                    <div className="w-3 h-3 rounded-full bg-green-500 opacity-50"></div>
                                                 </div>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="header-and-main-rows  ">
-                  <header class="header-rows "
-                     style="  margin-bottom:2.9027576197388vh;  ">
-                     <div class="header-row-wrapper">
-                        <div class="uc-row-wrapper">
-                           <div
-                              class="uc-row                          header-row
-                              " data-id="100"
-                              style="   margin-bottom:2.0746887966805vh;  "
-                              >
-                              <div id="r100" class="row-container  container ">
-                                 <div class="row headerRow "
-                                    style="">
-                                    <div
-                                       class="column col-xs-12 "
-                                       dataColumn-id="158"
-                                       style="  padding:0px 0px;     "
-                                       >
-                                       <div class="column-container "
-                                          style="" aria-label="column" role="contentinfo">
-                                          <div
-                                             class="module-container   only-mobile   align-center ModuleSpace
-                                             first   last                             "
-                                             aria-label="module container" role="contentinfo"
-                                             id="m298"
-                                             >
-                                             <div
-                                                class="   module ModuleSpace "
-                                                dataModule-id="298"
-                                                >
-                                                <div class="space-container">
-                                                   <div class="space-inner"
-                                                      style="height: 10px;"></div>
+                                                <div className="h-6 w-px bg-slate-700"></div>
+                                                <div className="flex items-center gap-2 text-gdbop-blue/80 font-mono text-xs tracking-widest hidden sm:flex">
+                                                    <Video size={14} />
+                                                    <span>LATEST FROM @CYBERCRIME.BG</span>
                                                 </div>
-                                                <style>
-                                                   .ModuleSpace[datamodule-id="298"] .space-container {
-                                                   border-radius: 0 0 0 0;
-                                                   }
-                                                   .ModuleSpace[datamodule-id="298"]:hover .space-container{
-                                                   border-radius: 0 0 0 0;
-                                                   }
-                                                </style>
-                                                <style>
-                                                   .ModuleSpace[datamodule-id="298"] .uc-row .column:first-child {
-                                                   border-bottom-left-radius: 0;
-                                                   border-top-left-radius: 0;
-                                                   }
-                                                   .ModuleSpace[datamodule-id="298"] .uc-row .column:last-child {
-                                                   border-bottom-right-radius: 0;
-                                                   border-top-right-radius: 0;
-                                                   }
-                                                </style>
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="header-row-wrapper">
-                        <div class="uc-row-wrapper">
-                           <div
-                              class="uc-row                          header-row
-                              " data-id="93"
-                              style="  "
-                              >
-                              <div id="r93" class="row-container  container ">
-                                 <div class="row headerRow "
-                                    style="">
-                                    <div
-                                       class="column col-xs-12 "
-                                       dataColumn-id="151"
-                                       style="  padding:16px 0px;     "
-                                       >
-                                       <div class="column-container "
-                                          style="" aria-label="column" role="contentinfo">
-                                          <div
-                                             class="module-container   only-mobile   align-center ModuleImage
-                                             first                              "
-                                             style=" padding: 0px 40px 0px 40px  ; padding-bottom:0px ; "
-                                             aria-label="module container" role="contentinfo"
-                                             id="m287"
-                                             >
-                                             <div
-                                                class="   module ModuleImage "
-                                                dataModule-id="287"
-                                                style="display:block;max-width:160px;"
-                                                >
-                                                <div
-                                                   class="animated animated-287  loading-animation loading-effects "
-                                                   data-loading-animation="Seker"
-                                                   data-animated-id="287"
-                                                   >
-                                                   <div class=" ">
-                                                      <div  class="animated-loading-item animated-item"                      style="opacity: 0; position: relative;" >
-                                                         <div class="layer"></div>
-                                                         <div class="fixed-ratio" style="padding-bottom: 124.91856677524%">
-                                                            <img class="image fixed-ratio-content "
-                                                               width="614px"
-                                                               height="767px"
-                                                               style=""
-                                                               loading="lazy"
-                                                               src="images/logo.png"
-                                                               alt="logo.png"
-                                                               />
-                                                         </div>
-                                                      </div>
-                                                   </div>
+                                            </div>
+                                            <div className="flex items-center gap-3">
+                                                <div className="px-2 py-0.5 rounded bg-blue-900/30 border border-blue-500/30 text-[10px] text-blue-400 font-mono">
+                                                    LIVE
                                                 </div>
-                                             </div>
-                                          </div>
-                                          <div
-                                             class="module-container   only-mobile   align-center ModuleTitle
-                                             last                             "
-                                             aria-label="module container" role="contentinfo"
-                                             id="m288"
-                                             >
-                                             <div
-                                                class="   module ModuleTitle "
-                                                dataModule-id="288"
-                                                >
-                                                <div class="uc-content">
-                                                   <h3 style="line-height: 1.7;"><span style="color: #000000; font-size: 20px;"><strong>БОРБА С КИБЕРПРЕСТЪПНОСТТА</strong></span></h3>
-                                                   <p style="line-height: 1.7;"><span style="font-size: 20px; color: #000000;"><strong>ГДБОП-МВР</strong></span></p>
-                                                </div>
-                                             </div>
-                                          </div>
-                                       </div>
+                                                <div className="w-2 h-2 bg-gdbop-blue rounded-full animate-pulse"></div>
+                                            </div>
+                                        </div>
+
+                                        {/* Content Area with Grid Background */}
+                                        <div className="relative min-h-[500px] bg-[#050505]">
+                                            {/* Cyber Grid Background */}
+                                            <div className="absolute inset-0 bg-[linear-gradient(rgba(50,100,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(50,100,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none"></div>
+                                            <div className="absolute inset-0 bg-radial-gradient(circle at 50% 50%, rgba(71,168,246,0.05), transparent 80%) pointer-events-none"></div>
+
+                                            {/* Corner Brackets */}
+                                            <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-gdbop-blue/50 rounded-tl-lg pointer-events-none"></div>
+                                            <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-gdbop-blue/50 rounded-tr-lg pointer-events-none"></div>
+                                            <div className="absolute bottom-4 left-4 w-8 h-8 border-b-2 border-l-2 border-gdbop-blue/50 rounded-bl-lg pointer-events-none"></div>
+                                            <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-gdbop-blue/50 rounded-br-lg pointer-events-none"></div>
+
+                                            {/* Actual Embed Container */}
+                                            <div className="relative z-10 p-2 sm:p-6 flex justify-center">
+                                                 <blockquote 
+                                                    ref={embedRef}
+                                                    className="tiktok-embed" 
+                                                    cite="https://www.tiktok.com/@cybercrime.bg" 
+                                                    data-unique-id="cybercrime.bg" 
+                                                    data-embed-type="creator" 
+                                                    style={{ maxWidth: '100%', minWidth: '300px', width: '100%', margin: 0 }}
+                                                > 
+                                                    <section> 
+                                                        <a target="_blank" href="https://www.tiktok.com/@cybercrime.bg?refer=embed" rel="noreferrer" className="text-gdbop-blue hover:underline">
+                                                            @cybercrime.bg
+                                                        </a> 
+                                                    </section> 
+                                                </blockquote>
+                                            </div>
+                                        </div>
+
+                                        {/* Screen Overlays */}
+                                        <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.3)_50%)] bg-[size:100%_3px] z-20 opacity-20 mix-blend-overlay"></div>
+                                        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_150px_rgba(0,0,0,0.8)] z-30"></div>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </header>
-                  <main class="main-rows">
-                     <div class="uc-row-wrapper">
-                        <div
-                           class="uc-row     first
-                           " data-id="113"
-                           style="   margin-bottom:0.96993210475267vh;   background:rgb(71, 168, 246); "
-                           >
-                           <div id="r113" class="row-container ">
-                              <div class="row mainRow "
-                                 style="">
-                                 <div
-                                    class="column col-sm-12 "
-                                    dataColumn-id="177"
-                                    style="  padding:3.4917555771096023vh 0vh;     "
-                                    >
-                                    <div class="column-container vertical-top"
-                                       style=" margin-top:0vh; " aria-label="column" role="contentinfo">
-                                       <div
-                                          class="module-container   only-mobile   align-center ModuleParagraph
-                                          first   last                             "
-                                          style=" padding: 0px 40px 0px 40px  "
-                                          aria-label="module container" role="contentinfo"
-                                          id="m339"
-                                          >
-                                          <div
-                                             class="   module ModuleParagraph "
-                                             dataModule-id="339"
-                                             style="display:block;max-width:1287px;"
-                                             >
-                                             <div class="uc-content">
-                                                <p style="text-align: center; font-size: 16px;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>СЪВЕТИ ЗА КИБЕРСИГУРНОСТ:</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ПАРОЛИ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Използвайте комбинация от малки и големи букви, цифри и специални знаци. Изберете парола над 10 знака. Не използвайте имена, телефонен номер, рождени дати, повтарящи се или визуално еднакви символи. Не използвайте една и съща парола за няколко различни профила. Не споделяйте паролата си с никого. Запишете паролата си на сигурно място. Сменяйте периодично паролите си. Изберете парола от нашият генератор <a href="https://ineedpass.com/" target="_blank">ineedpass.com</a></strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ФИШИНГ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Игнорирайте имейли или други съобщения от съмнителен източник. Помнете, че държавни институции, банки и фирми почти никога няма да искат от Вас да изпратите лични данни в имейл или чат. Бъдете изключително внимателни при сваляне и активиране на файлове, прикачени към имейли със стресиращ текст или подканящи за незабавно действие. </strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ИНВЕСТИЦИОННИ ИЗМАМИ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Доверете се на проверени, доказали се и известни компании и платформи за инвестиции. Не предоставяйте своите имена и телефон на сайтове и инвестиционни платформи, които привидно предлагат висока доходност. Преустановете комуникацията с лица, които постоянно искат да захранвате виртуалната си сметка в тяхната платформа, под предлог очакван скок на цени, акции или криптовалута, достигане на определен лимит преди теглене или заплащане на такса за освобождаване на тегленето. Не предоставяйте отдалечен достъп до своя компютър или телефон на непознати лица. Вижте списъка с измамни платформи и сайтове <a href="https://www.cybercrime.bg/investmentfraud.html" target="_blank">тук</a></strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ЛИЧНИ ДАННИ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Не споделяйте лични данни, потребителски имена и пароли, данни от банкови карти или други платежни инструменти при онлайн комуникация, освен ако не сте изрично сигурни къде ги изпращате. Ограничете до минимум информацията, която споделяте за себе си онлайн.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- НЕ ПОЛЗВАЙТЕ ПИРАТСКИ СОФТУЕР -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Използването на нелицензирани или кракнати програми почти винаги води рискове от заразяване на Вашето устройство с компютърен вирус. Потърсете безплатна или по-евтина алтернатива на програмата или услугата, която желаете да ползвате.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- АНТИВИРУСНА ПРОГРАМА -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Изберете съвременна и надеждна антивирусна програма за своите устройства, която редовно обновявайте. Заложете на световноизвестни и проверени решения. Сканирайте редовно своите устройства за киберзаплахи. </strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- НАГЛЕЖДАЙТЕ ПАРИТЕ СИ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Редовно следете движението по Вашите банкови сметки или други виртуални активи. Вземете незабавни мерки, ако установите неоторизиран превод като се свържете с Вашата банка или разплащателна услуга.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ОПЕРАЦИОННА СИСТЕМА И ПРОГРАМИ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Използвайте съвременна операционна система и програми, които редовно обновявайте. Остарелият софтуер по презумпция е по-лесна мишена за хакерите. Проверете настройките на своя компютър или телефон, за да ги обновите до последната версия.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- АРХИВИРАНЕ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Регулярно създавайте резервни копия на файлове, чието съдържание е от особена важност. Съхранявайте тези копия в офлайн среда. По този начин можете лесно да възстановите данните си, ако устройството Ви изчезне или стане жертва на рансъмуер.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- ДВУСТЕПЕННА ВЕРИФИКАЦИЯ/2FA -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Включете опцията за двустепенна верификация, когато това е възможно. Това гарантира допълнителна сигурност за Вашия профил и възможност да си върнете контрола над него при евентуално компрометиране.</strong></span></p>
-                                                <p style="text-align: center;" align="justify"> </p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>- НЕТИКЕТ -</strong></span></p>
-                                                <p style="text-align: center;" align="justify"><span style="font-size: 16px; color: #000000;"><strong>Комуникирайте учтиво и сдържано онлайн. Не обиждайте и не ругайте. Отнасяйте се с другите, както искате да се отнасят с Вас. Не споделяйте чужди лични данни или снимки, без изрично разрешение. Не разпространявайте снимки или материали с оръжия, наркотици, алкохол, насилие или друго неприемливо. Доверявайте се на надеждни източници на информация и не споделяйте лекомислено фалшиви или непроверени новини.</strong></span></p>
-                                             </div>
-                                          </div>
-                                       </div>
+                                </div>
+                                
+                                {/* Bottom Chin Branding */}
+                                <div className="mt-3 flex justify-center items-center opacity-50">
+                                    <div className="flex gap-2 items-center text-xs font-mono text-slate-500 tracking-[0.3em]">
+                                        <span>CYBER</span>
+                                        <div className="w-1 h-1 bg-slate-500 rounded-full"></div>
+                                        <span>INTELLIGENCE</span>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+                                </div>
+                            </div>
                         </div>
-                     </div>
-                     <div class="uc-row-wrapper">
-                        <div
-                           class="uc-row
-                           " data-id="104"
-                           style="   margin-bottom:1.0373443983402vh;   background:rgb(255, 255, 255); "
-                           >
-                           <div id="r104" class="row-container  container ">
-                              <div class="row mainRow "
-                                 style="">
-                                 <div
-                                    class="column col-sm-12 "
-                                    dataColumn-id="162"
-                                    style="  padding:2.6188166828322017vh 0vh;     "
-                                    >
-                                    <div class="column-container vertical-top"
-                                       style=" margin-top:0vh; " aria-label="column" role="contentinfo">
-                                       <div
-                                          class="module-container   only-mobile   align-center ModuleTitle
-                                          first   last                             "
-                                          style=" padding: 0px 0px 0px 0px  "
-                                          aria-label="module container" role="contentinfo"
-                                          id="m47"
-                                          >
-                                          <div
-                                             class="   module ModuleTitle "
-                                             dataModule-id="47"
-                                             style="display:block;max-width:1200px;"
-                                             >
-                                             <div class="uc-content">
-                                                <p class="CDt4Ke zfr3Q" dir="ltr" style="text-align: center; line-height: 1.7; font-size: 16px;"><span style="font-size: 16px; font-weight: 500; font-family: Montserrat; color: #000000;"><strong>Ако сте жертва или свидетел на киберпрестъпление, подайте сигнал в най-близкото районно полицейско управление или на място в дирекция Киберпрестъпност при ГДБОП-МВР</strong></span></p>
-                                             </div>
-                                          </div>
-                                       </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Tips Section Component
+        const TipsSection = () => {
+            return (
+                <section className="container mx-auto px-4 py-12 z-10 relative">
+                    <div className="flex items-center justify-center mb-12 gap-3">
+                        <Siren className="text-police-blue animate-pulse" size={32} />
+                        <h3 className="text-2xl md:text-3xl font-bold text-white text-center border-b-2 border-gdbop-blue pb-2">
+                            СЪВЕТИ ЗА КИБЕРСИГУРНОСТ
+                        </h3>
+                        <Siren className="text-police-red animate-pulse" size={32} />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {TIPS_DATA.map((tip) => (
+                            <div 
+                                key={tip.id}
+                                className="glass-panel p-6 rounded-xl hover:shadow-[0_0_15px_rgba(71,168,246,0.3)] backdrop-blur-md bg-slate-900/70 border border-gdbop-blue/20 transition-all duration-300 hover:-translate-y-1 group flex flex-col h-full"
+                            >
+                                <div className="flex items-center gap-4 mb-4">
+                                    <div className="p-3 rounded-lg bg-slate-800 text-gdbop-blue group-hover:bg-gdbop-blue group-hover:text-white transition-colors duration-300">
+                                        <tip.icon size={28} />
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="uc-row-wrapper">
-                        <div
-                           class="uc-row     last
-                           " data-id="16"
-                           style="   margin-bottom:0vh;   background:rgb(71, 168, 246); "
-                           >
-                           <div id="r16" class="row-container  container ">
-                              <div class="row mainRow "
-                                 style="">
-                                 <div
-                                    class="column col-sm-12 "
-                                    dataColumn-id="29"
-                                    style="  padding:3.1884057971014492vh 0vh;     "
-                                    >
-                                    <div class="column-container vertical-center"
-                                       style="" aria-label="column" role="contentinfo">
-                                       <div
-                                          class="module-container   only-mobile   align-center ModuleTitle
-                                          first   last                             "
-                                          style=" padding: 0px 0px 26px 0px  "
-                                          aria-label="module container" role="contentinfo"
-                                          id="m44"
-                                          >
-                                          <div
-                                             class="   module ModuleTitle "
-                                             dataModule-id="44"
-                                             >
-                                             <div class="uc-content">
-                                                <h4 style="color: rgba(30, 30, 30, 0.83); line-height: 1.7; font-size: 16px;"><span style="font-size: 16px; color: #000000;"><strong><span style="font-family: Montserrat;"><span style="letter-spacing: 2px;">Дирекция Киберпрестъпност, ГДБОП-МВР</span></span></strong></span></h4>
-                                                <h4 style="color: rgba(30, 30, 30, 0.83); line-height: 1.7; font-size: 16px;"><span style="font-size: 16px; color: #000000;"><strong><span style="font-family: Montserrat;"><span style="letter-spacing: 2px;">град София, бул. "Александър Малинов", № 1, бариерата на 07 РУ-СДВР и ГДНП</span></span></strong></span></h4>
-                                                <h4 style="color: rgba(30, 30, 30, 0.83); line-height: 1.7; font-size: 16px;"><span style="font-size: 16px; color: #000000;"><strong><span style="font-family: Montserrat;"><span style="letter-spacing: 2px;"><a href="https://maps.app.goo.gl/dVYVvWKt1sPPhiU49" target="_blank">Отвори адреса в навигацията</a></span></span></strong></span></h4>
-                                             </div>
-                                          </div>
-                                       </div>
+                                    <h4 className="font-bold text-lg text-slate-100 leading-tight">
+                                        {tip.title}
+                                    </h4>
+                                </div>
+                                <div className="text-slate-300 text-sm leading-relaxed flex-grow text-justify">
+                                    {tip.content}
+                                </div>
+                                {tip.linkText && (
+                                    <div className="mt-4 pt-4 border-t border-slate-700">
+                                        <a 
+                                            href={tip.linkUrl} 
+                                            target="_blank" 
+                                            rel="noreferrer"
+                                            className="inline-flex items-center gap-2 text-gdbop-blue hover:text-white font-medium text-sm transition-colors"
+                                        >
+                                            <ExternalLink size={16} />
+                                            {tip.linkText}
+                                        </a>
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            );
+        };
+
+        // CTA Section Component
+        const CTASection = () => {
+            return (
+                <section className="py-16 relative z-10">
+                    <div className="absolute inset-0 bg-gradient-to-r from-police-blue/10 via-gdbop-blue/5 to-police-red/10 backdrop-blur-sm"></div>
+                    <div className="container mx-auto px-4 relative">
+                        <div className="max-w-4xl mx-auto glass-panel bg-slate-900/80 backdrop-blur-lg p-8 md:p-12 rounded-2xl border border-white/10 text-center shadow-2xl">
+                            <Siren className="w-16 h-16 mx-auto mb-6 text-gdbop-blue animate-pulse" />
+                            <p className="text-lg md:text-xl font-medium leading-relaxed text-white">
+                                Ако сте жертва или свидетел на киберпрестъпление, подайте сигнал в най-близкото районно полицейско управление или на място в дирекция <span className="text-gdbop-blue font-bold">Киберпрестъпност</span> при ГДБОП-МВР
+                            </p>
                         </div>
-                     </div>
-                  </main>
-                  <div class="push"></div>
-               </div>
-               <footer class="footer-rows "
-                  style="">
-                  <div class="uc-row-wrapper">
-                     <div
-                        class="uc-row      last
-                        " data-id="102"
-                        style="  "
-                        >
-                        <div id="r102" class="row-container  container ">
-                           <div class="row footerRow "
-                              style="">
-                              <div
-                                 class="column col-sm-12 "
-                                 dataColumn-id="160"
-                                 style="  padding:3.4782608695652173vh 0vh;     "
-                                 >
-                                 <div class="column-container vertical-center"
-                                    style="" aria-label="column" role="contentinfo">
-                                    <div
-                                       class="module-container   only-mobile   align-center ModuleSocialIcons
-                                       first   last                             "
-                                       aria-label="module container" role="contentinfo"
-                                       id="m301"
-                                       >
-                                       <div
-                                          class="   module ModuleSocialIcons "
-                                          dataModule-id="301"
-                                          >
-                                          <style>
-                                             .social-icon-wrapper ul[data-module-id='301'] li {
-                                             text-transform: none;
-                                             margin-right:33px
-                                             }
-                                             .social-icon-wrapper ul[data-module-id='301'] li {
-                                             font-size: 30px;
-                                             }
-                                             .social-icon-wrapper ul[data-module-id='301'] li {
-                                             font-family: '&#039;Montserrat&#039;';
-                                             font-weight: 400;
-                                             letter-spacing: 0px;
-                                             }
-                                             .social-icon-wrapper ul[data-module-id='301'] li {
-                                             letter-spacing: 0;
-                                             }
-                                          </style>
-                                          <div class="social-icon-wrapper "
-                                             style="color: ;">
-                                             <ul class=" round"
-                                                data-module-id="301">
-                                                <li class="uci-facebook-round main-font-typography">
-                                                   <a href="https://www.facebook.com/www.cybercrime.bg" target="_blank" aria-label="facebook" rel="noopener noreferrer"></a>
-                                                </li>
-                                                <li class="uci-youtube-round main-font-typography"
-                                                   >
-                                                   <a href="https://www.youtube.com/user/bgcybercrime" target="_blank" aria-label="youtube" rel="noopener noreferrer"></a>
-                                                </li>
-                                             </ul>
-                                             <script data-cfasync="false" src="js/email-decode.min.js"></script><script type="application/ld+json">
-                                                {"@context":"https:\/\/schema.org","@type":"Organization","url":"http:\/\/www.cybercrime.bg","sameAs":["https:\/\/www.facebook.com\/www.cybercrime.bg","https:\/\/www.youtube.com\/user\/bgcybercrime"]}
-                                             </script>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Footer Component
+        const Footer = () => {
+            return (
+                <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 z-10 relative">
+                    <div className="container mx-auto px-4 flex flex-col items-center text-center gap-6">
+                        <div>
+                            <h4 className="text-white text-lg font-bold mb-2 uppercase tracking-wide">
+                                Дирекция Киберпрестъпност, ГДБОП-МВР
+                            </h4>
+                            <p className="max-w-md mx-auto mb-4">
+                                град София, бул. "Александър Малинов", № 1, бариерата на 07 РУ-СДВР и ГДНП
+                            </p>
+                            <a 
+                                href="https://maps.app.goo.gl/dVYVvWKt1sPPhiU49" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 text-gdbop-blue hover:text-white transition-colors border border-gdbop-blue/30 px-4 py-2 rounded-full hover:bg-gdbop-blue/10"
+                            >
+                                <MapPin size={18} />
+                                <span>Отвори адреса в навигацията</span>
+                            </a>
                         </div>
-                     </div>
-                  </div>
-               </footer>
-            </div>
-         </div>
-         <div class="accounts-popup">
-            <div class="loading-container">
-               <div class="loading-spinner"></div>
-            </div>
-            <iframe id="accounts-iframe" style="border: none;"></iframe>
-         </div>
-      </div>
-      <div class="module-datepicker-container"></div>
-      <script type="4c77e8ac3047353977af81af-text/javascript">
-         window.popupsExist = true;
-      </script>
-      <!-- jQuery minified -->
-      <script src="js/jquery-3.6.0.min.js" type="4c77e8ac3047353977af81af-text/javascript"></script>
-      <!-- public assets js, all lib js files concated and minified -->
-      <script defer src="js/publicAssets.js" type="4c77e8ac3047353977af81af-text/javascript"></script>
-      <!-- public js, all modules and apps public js concatenated and minified -->
-      <script defer src="js/public.js" type="4c77e8ac3047353977af81af-text/javascript"></script>
-      <!-- Html -->
-      <!-- Scripts -->
-      <script defer type="4c77e8ac3047353977af81af-text/javascript" src="js/effects.js"></script>
-      <!-- Inline Scripts -->
-      <script type="4c77e8ac3047353977af81af-text/javascript"></script>
-      <script src="js/rocket-loader.min.js" data-cf-settings="4c77e8ac3047353977af81af-|49" defer=""></script><script>(function(){var js = "window['__CF$cv$params']={r:'77dba3d62b22c2af',m:'3TqVwltc86Ff8_bZk4mG36wfeMGn6ELskzInSHGxaXU-1671741284-0-AfvqH34O8By1m1i0Rmyxcsab76FXaq16QiJhyy1HuOak5ui8Wpw7C8bCh8CZoFQJO1v8uLjKcj7DljedtDizZOXydpbcpPBrxpT7I6oRhkO3kAWQxxKrHlxomAuSc7B/PQ==',s:[0xe89a0f0e33,0xca05f5e171],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible5615.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script>
-   </body>
+
+                        <div className="flex gap-6 mt-4">
+                            <a 
+                                href="https://www.facebook.com/www.cybercrime.bg" 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="p-3 bg-slate-800 rounded-full hover:bg-[#1877F2] hover:text-white transition-all duration-300 transform hover:scale-110"
+                                aria-label="Facebook"
+                            >
+                                <Facebook size={24} />
+                            </a>
+                            <a 
+                                href="https://www.youtube.com/user/bgcybercrime" 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="p-3 bg-slate-800 rounded-full hover:bg-[#FF0000] hover:text-white transition-all duration-300 transform hover:scale-110"
+                                aria-label="YouTube"
+                            >
+                                <Youtube size={24} />
+                            </a>
+                            <a 
+                                href="https://www.tiktok.com/@cybercrime.bg" 
+                                target="_blank" 
+                                rel="noreferrer"
+                                className="p-3 bg-slate-800 rounded-full hover:bg-black hover:text-white border border-slate-700 hover:border-white transition-all duration-300 transform hover:scale-110"
+                                aria-label="TikTok"
+                            >
+                                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        
+                        <div className="mt-8 text-xs text-slate-600">
+                            &copy; {new Date().getFullYear()} Киберпрестъпност ГДБОП. Всички права запазени.
+                        </div>
+                    </div>
+                </footer>
+            );
+        };
+
+        // --- MAIN APP ---
+        const App = () => {
+            return (
+                <React.Fragment>
+                    <Scanlines />
+                    <CyberCube />
+                    <PoliceLights />
+                    
+                    <div className="flex flex-col min-h-screen">
+                        <Header />
+                        <main className="flex-grow">
+                            <TipsSection />
+                            <TikTokFeed />
+                            <CTASection />
+                        </main>
+                        <Footer />
+                    </div>
+                </React.Fragment>
+            );
+        };
+
+        // --- RENDER ---
+        const rootElement = document.getElementById('root');
+        if (rootElement) {
+            const root = createRoot(rootElement);
+            root.render(<App />);
+        }
+    </script>
+</body>
 </html>
-
