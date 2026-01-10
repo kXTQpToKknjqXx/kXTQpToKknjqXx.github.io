@@ -90,7 +90,8 @@
         import { 
             Lock, MailWarning, TrendingDown, ShieldAlert, Skull, 
             ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone, 
-            MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink 
+            MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink,
+            ArrowUp
         } from 'lucide-react';
 
         // --- CONSTANTS ---
@@ -174,7 +175,44 @@
         ];
 
         // --- COMPONENTS ---
+        const BackToTop = () => {
+            const [isVisible, setIsVisible] = useState(false);
 
+            useEffect(() => {
+                const toggleVisibility = () => {
+                    if (window.pageYOffset > 300) {
+                        setIsVisible(true);
+                    } else {
+                        setIsVisible(false);
+                    }
+                };
+
+                window.addEventListener('scroll', toggleVisibility);
+
+                return () => window.removeEventListener('scroll', toggleVisibility);
+            }, []);
+
+            const scrollToTop = () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            };
+
+            return (
+                <button 
+                    onClick={scrollToTop}
+                    className={`fixed bottom-8 right-8 z-50 p-4 bg-gdbop-blue text-white rounded-full shadow-[0_0_15px_rgba(71,168,246,0.5)] border border-white/20 transition-all duration-300 hover:scale-110 hover:bg-blue-600 focus:outline-none group ${
+                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+                    }`}
+                    aria-label="Back to top"
+                >
+                    <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
+                </button>
+            );
+        };
+
+        
         // 3D Cyber Cube Background
         const CyberCube = () => {
             const canvasRef = useRef(null);
@@ -625,6 +663,8 @@
                     <Scanlines />
                     <CyberCube />
                     <PoliceLights />
+                    
+                    <BackToTop />
                     
                     <div className="flex flex-col min-h-screen">
                         <Header />
