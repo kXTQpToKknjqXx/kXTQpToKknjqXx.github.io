@@ -30,8 +30,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Babel for in-browser JSX transformation -->
-    <script
-        src="https://unpkg.com/@babel/standalone/babel.min.js">integrity = "sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd" crossorigin = "anonymous" ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"
+        integrity="sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd"
+        crossorigin="anonymous"></script>
 
 
     <!-- Google Fonts -->
@@ -842,8 +843,8 @@
                 const loadTikTokSDK = () => {
                     // Check if script is already present
                     if (document.getElementById('tiktok-embed-script')) {
-                        // If script exists, try to re-trigger the load for dynamic content
-                        if (window.tiktok && window.tiktok.embed) {
+                        // If script exists, reload the embed if the method is available
+                        if (window.tiktok && window.tiktok.embed && typeof window.tiktok.embed.load === 'function') {
                             window.tiktok.embed.load();
                         }
                         return;
@@ -853,11 +854,25 @@
                     script.id = 'tiktok-embed-script';
                     script.src = 'https://www.tiktok.com/embed.js';
                     script.async = true;
+                    script.onload = () => {
+                        // Trigger load once script is ready
+                        if (window.tiktok && window.tiktok.embed && typeof window.tiktok.embed.load === 'function') {
+                            window.tiktok.embed.load();
+                        }
+                    };
                     document.body.appendChild(script);
                 };
 
+                // Remove existing script to force reload (optional, but cleaner for single page apps usually)
+                // However, for this simple page, we just check existence.
                 loadTikTokSDK();
-            }, []);
+
+                // Cleanup not strictly necessary for this simple app but good practice
+                return () => {
+                    // We don't remove the script to avoid re-downloading on re-renders, 
+                    // but we might want to ensure we don't duplicate.
+                };
+            }, [lang]); // Re-run if lang changes, though SDK handles itself mostly
 
             return (
                 <section id="video-feed" className="container mx-auto px-4 py-16 z-10 relative">
@@ -910,7 +925,7 @@
                                         </div>
 
                                         {/* Content Area with Grid Background */}
-                                        <div className="relative min-h-[500px] bg-[#050505]">
+                                        <div className="relative min-h-[500px] bg-[#050505] flex justify-center items-center">
                                             {/* Cyber Grid Background */}
                                             <div className="absolute inset-0 bg-[linear-gradient(rgba(50,100,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(50,100,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px] pointer-events-none"></div>
                                             <div className="absolute inset-0 bg-radial-gradient(circle at 50% 50%, rgba(71,168,246,0.05), transparent 80%) pointer-events-none"></div>
@@ -922,9 +937,8 @@
                                             <div className="absolute bottom-4 right-4 w-8 h-8 border-b-2 border-r-2 border-gdbop-blue/50 rounded-br-lg pointer-events-none"></div>
 
                                             {/* Actual Embed Container */}
-                                            <div className="relative z-10 p-2 sm:p-6 flex justify-center">
+                                            <div className="relative z-10 p-2 sm:p-6 w-full flex justify-center">
                                                 <blockquote
-                                                    ref={embedRef}
                                                     className="tiktok-embed"
                                                     cite="https://www.tiktok.com/@cybercrime.bg"
                                                     data-unique-id="cybercrime.bg"
@@ -942,7 +956,6 @@
 
                                         {/* Screen Overlays */}
                                         <div className="absolute inset-0 pointer-events-none bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.3)_50%)] bg-[size:100%_3px] z-20 opacity-20 mix-blend-overlay"></div>
-                                        <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_150px_rgba(0,0,0,0.8)] z-30"></div>
                                     </div>
                                 </div>
 
