@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Киберпрестъпност ГДБОП</title>
-    <meta name="description" content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, съвети за киберсигурност">
+    <meta name="description"
+        content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, съвети за киберсигурност">
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
     script-src 'self' 'unsafe-inline' 'unsafe-eval' 
@@ -12,60 +14,63 @@
     https://unpkg.com 
     https://esm.sh 
     https://www.tiktok.com
-    https://*.ttwstatic.com;
+    https://connect.facebook.net;
     style-src 'self' 'unsafe-inline' 
     https://fonts.googleapis.com 
     https://cdn.tailwindcss.com;
     font-src 'self' https://fonts.gstatic.com;
     img-src 'self' https: data:;
-    frame-src https://www.tiktok.com https://*.tiktok.com;
-    connect-src 'self' https://esm.sh https://*.tiktok.com https://*.ttwstatic.com;
+    frame-src https://www.tiktok.com https://www.facebook.com https://web.facebook.com;
+    connect-src 'self' https://esm.sh https://urlhaus-api.abuse.ch;
     ">
     <link rel="icon" href="images/favicon.png" />
 
     <!-- Tailwind CSS -->
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Babel for in-browser JSX/TS transformation -->
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js">integrity="sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd" crossorigin="anonymous"></script>
-    
+
+    <!-- Babel for in-browser JSX transformation -->
+    <script
+        src="https://unpkg.com/@babel/standalone/babel.min.js">integrity = "sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd" crossorigin = "anonymous" ></script>
+
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-            },
-            colors: {
-              'gdbop-blue': '#47a8f6',
-              'gdbop-dark': '#0f172a', // slate-900
-              'police-blue': '#0055ff',
-              'police-red': '#ff0000',
-            },
-            animation: {
-              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-              'float': 'float 6s ease-in-out infinite',
-              'scan': 'scan 4s linear infinite',
-            },
-            keyframes: {
-              float: {
-                '0%, 100%': { transform: 'translateY(0)' },
-                '50%': { transform: 'translateY(-10px)' },
-              },
-              scan: {
-                '0%': { top: '-10%' },
-                '100%': { top: '110%' },
-              }
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        'gdbop-blue': '#47a8f6',
+                        'gdbop-dark': '#0f172a', // slate-900
+                        'police-blue': '#0055ff',
+                        'police-red': '#ff0000',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'scan': 'scan 4s linear infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        scan: {
+                            '0%': { top: '-10%' },
+                            '100%': { top: '110%' },
+                        }
+                    }
+                }
             }
-          }
         }
-      }
     </script>
 
     <!-- Import Map for React and Lucide -->
@@ -81,100 +86,210 @@
 }
 </script>
 </head>
-<body class="bg-gdbop-dark text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gdbop-blue selection:text-white">
+
+<body
+    class="bg-gdbop-dark text-slate-100 font-sans antialiased overflow-x-hidden selection:bg-gdbop-blue selection:text-white">
     <div id="root"></div>
 
     <script type="text/babel" data-type="module" data-presets="react,typescript">
         import React, { useState, useEffect, useRef } from 'react';
         import { createRoot } from 'react-dom/client';
-        import { 
-            Lock, MailWarning, TrendingDown, ShieldAlert, Skull, 
-            ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone, 
+        import {
+            Lock, MailWarning, TrendingDown, ShieldAlert, Skull,
+            ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone,
             MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink,
-            ArrowUp
+            ArrowUp, Globe, TrendingUp
         } from 'lucide-react';
 
         // --- CONSTANTS ---
+
+        const TRANSLATIONS = {
+            bg: {
+                home: "Начало",
+                tips: "Съвети",
+                video: "Видео",
+                blog: "Блог",
+                threats: "Заплахи",
+                contacts: "Контакти",
+                headerTitle: "Борба с киберпрестъпността",
+                headerSubtitle: "ГДБОП-МВР",
+                videoTitle: "Видео Канал",
+                tipsTitle: "Съвети за Киберсигурност",
+                ctaText: "Ако сте жертва или свидетел на киберпрестъпление, подайте сигнал в най-близкото районно полицейско управление или на място в дирекция",
+                ctaDirectorate: "Киберпрестъпност",
+                ctaMvr: "при ГДБОП-МВР",
+                footerTitle: "Дирекция Киберпрестъпност, ГДБОП-МВР",
+                address: 'град София, бул. "Александър Малинов", № 1, бариерата на 07 РУ-СДВР и ГДНП',
+                openMap: "Отвори адреса в навигацията",
+                rights: "Всички права запазени.",
+                latestFrom: "ПОСЛЕДНО ОТ",
+                live: "НА ЖИВО",
+                threatFeedTitle: "БЮЛЕТИН ЗА ЗАПЛАХИ",
+                blogTitle: "НОВИНИ ОТ FACEBOOK",
+                loading: "Зареждане...",
+                error: "Грешка при зареждане",
+                source: "ИЗТОЧНИК",
+                malware: "ЗЛОВРЕДЕН ЛИНК",
+                status: "СТАТУС",
+                offline: "ОФЛАЙН",
+                online: "ОНЛАЙН",
+                date: "ДАТА",
+                investment: "Инвестиционни измами",
+                backHome: "Към Начало"
+            },
+            en: {
+                home: "Home",
+                tips: "Tips",
+                video: "Video",
+                blog: "Blog",
+                threats: "Threats",
+                contacts: "Contacts",
+                headerTitle: "Cybercrime Directorate",
+                headerSubtitle: "GDCOC-MoI",
+                videoTitle: "Video Channel",
+                tipsTitle: "Cybersecurity Tips",
+                ctaText: "If you are a victim or witness of a cybercrime, report it to the nearest district police station or at the Directorate",
+                ctaDirectorate: "Cybercrime",
+                ctaMvr: "at GDCOC-MoI",
+                footerTitle: "Cybercrime Directorate, GDCOC-MoI",
+                address: 'Sofia, 1 Alexander Malinov Blvd, barrier of 07 RU-SDVR and GDNP',
+                openMap: "Open address in navigation",
+                rights: "All rights reserved.",
+                latestFrom: "LATEST FROM",
+                live: "LIVE",
+                threatFeedTitle: "THREAT FEED",
+                blogTitle: "FACEBOOK NEWS",
+                loading: "Loading...",
+                error: "Error loading data",
+                source: "SOURCE",
+                malware: "MALICIOUS LINK",
+                status: "STATUS",
+                offline: "OFFLINE",
+                online: "ONLINE",
+                date: "DATE",
+                investment: "Investment Fraud",
+                backHome: "Back to Home"
+            }
+        };
+
         const TIPS_DATA = [
             {
                 id: 'passwords',
-                title: 'ПАРОЛИ',
+                title: { bg: 'ПАРОЛИ', en: 'PASSWORDS' },
                 icon: Lock,
-                content: 'Използвайте комбинация от малки и големи букви, цифри и специални знаци. Изберете парола над 10 знака. Не използвайте имена, телефонен номер, рождени дати, повтарящи се или визуално еднакви символи. Не използвайте една и съща парола за няколко различни профила. Не споделяйте паролата си с никого. Запишете паролата си на сигурно място. Сменяйте периодично паролите си.',
-                linkText: 'Изберете парола от нашият генератор ineedpass.com',
+                content: {
+                    bg: 'Използвайте комбинация от малки и големи букви, цифри и специални знаци. Изберете парола над 10 знака. Не използвайте имена, телефонен номер, рождени дати, повтарящи се или визуално еднакви символи. Не използвайте една и съща парола за няколко различни профила. Не споделяйте паролата си с никого. Запишете паролата си на сигурно място. Сменяйте периодично паролите си.',
+                    en: 'Use a combination of uppercase and lowercase letters, numbers, and special characters. Choose a password over 10 characters long. Do not use names, phone numbers, birthdates, repeating or visually identical symbols. Do not use the same password for different accounts. Do not share your password with anyone. Write it down in a safe place. Change your passwords periodically.'
+                },
+                linkText: { bg: 'Изберете парола от нашият генератор ineedpass.com', en: 'Choose a password from our generator ineedpass.com' },
                 linkUrl: 'https://ineedpass.com/'
             },
             {
                 id: 'phishing',
-                title: 'ФИШИНГ',
+                title: { bg: 'ФИШИНГ', en: 'PHISHING' },
                 icon: MailWarning,
-                content: 'Игнорирайте имейли или други съобщения от съмнителен източник. Помнете, че държавни институции, банки и фирми почти никога няма да искат от Вас да изпратите лични данни в имейл или чат. Бъдете изключително внимателни при сваляне и активиране на файлове, прикачени към имейли със стресиращ текст или подканящи за незабавно действие.'
+                content: {
+                    bg: 'Игнорирайте имейли или други съобщения от съмнителен източник. Помнете, че държавни институции, банки и фирми почти никога няма да искат от Вас да изпратите лични данни в имейл или чат. Бъдете изключително внимателни при сваляне и активиране на файлове, прикачени към имейли със стресиращ текст или подканящи за незабавно действие.',
+                    en: 'Ignore emails or other messages from suspicious sources. Remember that government institutions, banks, and companies will almost never ask you to send personal data via email or chat. Be extremely careful when downloading and activating files attached to emails with stressful text or prompting immediate action.'
+                }
             },
             {
                 id: 'investment',
-                title: 'ИНВЕСТИЦИОННИ ИЗМАМИ',
+                title: { bg: 'ИНВЕСТИЦИОННИ ИЗМАМИ', en: 'INVESTMENT FRAUD' },
                 icon: TrendingDown,
-                content: 'Доверете се на проверени, доказали се и известни компании и платформи за инвестиции. Не предоставяйте своите имена и телефон на сайтове и инвестиционни платформи, които привидно предлагат висока доходност. Преустановете комуникацията с лица, които постоянно искат да захранвате виртуалната си сметка. Не предоставяйте отдалечен достъп до своя компютър или телефон на непознати лица.',
-                linkText: 'Вижте списъка с измамни платформи и сайтове тук',
+                content: {
+                    bg: 'Доверете се на проверени, доказали се и известни компании и платформи за инвестиции. Не предоставяйте своите имена и телефон на сайтове и инвестиционни платформи, които привидно предлагат висока доходност. Преустановете комуникацията с лица, които постоянно искат да захранвате виртуалната си сметка. Не предоставяйте отдалечен достъп до своя компютър или телефон на непознати лица.',
+                    en: 'Trust verified, proven, and well-known investment companies and platforms. Do not provide your name and phone number to sites and investment platforms that seemingly offer high returns. Stop communicating with persons who constantly ask you to fund your virtual account. Do not provide remote access to your computer or phone to strangers.'
+                },
+                linkText: { bg: 'Вижте списъка с измамни платформи и сайтове тук', en: 'See the list of fraudulent platforms and websites here' },
                 linkUrl: 'https://cybercrime.bg/investmentfraud.html'
             },
             {
                 id: 'personal_data',
-                title: 'ЛИЧНИ ДАННИ',
+                title: { bg: 'ЛИЧНИ ДАННИ', en: 'PERSONAL DATA' },
                 icon: ShieldAlert,
-                content: 'Не споделяйте лични данни, потребителски имена и пароли, данни от банкови карти или други платежни инструменти при онлайн комуникация, освен ако не сте изрично сигурни къде ги изпращате. Ограничете до минимум информацията, която споделяте за себе си онлайн.'
+                content: {
+                    bg: 'Не споделяйте лични данни, потребителски имена и пароли, данни от банкови карти или други платежни инструменти при онлайн комуникация, освен ако не сте изрично сигурни къде ги изпращате. Ограничете до минимум информацията, която споделяте за себе си онлайн.',
+                    en: 'Do not share personal data, usernames and passwords, bank card details, or other payment instruments in online communication unless you are explicitly sure where you are sending them. Minimize the information you share about yourself online.'
+                }
             },
             {
                 id: 'piracy',
-                title: 'БЕЗ ПИРАТСКИ СОФТУЕР',
+                title: { bg: 'НЕ ПОЛЗВАЙТЕ ПИРАТСКИ СОФТУЕР', en: 'NO PIRATED SOFTWARE' },
                 icon: Skull,
-                content: 'Използването на нелицензирани или кракнати програми почти винаги води рискове от заразяване на Вашето устройство с компютърен вирус. Потърсете безплатна или по-евтина алтернатива на програмата или услугата, която желаете да ползвате.'
+                content: {
+                    bg: 'Използването на нелицензирани или кракнати програми почти винаги води рискове от заразяване на Вашето устройство с компютърен вирус. Потърсете безплатна или по-евтина алтернатива на програмата или услугата, която желаете да ползвате.',
+                    en: 'Using unlicensed or cracked programs almost always carries risks of infecting your device with a computer virus. Look for a free or cheaper alternative to the program or service you want to use.'
+                }
             },
             {
                 id: 'antivirus',
-                title: 'АНТИВИРУСНА ПРОГРАМА',
+                title: { bg: 'АНТИВИРУСНА ПРОГРАМА', en: 'ANTIVIRUS SOFTWARE' },
                 icon: ShieldCheck,
-                content: 'Изберете съвременна и надеждна антивирусна програма за своя компютър. Заложете на световноизвестни и проверени решения. Сканирайте редовно своя компютър за киберзаплахи. Телефона и таблета са отлично защитени и не се нуждаят от антивирусна.'
+                content: {
+                    bg: 'Изберете съвременна и надеждна антивирусна програма за своите устройства, която редовно обновявайте. Заложете на световноизвестни и проверени решения. Сканирайте редовно своите устройства за киберзаплахи.',
+                    en: 'Choose a modern and reliable antivirus program for your devices and update it regularly. Bet on world-famous and proven solutions. Regularly scan your devices for cyber threats.'
+                }
             },
             {
                 id: 'money',
-                title: 'НАГЛЕЖДАЙТЕ ПАРИТЕ СИ',
+                title: { bg: 'НАГЛЕЖДАЙТЕ ПАРИТЕ СИ', en: 'MONITOR YOUR MONEY' },
                 icon: Eye,
-                content: 'Редовно следете движението по Вашите банкови сметки или други виртуални активи. Вземете незабавни мерки, ако установите неоторизиран превод като се свържете с Вашата банка или разплащателна услуга.'
+                content: {
+                    bg: 'Редовно следете движението по Вашите банкови сметки или други виртуални активи. Вземете незабавни мерки, ако установите неоторизиран превод като се свържете с Вашата банка или разплащателна услуга.',
+                    en: 'Regularly monitor the movement in your bank accounts or other virtual assets. Take immediate action if you detect an unauthorized transfer by contacting your bank or payment service.'
+                }
             },
             {
                 id: 'updates',
-                title: 'ОПЕРАЦИОННА СИСТЕМА И ПРОГРАМИ',
+                title: { bg: 'ОПЕРАЦИОННА СИСТЕМА И ПРОГРАМИ', en: 'OS & SOFTWARE UPDATES' },
                 icon: RefreshCw,
-                content: 'Използвайте съвременна операционна система и програми, които редовно обновявайте. Остарелият софтуер по презумпция е по-лесна мишена за хакерите. Проверете настройките на своя компютър или телефон, за да ги обновите до последната версия.'
+                content: {
+                    bg: 'Използвайте съвременна операционна система и програми, които редовно обновявайте. Остарелият софтуер по презумпция е по-лесна мишена за хакерите. Проверете настройките на своя компютър или телефон, за да ги обновите до последната версия.',
+                    en: 'Use a modern operating system and programs that you update regularly. Outdated software is prone to be a target for hackers. Check your computer or phone settings to update them to the latest version.'
+                }
             },
             {
                 id: 'backup',
-                title: 'АРХИВИРАНЕ',
+                title: { bg: 'АРХИВИРАНЕ', en: 'BACKUP' },
                 icon: HardDrive,
-                content: 'Регулярно създавайте резервни копия на файлове, чието съдържание е от особена важност. Съхранявайте тези копия в офлайн среда. По този начин можете лесно да възстановите данните си, ако устройството Ви изчезне или стане жертва на рансъмуер.'
+                content: {
+                    bg: 'Регулярно създавайте резервни копия на файлове, чието съдържание е от особена важност. Съхранявайте тези копия в офлайн среда. По този начин можете лесно да възстановите данните си, ако устройството Ви изчезне или стане жертва на рансъмуер.',
+                    en: 'Regularly create backups of files whose content is of particular importance. Store these copies in an offline environment. This way you can easily recover your data if your device goes missing or falls victim to ransomware.'
+                }
             },
             {
                 id: '2fa',
-                title: 'ДВУСТЕПЕННА ВЕРИФИКАЦИЯ/2FA',
+                title: { bg: 'ДВУСТЕПЕННА ВЕРИФИКАЦИЯ/2FA', en: 'TWO-FACTOR AUTH / 2FA' },
                 icon: Smartphone,
-                content: 'Включете опцията за двустепенна верификация, когато това е възможно. Това гарантира допълнителна сигурност за Вашия профил и възможност да си върнете контрола над него при евентуално компрометиране.'
+                content: {
+                    bg: 'Включете опцията за двустепенна верификация, когато това е възможно. Това гарантира допълнителна сигурност за Вашия профил и възможност да си върнете контрола над него при евентуално компрометиране.',
+                    en: 'Enable the two-factor verification option whenever possible. This guarantees additional security for your profile and the ability to regain control over it in case of compromise.'
+                }
             },
             {
                 id: 'netiquette',
-                title: 'НЕТИКЕТ',
+                title: { bg: 'НЕТИКЕТ', en: 'NETIQUETTE' },
                 icon: MessageCircle,
-                content: 'Комуникирайте учтиво и сдържано онлайн. Не обиждайте и не ругайте. Отнасяйте се с другите, както искате да се отнасят с Вас. Не споделяйте чужди лични данни или снимки, без изрично разрешение. Доверявайте се на надеждни източници на информация и не споделяйте лекомислено фалшиви или непроверени новини.'
+                content: {
+                    bg: 'Комуникирайте учтиво и сдържано онлайн. Не обиждайте и не ругайте. Отнасяйте се с другите, както искате да се отнасят с Вас. Не споделяйте чужди лични данни или снимки, без изрично разрешение. Доверявайте се на надеждни източници на информация и не споделяйте лекомислено фалшиви или непроверени новини.',
+                    en: 'Communicate politely and with restraint online. Do not insult or swear. Treat others as you would like to be treated. Do not share other people\'s personal data or photos without explicit permission. Trust reliable sources of information and do not share fake or unverified news lightly.'
+                }
             },
             {
                 id: 'examination',
-                title: 'ПРЕГЛЕД И ТЕСТ',
+                title: { bg: 'ПРЕГЛЕД И ТЕСТ', en: 'REVIEW AND TEST' },
                 icon: CheckCircle,
-                content: 'Използвайте опцията за преглед и тест, както и плащане при получаване, когато това е възможно. По този начин намалявате възможността да получите нещо, което не сте поръчали или не отговаря на Вашите потребителски изисквания. Избирайте известни и доказани онлайн магазини и платформи за Вашите поръчки.'
+                content: {
+                    bg: 'Използвайте опцията за преглед и тест, както и плащане при получаване, когато това е възможно. По този начин намалявате възможността да получите нещо, което не сте поръчали или не отговаря на Вашите потребителски изисквания. Избирайте известни и доказани онлайн магазини и платформи за вашите поръчки.',
+                    en: 'Use the review and test option, as well as payment on delivery, whenever possible. This way you reduce the possibility of receiving something you did not order or that does not meet your consumer requirements. Choose well-known and proven online stores and platforms for your orders.'
+                }
             }
         ];
 
         // --- COMPONENTS ---
+
+        // Back to Top Button Component
         const BackToTop = () => {
             const [isVisible, setIsVisible] = useState(false);
 
@@ -200,11 +315,10 @@
             };
 
             return (
-                <button 
+                <button
                     onClick={scrollToTop}
-                    className={`fixed bottom-8 right-8 z-50 p-4 bg-gdbop-blue text-white rounded-full shadow-[0_0_15px_rgba(71,168,246,0.5)] border border-white/20 transition-all duration-300 hover:scale-110 hover:bg-blue-600 focus:outline-none group ${
-                        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
-                    }`}
+                    className={`fixed bottom-8 right-8 z-50 p-4 bg-gdbop-blue text-white rounded-full shadow-[0_0_15px_rgba(71,168,246,0.5)] border border-white/20 transition-all duration-300 hover:scale-110 hover:bg-blue-600 focus:outline-none group ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+                        }`}
                     aria-label="Back to top"
                 >
                     <ArrowUp className="w-6 h-6 group-hover:-translate-y-1 transition-transform" />
@@ -212,7 +326,325 @@
             );
         };
 
-        
+
+        // Navbar Component
+        const Navbar = ({ lang, setLang }) => {
+            const t = TRANSLATIONS[lang];
+            const [isScrolled, setIsScrolled] = useState(false);
+            const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+            useEffect(() => {
+                const handleScroll = () => {
+                    setIsScrolled(window.scrollY > 50);
+                };
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll);
+            }, []);
+
+            const scrollToSection = (id) => {
+                const element = document.getElementById(id);
+                if (element) {
+                    const offset = 80;
+                    const bodyRect = document.body.getBoundingClientRect().top;
+                    const elementRect = element.getBoundingClientRect().top;
+                    const elementPosition = elementRect - bodyRect;
+                    const offsetPosition = elementPosition - offset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    setIsMenuOpen(false);
+                }
+            };
+
+            const navItems = [
+                { id: 'home', label: t.home, icon: ShieldCheck },
+                { id: 'tips', label: t.tips, icon: Lock },
+                { id: 'video-feed', label: t.video, icon: Video },
+                { id: 'blog-feed', label: t.blog, icon: Facebook },
+                { id: 'threat-feed', label: t.threats, icon: Siren },
+                { id: 'investment-fraud.html', label: t.investment, icon: TrendingUp, isLink: true },
+                { id: 'contacts', label: t.contacts, icon: MapPin },
+            ];
+
+            return (
+                <nav className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-slate-900/90 backdrop-blur-md shadow-lg border-b border-gdbop-blue/20' : 'bg-transparent'}`}>
+                    <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+                        <div className="flex items-center gap-2 cursor-pointer" onClick={() => scrollToSection('home')}>
+                            <ShieldCheck className="text-gdbop-blue" size={28} />
+                            <span className="font-bold text-white tracking-wider hidden md:block">CYBERCRIME.BG</span>
+                        </div>
+
+                        {/* Desktop Menu */}
+                        <div className="hidden md:flex items-center gap-1">
+                            {navItems.map((item) => (
+                                item.isLink ? (
+                                    <a
+                                        key={item.id}
+                                        href={item.id}
+                                        className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-2 group"
+                                    >
+                                        <item.icon size={16} className="text-police-red group-hover:scale-110 transition-transform" />
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <button
+                                        key={item.id}
+                                        onClick={() => scrollToSection(item.id)}
+                                        className="px-4 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-2 group"
+                                    >
+                                        <item.icon size={16} className="text-gdbop-blue group-hover:scale-110 transition-transform" />
+                                        {item.label}
+                                    </button>
+                                )
+                            ))}
+
+                            {/* Language Toggle in Navbar */}
+                            <button
+                                onClick={() => setLang(lang === 'bg' ? 'en' : 'bg')}
+                                className="ml-4 flex items-center gap-2 px-3 py-1.5 bg-slate-800 border border-slate-700/50 rounded-full text-gdbop-blue hover:bg-gdbop-blue hover:text-white hover:border-white transition-all duration-300 group"
+                            >
+                                <Globe size={16} className="group-hover:rotate-180 transition-transform duration-500" />
+                                <span className="font-bold font-mono text-xs uppercase tracking-wider">{lang === 'bg' ? 'EN' : 'BG'}</span>
+                            </button>
+                        </div>
+
+                        {/* Mobile Menu Button */}
+                        <div className="md:hidden flex items-center gap-4">
+                            {/* Mobile Language Toggle */}
+                            <button
+                                onClick={() => setLang(lang === 'bg' ? 'en' : 'bg')}
+                                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-slate-700/50 rounded-full text-gdbop-blue hover:bg-gdbop-blue hover:text-white transition-all text-xs font-bold font-mono"
+                            >
+                                <Globe size={16} />
+                                {lang === 'bg' ? 'EN' : 'BG'}
+                            </button>
+
+                            <button
+                                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                                className="text-white p-2"
+                            >
+                                {isMenuOpen ? <TrendingDown className="rotate-45" size={24} /> : <TrendingDown size={24} />}
+                            </button>
+                        </div>
+                    </div>
+
+                    {/* Mobile Menu Dropdown */}
+                    {isMenuOpen && (
+                        <div className="md:hidden absolute top-full left-0 w-full bg-slate-900/95 backdrop-blur-xl border-t border-slate-800 p-4 flex flex-col gap-2 shadow-2xl">
+                            {navItems.map((item) => (
+                                item.isLink ? (
+                                    <a
+                                        key={item.id}
+                                        href={item.id}
+                                        className="p-4 text-left font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-all flex items-center gap-3"
+                                    >
+                                        <item.icon size={20} className="text-police-red" />
+                                        {item.label}
+                                    </a>
+                                ) : (
+                                    <button
+                                        key={item.id}
+                                        onClick={() => scrollToSection(item.id)}
+                                        className="p-4 text-left font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-all flex items-center gap-3"
+                                    >
+                                        <item.icon size={20} className="text-gdbop-blue" />
+                                        {item.label}
+                                    </button>
+                                )
+                            ))}
+                        </div>
+                    )}
+                </nav>
+            );
+        };
+
+        // Blog Section Component (Facebook)
+        const BlogSection = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+            const [isLoaded, setIsLoaded] = useState(false);
+
+            return (
+                <section id="blog-feed" className="container mx-auto px-4 py-16 relative z-10">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-center gap-3 mb-12 justify-center">
+                            <Facebook className="text-gdbop-blue animate-pulse" size={32} />
+                            <h3 className="text-3xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-gdbop-blue to-white uppercase tracking-wider">
+                                {t.blogTitle}
+                            </h3>
+                            <div className="h-1 flex-grow max-w-[100px] bg-gradient-to-r from-gdbop-blue to-transparent rounded-full"></div>
+                        </div>
+
+                        <div className="relative group">
+                            {/* Cyberpunk Frame Container */}
+                            <div className="absolute -inset-1 bg-gradient-to-r from-gdbop-blue via-police-blue to-gdbop-blue rounded-xl opacity-75 blur-sm group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+
+                            <div className="relative glass-panel p-2 rounded-xl border border-gdbop-blue/50 shadow-[0_0_50px_rgba(71,168,246,0.15)] ring-1 ring-white/10">
+                                {/* Corner Accents */}
+                                <div className="absolute top-0 left-0 w-8 h-8 border-t-2 border-l-2 border-gdbop-blue rounded-tl-xl z-20"></div>
+                                <div className="absolute top-0 right-0 w-8 h-8 border-t-2 border-r-2 border-gdbop-blue rounded-tr-xl z-20"></div>
+                                <div className="absolute bottom-0 left-0 w-8 h-8 border-b-2 border-l-2 border-gdbop-blue rounded-bl-xl z-20"></div>
+                                <div className="absolute bottom-0 right-0 w-8 h-8 border-b-2 border-r-2 border-gdbop-blue rounded-br-xl z-20"></div>
+
+                                {/* Scanner Line Effect */}
+                                <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-xl">
+                                    <div className="absolute w-full h-[2px] bg-gdbop-blue/30 top-0 animate-scan"></div>
+                                </div>
+
+                                <div className="flex justify-center bg-slate-900 rounded-lg overflow-hidden">
+                                    {/* Skeleton Loading State */}
+                                    {!isLoaded && (
+                                        <div className="absolute inset-0 flex items-center justify-center bg-slate-900 z-10">
+                                            <div className="flex flex-col items-center gap-4">
+                                                <div className="w-12 h-12 border-4 border-gdbop-blue border-t-transparent rounded-full animate-spin"></div>
+                                                <span className="text-gdbop-blue font-mono animate-pulse">LOADING FEED DATA...</span>
+                                            </div>
+                                        </div>
+                                    )}
+
+                                    <iframe
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fwww.cybercrime.bg&tabs=timeline&width=500&height=800&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                                        width="500"
+                                        height="800"
+                                        style={{ border: 'none', overflow: 'hidden' }}
+                                        scrolling="no"
+                                        frameBorder="0"
+                                        allowFullScreen={true}
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                                        onLoad={() => setIsLoaded(true)}
+                                        className="max-w-full"
+                                    ></iframe>
+                                </div>
+                            </div>
+
+                            {/* Decorative Tech Elements */}
+                            <div className="absolute -right-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-2 opacity-50">
+                                {[...Array(5)].map((_, i) => (
+                                    <div key={i} className="w-2 h-2 bg-gdbop-blue rounded-full"></div>
+                                ))}
+                            </div>
+                            <div className="absolute -left-12 top-1/2 -translate-y-1/2 hidden md:flex flex-col gap-2 opacity-50">
+                                {[...Array(5)].map((_, i) => (
+                                    <div key={i} className="w-2 h-2 bg-gdbop-blue rounded-full"></div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Threat Feed Component
+        const ThreatFeed = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+            const [threats, setThreats] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(false);
+
+            useEffect(() => {
+                const fetchThreats = async () => {
+                    try {
+                        const response = await fetch('https://urlhaus-api.abuse.ch/v1/urls/recent/limit/10/');
+                        if (!response.ok) throw new Error('Network response was not ok');
+                        const data = await response.json();
+
+                        if (data && data.urls) {
+                            setThreats(data.urls);
+                        } else {
+                            throw new Error('Invalid data format');
+                        }
+                    } catch (err) {
+                        console.error("Failed to fetch threat feed, using fallback data", err);
+                        setError(true);
+                        // Fallback mock data
+                        setThreats([
+                            { id: 1, url: 'http://malicious-bank-login.com/secure', date_added: new Date().toISOString(), url_status: 'online', reporter: 'abuse_ch' },
+                            { id: 2, url: 'http://fake-investment-platform.net/ref=123', date_added: new Date().toISOString(), url_status: 'online', reporter: 'CyberCleaner' },
+                            { id: 3, url: 'https://update-windows-security-critical.xyz', date_added: new Date().toISOString(), url_status: 'offline', reporter: 'MalwareHunter' },
+                            { id: 4, url: 'http://free-crypto-giveaway.org/claim', date_added: new Date(Date.now() - 3600000).toISOString(), url_status: 'online', reporter: 'PhishTank' },
+                            { id: 5, url: 'https://secure-paypal-verify-v2.info', date_added: new Date(Date.now() - 7200000).toISOString(), url_status: 'online', reporter: 'Google' },
+                        ]);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                fetchThreats();
+            }, []);
+
+            return (
+                <section id="threat-feed" className="container mx-auto px-4 py-16 z-10 relative">
+                    <div className="flex items-center justify-center mb-12 gap-4">
+                        <ShieldAlert className="text-police-red animate-pulse" size={32} />
+                        <h3 className="text-2xl md:text-3xl font-bold text-white text-center border-b-2 border-gdbop-blue pb-2 uppercase">
+                            {t.threatFeedTitle}
+                        </h3>
+                        <ShieldAlert className="text-police-blue animate-pulse" size={32} />
+                    </div>
+
+                    <div className="glass-panel bg-slate-900/80 backdrop-blur-md rounded-xl border border-red-500/20 overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.1)]">
+                        <div className="p-4 bg-red-900/20 border-b border-red-500/20 flex items-center justify-between">
+                            <div className="flex items-center gap-2 text-red-400">
+                                <span className="relative flex h-3 w-3">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                                </span>
+                                <span className="font-mono text-sm tracking-widest">{t.live}</span>
+                            </div>
+                            <div className="text-xs text-slate-400 font-mono">
+                                SOURCE: URLhaus (abuse.ch)
+                            </div>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left text-sm text-slate-300">
+                                <thead className="bg-slate-950/50 text-slate-400 font-mono uppercase text-xs">
+                                    <tr>
+                                        <th className="p-4">{t.date}</th>
+                                        <th className="p-4">{t.malware}</th>
+                                        <th className="p-4">{t.status}</th>
+                                        <th className="p-4 hidden md:table-cell">{t.source}</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-800 font-mono">
+                                    {loading ? (
+                                        <tr>
+                                            <td colSpan="4" className="p-8 text-center text-gdbop-blue animate-pulse">
+                                                {t.loading}
+                                            </td>
+                                        </tr>
+                                    ) : (
+                                        threats.map((threat, idx) => (
+                                            <tr key={idx} className="hover:bg-red-500/5 transition-colors">
+                                                <td className="p-4 whitespace-nowrap text-slate-500">
+                                                    {new Date(threat.date_added).toLocaleDateString()}
+                                                </td>
+                                                <td className="p-4 max-w-xs md:max-w-md truncate text-red-300">
+                                                    {threat.url}
+                                                </td>
+                                                <td className="p-4">
+                                                    <span className={`px-2 py-1 rounded text-xs font-bold ${threat.url_status === 'online'
+                                                        ? 'bg-red-500/20 text-red-500 border border-red-500/20'
+                                                        : 'bg-slate-700 text-slate-400'
+                                                        }`}>
+                                                        {threat.url_status === 'online' ? t.online : t.offline}
+                                                    </span>
+                                                </td>
+                                                <td className="p-4 hidden md:table-cell text-slate-500">
+                                                    {threat.reporter}
+                                                </td>
+                                            </tr>
+                                        ))
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+            );
+        };
+
         // 3D Cyber Cube Background
         const CyberCube = () => {
             const canvasRef = useRef(null);
@@ -225,7 +657,7 @@
                 if (!ctx) return;
 
                 let animationFrameId;
-                
+
                 let width = window.innerWidth;
                 let height = window.innerHeight;
                 canvas.width = width;
@@ -233,20 +665,20 @@
 
                 // Cube Vertices [-1, 1]
                 const createCubePoints = () => [
-                    {x: -1, y: -1, z: -1}, {x: 1, y: -1, z: -1},
-                    {x: 1, y: 1, z: -1}, {x: -1, y: 1, z: -1},
-                    {x: -1, y: -1, z: 1}, {x: 1, y: -1, z: 1},
-                    {x: 1, y: 1, z: 1}, {x: -1, y: 1, z: 1}
+                    { x: -1, y: -1, z: -1 }, { x: 1, y: -1, z: -1 },
+                    { x: 1, y: 1, z: -1 }, { x: -1, y: 1, z: -1 },
+                    { x: -1, y: -1, z: 1 }, { x: 1, y: -1, z: 1 },
+                    { x: 1, y: 1, z: 1 }, { x: -1, y: 1, z: 1 }
                 ];
 
                 const edges = [
-                    [0,1], [1,2], [2,3], [3,0], // back
-                    [4,5], [5,6], [6,7], [7,4], // front
-                    [0,4], [1,5], [2,6], [3,7]  // connecting
+                    [0, 1], [1, 2], [2, 3], [3, 0], // back
+                    [4, 5], [5, 6], [6, 7], [7, 4], // front
+                    [0, 4], [1, 5], [2, 6], [3, 7]  // connecting
                 ];
 
                 const pointsOuter = createCubePoints();
-                const pointsInner = createCubePoints(); 
+                const pointsInner = createCubePoints();
 
                 let angleX = 0;
                 let angleY = 0;
@@ -256,31 +688,31 @@
                     let x = p.x * Math.cos(ay) - p.z * Math.sin(ay);
                     let z = p.x * Math.sin(ay) + p.z * Math.cos(ay);
                     let y = p.y;
-                    
+
                     // Rotate X
                     let yNew = y * Math.cos(ax) - z * Math.sin(ax);
                     z = y * Math.sin(ax) + z * Math.cos(ax);
                     y = yNew;
 
-                    return {x, y, z};
+                    return { x, y, z };
                 }
 
                 const drawCube = (points, size, color, lw, rotX, rotY, isInner = false) => {
                     ctx.strokeStyle = color;
                     ctx.lineWidth = lw;
                     ctx.lineCap = 'round';
-                    
+
                     // Perspective projection constants
                     const cameraDist = 4; // Camera distance from center
-                    
+
                     const projected = points.map(p => {
                         const rotated = rotate(p, rotX, rotY);
                         const scale = cameraDist / (cameraDist - rotated.z);
-                        
+
                         return {
                             x: rotated.x * size * scale + width / 2,
                             y: rotated.y * size * scale + height / 2,
-                            z: rotated.z 
+                            z: rotated.z
                         };
                     });
 
@@ -360,23 +792,24 @@
 
         // Scanlines Overlay
         const Scanlines = () => (
-            <div 
+            <div
                 className="fixed top-0 left-0 right-0 bottom-0 pointer-events-none z-50 bg-[linear-gradient(to_bottom,rgba(255,255,255,0),rgba(255,255,255,0)_50%,rgba(0,0,0,0.1)_50%,rgba(0,0,0,0.1))] bg-[length:100%_4px]"
             />
         );
 
         // Header Component
-        const Header = () => {
+        const Header = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
             const [isLoaded, setIsLoaded] = useState(false);
 
             return (
-                <header className="relative pt-12 pb-8 px-4 flex flex-col items-center justify-center z-10">
+                <header id="home" className="relative pt-32 pb-8 px-4 flex flex-col items-center justify-center z-10">
                     <div className="relative mb-6">
                         {/* Glowing ring behind logo */}
                         <div className="absolute inset-0 bg-gdbop-blue rounded-full blur-[40px] opacity-20 animate-pulse"></div>
-                        <img 
-                            src="images/logo.png" 
-                            alt="ГДБОП Logo" 
+                        <img
+                            src="images/logo.png"
+                            alt="ГДБОП Logo"
                             className={`relative h-48 md:h-56 w-auto object-contain drop-shadow-2xl transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                             onLoad={() => setIsLoaded(true)}
                             onError={(e) => {
@@ -384,13 +817,13 @@
                             }}
                         />
                     </div>
-                    
+
                     <div className="text-center space-y-2 animate-float">
                         <h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-white via-gdbop-blue to-white drop-shadow-lg uppercase">
-                            Борба с киберпрестъпността
+                            {t.headerTitle}
                         </h1>
                         <h2 className="text-xl md:text-2xl font-semibold tracking-widest text-slate-400 uppercase">
-                            ГДБОП-МВР
+                            {t.headerSubtitle}
                         </h2>
                     </div>
 
@@ -400,7 +833,8 @@
         };
 
         // TikTok Feed Component (UPDATED VISUALS)
-        const TikTokFeed = () => {
+        const TikTokFeed = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
             const embedRef = useRef(null);
 
             useEffect(() => {
@@ -426,12 +860,12 @@
             }, []);
 
             return (
-                <section className="container mx-auto px-4 py-16 z-10 relative">
-                     <div className="flex items-center justify-center mb-12 gap-4">
+                <section id="video-feed" className="container mx-auto px-4 py-16 z-10 relative">
+                    <div className="flex items-center justify-center mb-12 gap-4">
                         <Siren className="text-police-blue animate-pulse drop-shadow-[0_0_10px_rgba(0,85,255,0.8)]" size={36} />
                         <h3 className="text-3xl md:text-5xl font-bold text-white text-center drop-shadow-[0_0_10px_rgba(255,255,255,0.5)] uppercase tracking-widest">
                             <span className="bg-clip-text text-transparent bg-gradient-to-r from-white via-gdbop-blue to-white">
-                                Видеоканал
+                                {t.videoTitle}
                             </span>
                         </h3>
                         <Siren className="text-police-red animate-pulse drop-shadow-[0_0_10px_rgba(255,0,0,0.8)]" size={36} />
@@ -440,19 +874,19 @@
                     <div className="flex justify-center perspective-[2000px]">
                         {/* 3D Wrapper */}
                         <div className="relative group w-full max-w-7xl transition-all duration-700 transform hover:[transform:rotateX(2deg)_scale(1.01)]">
-                            
+
                             {/* Ambient Glow */}
                             <div className="absolute -inset-4 bg-gradient-to-r from-police-blue via-purple-600 to-police-red rounded-[3rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000 animate-pulse-slow"></div>
-                            
+
                             {/* Main Frame Chassis */}
                             <div className="relative bg-slate-950 rounded-[2rem] p-3 shadow-2xl ring-1 ring-white/10 border-t border-slate-800">
-                                
+
                                 {/* Metallic Bezel / Frame Border */}
                                 <div className="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-950 rounded-[1.5rem] p-2 shadow-[inset_0_2px_4px_rgba(255,255,255,0.1),0_10px_20px_rgba(0,0,0,0.5)] border border-slate-600">
-                                    
+
                                     {/* Inner Screen Container (Recessed) */}
                                     <div className="relative bg-black rounded-xl overflow-hidden border border-slate-800 shadow-[inset_0_0_40px_rgba(0,0,0,1)]">
-                                        
+
                                         {/* Top UI Bar */}
                                         <div className="h-12 bg-slate-900 border-b border-slate-800 flex items-center justify-between px-6 relative z-20">
                                             <div className="flex items-center gap-4">
@@ -464,12 +898,12 @@
                                                 <div className="h-6 w-px bg-slate-700"></div>
                                                 <div className="flex items-center gap-2 text-gdbop-blue/80 font-mono text-xs tracking-widest hidden sm:flex">
                                                     <Video size={14} />
-                                                    <span>LATEST FROM @CYBERCRIME.BG</span>
+                                                    <span>{t.latestFrom} @CYBERCRIME.BG</span>
                                                 </div>
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <div className="px-2 py-0.5 rounded bg-blue-900/30 border border-blue-500/30 text-[10px] text-blue-400 font-mono">
-                                                    LIVE
+                                                    {t.live}
                                                 </div>
                                                 <div className="w-2 h-2 bg-gdbop-blue rounded-full animate-pulse"></div>
                                             </div>
@@ -489,19 +923,19 @@
 
                                             {/* Actual Embed Container */}
                                             <div className="relative z-10 p-2 sm:p-6 flex justify-center">
-                                                 <blockquote 
+                                                <blockquote
                                                     ref={embedRef}
-                                                    className="tiktok-embed" 
-                                                    cite="https://www.tiktok.com/@cybercrime.bg" 
-                                                    data-unique-id="cybercrime.bg" 
-                                                    data-embed-type="creator" 
+                                                    className="tiktok-embed"
+                                                    cite="https://www.tiktok.com/@cybercrime.bg"
+                                                    data-unique-id="cybercrime.bg"
+                                                    data-embed-type="creator"
                                                     style={{ maxWidth: '100%', minWidth: '300px', width: '100%', margin: 0 }}
-                                                > 
-                                                    <section> 
+                                                >
+                                                    <section>
                                                         <a target="_blank" href="https://www.tiktok.com/@cybercrime.bg?refer=embed" rel="noreferrer" className="text-gdbop-blue hover:underline">
                                                             @cybercrime.bg
-                                                        </a> 
-                                                    </section> 
+                                                        </a>
+                                                    </section>
                                                 </blockquote>
                                             </div>
                                         </div>
@@ -511,7 +945,7 @@
                                         <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_150px_rgba(0,0,0,0.8)] z-30"></div>
                                     </div>
                                 </div>
-                                
+
                                 {/* Bottom Chin Branding */}
                                 <div className="mt-3 flex justify-center items-center opacity-50">
                                     <div className="flex gap-2 items-center text-xs font-mono text-slate-500 tracking-[0.3em]">
@@ -528,20 +962,22 @@
         };
 
         // Tips Section Component
-        const TipsSection = () => {
+        const TipsSection = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+
             return (
-                <section className="container mx-auto px-4 py-12 z-10 relative">
+                <section id="tips" className="container mx-auto px-4 py-12 z-10 relative">
                     <div className="flex items-center justify-center mb-12 gap-3">
                         <Siren className="text-police-blue animate-pulse" size={32} />
                         <h3 className="text-2xl md:text-3xl font-bold text-white text-center border-b-2 border-gdbop-blue pb-2">
-                            СЪВЕТИ ЗА КИБЕРСИГУРНОСТ
+                            {t.tipsTitle}
                         </h3>
                         <Siren className="text-police-red animate-pulse" size={32} />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {TIPS_DATA.map((tip) => (
-                            <div 
+                            <div
                                 key={tip.id}
                                 className="glass-panel p-6 rounded-xl hover:shadow-[0_0_15px_rgba(71,168,246,0.3)] backdrop-blur-md bg-slate-900/70 border border-gdbop-blue/20 transition-all duration-300 hover:-translate-y-1 group flex flex-col h-full"
                             >
@@ -550,22 +986,22 @@
                                         <tip.icon size={28} />
                                     </div>
                                     <h4 className="font-bold text-lg text-slate-100 leading-tight">
-                                        {tip.title}
+                                        {tip.title[lang]}
                                     </h4>
                                 </div>
                                 <div className="text-slate-300 text-sm leading-relaxed flex-grow text-justify">
-                                    {tip.content}
+                                    {tip.content[lang]}
                                 </div>
-                                {tip.linkText && (
+                                {tip.linkText && tip.linkText[lang] && (
                                     <div className="mt-4 pt-4 border-t border-slate-700">
-                                        <a 
-                                            href={tip.linkUrl} 
-                                            target="_blank" 
+                                        <a
+                                            href={tip.linkUrl}
+                                            target="_blank"
                                             rel="noreferrer"
                                             className="inline-flex items-center gap-2 text-gdbop-blue hover:text-white font-medium text-sm transition-colors"
                                         >
                                             <ExternalLink size={16} />
-                                            {tip.linkText}
+                                            {tip.linkText[lang]}
                                         </a>
                                     </div>
                                 )}
@@ -577,7 +1013,9 @@
         };
 
         // CTA Section Component
-        const CTASection = () => {
+        const CTASection = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+
             return (
                 <section className="py-16 relative z-10">
                     <div className="absolute inset-0 bg-gradient-to-r from-police-blue/10 via-gdbop-blue/5 to-police-red/10 backdrop-blur-sm"></div>
@@ -585,7 +1023,7 @@
                         <div className="max-w-4xl mx-auto glass-panel bg-slate-900/80 backdrop-blur-lg p-8 md:p-12 rounded-2xl border border-white/10 text-center shadow-2xl">
                             <Siren className="w-16 h-16 mx-auto mb-6 text-gdbop-blue animate-pulse" />
                             <p className="text-lg md:text-xl font-medium leading-relaxed text-white">
-                                Ако сте жертва или свидетел на киберпрестъпление, подайте сигнал в най-близкото районно полицейско управление или на място в дирекция <span className="text-gdbop-blue font-bold">Киберпрестъпност</span> при ГДБОП-МВР
+                                {t.ctaText} <span className="text-gdbop-blue font-bold">{t.ctaDirectorate}</span> {t.ctaMvr}
                             </p>
                         </div>
                     </div>
@@ -594,86 +1032,98 @@
         };
 
         // Footer Component
-        const Footer = () => {
+        const Footer = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+
             return (
-                <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 z-10 relative">
+                <section id="contacts" className="bg-slate-950 border-t border-slate-800 text-slate-400 py-12 z-10 relative">
                     <div className="container mx-auto px-4 flex flex-col items-center text-center gap-6">
                         <div>
                             <h4 className="text-white text-lg font-bold mb-2 uppercase tracking-wide">
-                                Дирекция Киберпрестъпност, ГДБОП-МВР
+                                {t.footerTitle}
                             </h4>
                             <p className="max-w-md mx-auto mb-4">
-                                град София, бул. "Александър Малинов", № 1, бариерата на 07 районно, Националната полиция и Американския колеж
+                                {t.address}
                             </p>
-                            <a 
-                                href="https://maps.app.goo.gl/dVYVvWKt1sPPhiU49" 
-                                target="_blank" 
+                            <a
+                                href="https://maps.app.goo.gl/dVYVvWKt1sPPhiU49"
+                                target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 text-gdbop-blue hover:text-white transition-colors border border-gdbop-blue/30 px-4 py-2 rounded-full hover:bg-gdbop-blue/10"
                             >
                                 <MapPin size={18} />
-                                <span>Отвори адреса в навигацията</span>
+                                <span>{t.openMap}</span>
                             </a>
                         </div>
 
                         <div className="flex gap-6 mt-4">
-                            <a 
-                                href="https://www.facebook.com/www.cybercrime.bg" 
-                                target="_blank" 
+                            <a
+                                href="https://www.facebook.com/www.cybercrime.bg"
+                                target="_blank"
                                 rel="noreferrer"
                                 className="p-3 bg-slate-800 rounded-full hover:bg-[#1877F2] hover:text-white transition-all duration-300 transform hover:scale-110"
                                 aria-label="Facebook"
                             >
                                 <Facebook size={24} />
                             </a>
-                            <a 
-                                href="https://www.youtube.com/user/bgcybercrime" 
-                                target="_blank" 
+                            <a
+                                href="https://www.youtube.com/user/bgcybercrime"
+                                target="_blank"
                                 rel="noreferrer"
                                 className="p-3 bg-slate-800 rounded-full hover:bg-[#FF0000] hover:text-white transition-all duration-300 transform hover:scale-110"
                                 aria-label="YouTube"
                             >
                                 <Youtube size={24} />
                             </a>
-                            <a 
-                                href="https://www.tiktok.com/@cybercrime.bg" 
-                                target="_blank" 
+                            <a
+                                href="https://www.tiktok.com/@cybercrime.bg"
+                                target="_blank"
                                 rel="noreferrer"
                                 className="p-3 bg-slate-800 rounded-full hover:bg-black hover:text-white border border-slate-700 hover:border-white transition-all duration-300 transform hover:scale-110"
                                 aria-label="TikTok"
                             >
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                                 </svg>
                             </a>
                         </div>
-                        
+
                         <div className="mt-8 text-xs text-slate-600">
-                            &copy; {new Date().getFullYear()} Киберпрестъпност ГДБОП. Всички права запазени.
+                            &copy; {new Date().getFullYear()} Киберпрестъпност ГДБОП. {t.rights}
                         </div>
                     </div>
-                </footer>
+                </section>
             );
         };
 
         // --- MAIN APP ---
         const App = () => {
+            const [lang, setLang] = useState('bg'); // 'bg' or 'en'
+
+            // Effect to set loading state for initial load animation
+            useEffect(() => {
+                // Simulate loading resources
+            }, []);
+
             return (
                 <React.Fragment>
+                    <Navbar lang={lang} setLang={setLang} />
                     <Scanlines />
                     <CyberCube />
                     <PoliceLights />
-                    
+
                     <BackToTop />
-                    
+
                     <div className="flex flex-col min-h-screen">
-                        <Header />
+                        <Header lang={lang} />
                         <main className="flex-grow">
-                            <TipsSection />
-                            <TikTokFeed />
-                            <CTASection />
+                            <TipsSection lang={lang} />
+                            <ThreatFeed lang={lang} />
+                            <BlogSection lang={lang} />
+                            <TikTokFeed lang={lang} />
+                            <CTASection lang={lang} />
                         </main>
-                        <Footer />
+                        <Footer lang={lang} />
                     </div>
                 </React.Fragment>
             );
@@ -687,4 +1137,5 @@
         }
     </script>
 </body>
+
 </html>
