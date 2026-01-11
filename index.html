@@ -574,6 +574,19 @@
                 fetchThreats();
             }, []);
 
+            const formatDate = (dateString) => {
+                try {
+                    // Handle "YYYY-MM-DD HH:MM:SS UTC" format
+                    if (dateString.includes('UTC')) {
+                        const isoDate = dateString.replace(' ', 'T').replace(' UTC', 'Z');
+                        return new Date(isoDate).toLocaleDateString();
+                    }
+                    return new Date(dateString).toLocaleDateString();
+                } catch (e) {
+                    return 'Invalid Date';
+                }
+            };
+            
             return (
                 <section id="threat-feed" className="container mx-auto px-4 py-16 z-10 relative">
                     <div className="flex items-center justify-center mb-12 gap-4">
@@ -618,8 +631,8 @@
                                     ) : (
                                         threats.map((threat, idx) => (
                                             <tr key={idx} className="hover:bg-red-500/5 transition-colors">
-                                                <td className="p-4 whitespace-nowrap text-slate-500">
-                                                    {new Date(threat.date_added).toLocaleDateString()}
+                                                <td className="p-4 whitespace-nowrap text-slate-500">    
+                                                    {formatDate(threat.date_added)}
                                                 </td>
                                                 <td className="p-4 max-w-xs md:max-w-md truncate text-red-300">
                                                     {threat.url}
