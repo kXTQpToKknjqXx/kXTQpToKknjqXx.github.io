@@ -2,9 +2,8 @@ name: Fetch URLhaus Data
 
 on:
   schedule:
-    # Runs every hour at minute 0
     - cron: '0 * * * *'
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   fetch-and-commit:
@@ -19,8 +18,8 @@ jobs:
       
       - name: Fetch data from API
         run: |
-          curl -X POST https://urlhaus-api.abuse.ch/v1/urls/recent/limit/10/ \
-            -H "Auth-Key: ${{ secrets.API_KEY }}" \
+          curl -H "Auth-Key: ${{ secrets.API_KEY }}" \
+            -X GET https://urlhaus-api.abuse.ch/v1/urls/recent/limit/10/ \
             -o data/urlhaus-data.json
       
       - name: Commit and push if changed
