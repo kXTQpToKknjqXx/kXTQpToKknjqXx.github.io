@@ -21,17 +21,12 @@
     <link rel="icon" href="images/favicon.png" />
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwindcss.js"></script>
 
-    <!-- Babel for in-browser JSX transformation -->
-    <script
-        src="https://unpkg.com/@babel/standalone/babel.min.js">integrity = "sha384-mP9sW+eK08VvAmlxEkn9Kn6egvKFtnFEfW7/u9feUWAIoTvnYAzT4NwsskP+uWUd" crossorigin = "anonymous" ></script>
+    <script src="assets/js/babel.min.js"></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="assets/css/montserrat.css" rel="stylesheet">
 
     <script>
             tailwind.config = {
@@ -70,9 +65,9 @@
     <script type="importmap">
     {
       "imports": {
-        "react": "https://esm.sh/react@18.2.0",
-        "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
-        "lucide-react": "https://esm.sh/lucide-react@0.344.0"
+        "lucide-react": "./assets/js/lucide-react.js",
+        "react": "./assets/js/react.js",
+        "react-dom/client": "./assets/js/react-dom.js"
       }
     }
     </script>
