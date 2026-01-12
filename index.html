@@ -9,20 +9,14 @@
         content="киберпрестъпност гдбоп, гдбоп киберсигурност, дирекция киберпрестъпност, съвети за киберсигурност">
     <meta http-equiv="Content-Security-Policy" content="
     default-src 'self';
-    script-src 'self' 'unsafe-inline' 'unsafe-eval' 
-    https://cdn.tailwindcss.com 
-    https://unpkg.com 
-    https://esm.sh 
-    https://www.tiktok.com
-    https://*.ttwstatic.com;
-    style-src 'self' 'unsafe-inline' 
-    https://fonts.googleapis.com 
-    https://cdn.tailwindcss.com;
-    font-src 'self' https://fonts.gstatic.com;
-    img-src 'self' https: data:;
-    frame-src https://www.tiktok.com https://*.tiktok.com https://www.facebook.com https://web.facebook.com;
-    connect-src 'self' https://esm.sh https://*.tiktok.com https://*.ttwstatic.com https://urlhaus-api.abuse.ch;
+    script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https://www.tiktok.com https://*.ttwstatic.com;
+    style-src 'self' 'unsafe-inline';
+    font-src 'self';
+    img-src 'self' https://www.tiktok.com https://*.ttwstatic.com data:;
+    frame-src https://www.facebook.com https://web.facebook.com https://www.tiktok.com https://*.tiktok.com;
+    connect-src 'self' https://*.tiktok.com https://*.ttwstatic.com;
     ">
+    
     <link rel="icon" href="images/favicon.png" />
 
     <!-- Tailwind CSS -->
