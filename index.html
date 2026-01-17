@@ -801,13 +801,16 @@
             const t = TRANSLATIONS[lang];
             const [isLoaded, setIsLoaded] = useState(false);
 
+            // Determine logo path based on language
+            const logoPath = lang === 'en' ? 'images/logo-en.png' : 'images/logo.png';
+
             return (
                 <header id="home" className="relative pt-32 pb-8 px-4 flex flex-col items-center justify-center z-10">
                     <div className="relative mb-6">
                         {/* Glowing ring behind logo */}
                         <div className="absolute inset-0 bg-gdbop-blue rounded-full blur-[40px] opacity-20 animate-pulse"></div>
                         <img
-                            src="images/logo.png"
+                            src={logoPath}
                             alt="ГДБОП Logo"
                             className={`relative h-48 md:h-56 w-auto object-contain drop-shadow-2xl transition-all duration-1000 transform ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                             onLoad={() => setIsLoaded(true)}
