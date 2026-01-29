@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +14,9 @@
     font-src 'self';
     img-src 'self' https://www.tiktok.com https://*.ttwstatic.com data:;
     frame-src https://www.facebook.com https://web.facebook.com https://www.tiktok.com https://*.tiktok.com;
-    connect-src 'self' https://*.tiktok.com https://*.ttwstatic.com;
+    connect-src 'self' https://*.tiktok.com https://*.ttwstatic.com https://raw.githubusercontent.com;
     ">
-    
+
     <link rel="icon" href="images/favicon.png" />
 
     <!-- Tailwind CSS -->
@@ -27,7 +28,7 @@
 
     <!-- Google Fonts -->
     <link href="assets/css/montserrat.css" rel="stylesheet">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -121,7 +122,15 @@
                 online: "ОНЛАЙН",
                 date: "ДАТА",
                 investment: "Инвестиционни измами",
-                backHome: "Към Начало"
+                backHome: "Към Начало",
+                phishingTitle: "Фишинг домейни",
+                phishingNav: "Фишинг",
+                domain: "ДОМЕЙН",
+                score: "РЕЗУЛТАТ",
+                prev: "Предишна",
+                next: "Следваща",
+                page: "Страница",
+                of: "от"
             },
             en: {
                 home: "Home",
@@ -154,7 +163,15 @@
                 online: "ONLINE",
                 date: "DATE",
                 investment: "Investment Fraud",
-                backHome: "Back to Home"
+                backHome: "Back to Home",
+                phishingTitle: "PHISHING DOMAINS",
+                phishingNav: "Phishing",
+                domain: "DOMAIN",
+                score: "SCORE",
+                prev: "Previous",
+                next: "Next",
+                page: "Page",
+                of: "of"
             }
         };
 
@@ -177,7 +194,9 @@
                 content: {
                     bg: 'Игнорирайте имейли или други съобщения от съмнителен източник. Помнете, че държавни институции, банки и фирми почти никога няма да искат от Вас да изпратите лични данни в имейл или чат. Бъдете изключително внимателни при сваляне и активиране на файлове, прикачени към имейли със стресиращ текст или подканящи за незабавно действие.',
                     en: 'Ignore emails or other messages from suspicious sources. Remember that government institutions, banks, and companies will almost never ask you to send personal data via email or chat. Be extremely careful when downloading and activating files attached to emails with stressful text or prompting immediate action.'
-                }
+                },
+                linkText: { bg: 'Вижте списъка с фишинг домейни тук', en: 'See the list of phishing domains here' },
+                linkUrl: '#phishing-feed'
             },
             {
                 id: 'investment',
@@ -350,6 +369,7 @@
                 { id: 'video-feed', label: t.video, icon: Video },
                 { id: 'blog-feed', label: t.blog, icon: Facebook },
                 { id: 'threat-feed', label: t.threats, icon: Siren },
+                { id: 'phishing-feed', label: t.phishingNav, icon: ShieldAlert },
                 { id: 'investment-fraud.html', label: t.investment, icon: TrendingUp, isLink: true },
                 { id: 'contacts', label: t.contacts, icon: MapPin },
             ];
@@ -468,10 +488,10 @@
 
                             <div className="relative glass-panel p-2 rounded-xl border border-gdbop-blue/50 shadow-[0_0_50px_rgba(71,168,246,0.15)] ring-1 ring-white/10">
                                 {/* Corner Accents */}
-                            <div className="absolute top-12 left-0 md:top-4 md:left-4 w-8 h-8 border-t-2 border-l-2 border-gdbop-blue/50 rounded-tl-lg pointer-events-none"></div>
-                            <div className="absolute top-12 right-0 md:top-4 md:right-4 w-8 h-8 border-t-2 border-r-2 border-gdbop-blue/50 rounded-tr-lg pointer-events-none"></div>
-                            <div className="absolute bottom-12 left-0 md:bottom-4 md:left-4 w-8 h-8 border-b-2 border-l-2 border-gdbop-blue/50 rounded-bl-lg pointer-events-none"></div>
-                            <div className="absolute bottom-12 right-0 md:bottom-4 md:right-4 w-8 h-8 border-b-2 border-r-2 border-gdbop-blue/50 rounded-br-lg pointer-events-none"></div>
+                                <div className="absolute top-12 left-0 md:top-4 md:left-4 w-8 h-8 border-t-2 border-l-2 border-gdbop-blue/50 rounded-tl-lg pointer-events-none"></div>
+                                <div className="absolute top-12 right-0 md:top-4 md:right-4 w-8 h-8 border-t-2 border-r-2 border-gdbop-blue/50 rounded-tr-lg pointer-events-none"></div>
+                                <div className="absolute bottom-12 left-0 md:bottom-4 md:left-4 w-8 h-8 border-b-2 border-l-2 border-gdbop-blue/50 rounded-bl-lg pointer-events-none"></div>
+                                <div className="absolute bottom-12 right-0 md:bottom-4 md:right-4 w-8 h-8 border-b-2 border-r-2 border-gdbop-blue/50 rounded-br-lg pointer-events-none"></div>
 
                                 {/* Scanner Line Effect */}
                                 <div className="absolute inset-0 pointer-events-none overflow-hidden rounded-xl">
@@ -571,7 +591,7 @@
                     return 'Invalid Date';
                 }
             };
-            
+
             return (
                 <section id="threat-feed" className="container mx-auto px-4 py-16 z-10 relative">
                     <div className="flex items-center justify-center mb-12 gap-4">
@@ -616,7 +636,7 @@
                                     ) : (
                                         threats.map((threat, idx) => (
                                             <tr key={idx} className="hover:bg-red-500/5 transition-colors">
-                                                <td className="p-4 whitespace-nowrap text-slate-500">    
+                                                <td className="p-4 whitespace-nowrap text-slate-500">
                                                     {formatDate(threat.date_added)}
                                                 </td>
                                                 <td className="p-4 max-w-xs md:max-w-md truncate text-red-300">
@@ -639,6 +659,147 @@
                                 </tbody>
                             </table>
                         </div>
+                    </div>
+                </section>
+            );
+        };
+
+        // Phishing Feed Component
+        const PhishingFeed = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
+            const [feedData, setFeedData] = useState([]);
+            const [loading, setLoading] = useState(true);
+            const [error, setError] = useState(false);
+            const [currentPage, setCurrentPage] = useState(1);
+            const itemsPerPage = 10;
+
+            useEffect(() => {
+                const fetchPhishingData = async () => {
+                    try {
+                        const response = await fetch('https://raw.githubusercontent.com/georgi-i/detectopod/main/feed/phishing_feed.json');
+                        if (!response.ok) throw new Error('Network response was not ok');
+                        const data = await response.json();
+                        setFeedData(data);
+                    } catch (err) {
+                        console.error("Failed to fetch phishing feed", err);
+                        setError(true);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+
+                fetchPhishingData();
+            }, []);
+
+            const formatDate = (dateString) => {
+                try {
+                    return new Date(dateString).toLocaleDateString();
+                } catch (e) {
+                    return 'Invalid Date';
+                }
+            };
+
+            // Pagination Logic
+            const indexOfLastItem = currentPage * itemsPerPage;
+            const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+            const currentItems = feedData.slice(indexOfFirstItem, indexOfLastItem);
+            const totalPages = Math.ceil(feedData.length / itemsPerPage);
+
+            const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+            return (
+                <section id="phishing-feed" className="container mx-auto px-4 py-16 z-10 relative">
+                    <div className="flex items-center justify-center mb-12 gap-4">
+                        <ShieldAlert className="text-police-red animate-pulse" size={32} />
+                        <h3 className="text-2xl md:text-3xl font-bold text-white text-center border-b-2 border-gdbop-blue pb-2 uppercase">
+                            {t.phishingTitle}
+                        </h3>
+                        <ShieldAlert className="text-police-blue animate-pulse" size={32} />
+                    </div>
+
+                    <div className="glass-panel bg-slate-900/80 backdrop-blur-md rounded-xl border border-gdbop-blue/20 overflow-hidden shadow-[0_0_30px_rgba(71,168,246,0.1)]">
+                        <div className="p-4 bg-gdbop-blue/10 border-b border-gdbop-blue/20 flex items-center justify-between">
+                            <div className="flex items-center gap-2 text-gdbop-blue">
+                                <span className="relative flex h-3 w-3">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gdbop-blue opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                                </span>
+                                <span className="font-mono text-sm tracking-widest">{t.live}</span>
+                            </div>
+                            <div className="text-xs text-slate-400 font-mono">
+                                {t.source}: detectopod (github.com/georgi-i)
+                            </div>
+                        </div>
+
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left text-sm text-slate-300">
+                                <thead className="bg-slate-950/50 text-slate-400 font-mono uppercase text-xs">
+                                    <tr>
+                                        <th className="p-4">{t.date}</th>
+                                        <th className="p-4">{t.domain}</th>
+                                        <th className="p-4">{t.score}</th>
+                                        <th className="p-4 hidden md:table-cell">{t.source}</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="divide-y divide-slate-800 font-mono">
+                                    {loading ? (
+                                        <tr>
+                                            <td colSpan="4" className="p-8 text-center text-gdbop-blue animate-pulse">
+                                                {t.loading}
+                                            </td>
+                                        </tr>
+                                    ) : error ? (
+                                        <tr>
+                                            <td colSpan="4" className="p-8 text-center text-red-500">
+                                                {t.error}
+                                            </td>
+                                        </tr>
+                                    ) : (
+                                        currentItems.map((item, idx) => (
+                                            <tr key={idx} className="hover:bg-gdbop-blue/5 transition-colors">
+                                                <td className="p-4 whitespace-nowrap text-slate-500">
+                                                    {formatDate(item.detected_at)}
+                                                </td>
+                                                <td className="p-4 max-w-xs md:max-w-md truncate text-gdbop-blue">
+                                                    {item.domain}
+                                                </td>
+                                                <td className="p-4">
+                                                    <span className="px-2 py-1 rounded text-xs font-bold bg-slate-700 text-slate-300">
+                                                        {item.score}
+                                                    </span>
+                                                </td>
+                                                <td className="p-4 hidden md:table-cell text-slate-500">
+                                                    {item.source}
+                                                </td>
+                                            </tr>
+                                        ))
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {/* Pagination Controls */}
+                        {!loading && !error && feedData.length > itemsPerPage && (
+                            <div className="p-4 border-t border-slate-800 flex items-center justify-between bg-slate-950/30">
+                                <button
+                                    onClick={() => paginate(currentPage - 1)}
+                                    disabled={currentPage === 1}
+                                    className="px-4 py-2 text-xs font-mono font-bold text-slate-300 bg-slate-800 rounded hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                >
+                                    {t.prev}
+                                </button>
+                                <span className="text-xs font-mono text-slate-500">
+                                    {t.page} {currentPage} {t.of} {totalPages}
+                                </span>
+                                <button
+                                    onClick={() => paginate(currentPage + 1)}
+                                    disabled={currentPage === totalPages}
+                                    className="px-4 py-2 text-xs font-mono font-bold text-slate-300 bg-slate-800 rounded hover:bg-slate-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                >
+                                    {t.next}
+                                </button>
+                            </div>
+                        )}
                     </div>
                 </section>
             );
@@ -997,7 +1158,7 @@
                             >
                                 <div className="flex items-center gap-4 mb-4">
                                     <div className="p-3 rounded-lg bg-slate-800 text-gdbop-blue group-hover:bg-gdbop-blue group-hover:text-white transition-colors duration-300">
-                                        <tip.icon size={28} />
+                                        <tip.icon size={tip.id === 'phishing' ? 42 : 28} />
                                     </div>
                                     <h4 className="font-bold text-lg text-slate-100 leading-tight">
                                         {tip.title[lang]}
@@ -1010,8 +1171,8 @@
                                     <div className="mt-4 pt-4 border-t border-slate-700">
                                         <a
                                             href={tip.linkUrl}
-                                            target="_blank"
-                                            rel="noreferrer"
+                                            target={tip.linkUrl.startsWith('http') ? "_blank" : "_self"}
+                                            rel={tip.linkUrl.startsWith('http') ? "noreferrer" : undefined}
                                             className="inline-flex items-center gap-2 text-gdbop-blue hover:text-white font-medium text-sm transition-colors"
                                         >
                                             <ExternalLink size={16} />
@@ -1133,6 +1294,7 @@
                         <main className="flex-grow">
                             <TipsSection lang={lang} />
                             <ThreatFeed lang={lang} />
+                            <PhishingFeed lang={lang} />
                             <BlogSection lang={lang} />
                             <TikTokFeed lang={lang} />
                             <CTASection lang={lang} />
@@ -1155,4 +1317,5 @@
   Created by Georgi I. [tepees_fetch.4q@icloud.com]
   AI collaboration: Gemini 3 Pro [IDE Antigravity]
 -->
+
 </html>
