@@ -2,12 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3766382,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766382\/",
-            "url": "http:\/\/115.54.160.90:55063\/bin.sh",
+            "id": 3766943,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766943\/",
+            "url": "http:\/\/39.74.33.174:38667\/i",
             "url_status": "online",
-            "host": "115.54.160.90",
-            "date_added": "2026-01-31 02:22:09 UTC",
+            "host": "39.74.33.174",
+            "date_added": "2026-02-01 03:07:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -23,12 +23,32 @@
             ]
         },
         {
-            "id": 3766381,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766381\/",
-            "url": "http:\/\/115.61.55.253:55371\/i",
+            "id": 3766940,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766940\/",
+            "url": "http:\/\/110.37.72.176:59933\/i",
             "url_status": "online",
-            "host": "115.61.55.253",
-            "date_added": "2026-01-31 02:20:12 UTC",
+            "host": "110.37.72.176",
+            "date_added": "2026-02-01 03:03:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "threatquery",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3766941,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766941\/",
+            "url": "http:\/\/115.57.215.104:45863\/bin.sh",
+            "url_status": "online",
+            "host": "115.57.215.104",
+            "date_added": "2026-02-01 03:03:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -44,170 +64,144 @@
             ]
         },
         {
-            "id": 3766380,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766380\/",
-            "url": "http:\/\/110.37.14.231:39282\/bin.sh",
+            "id": 3766942,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766942\/",
+            "url": "http:\/\/115.49.203.96:34738\/i",
             "url_status": "online",
-            "host": "110.37.14.231",
-            "date_added": "2026-01-31 02:18:18 UTC",
+            "host": "115.49.203.96",
+            "date_added": "2026-02-01 03:03:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
                 "Mozi"
             ]
         },
         {
-            "id": 3766379,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766379\/",
-            "url": "http:\/\/42.233.107.224:53533\/i",
+            "id": 3766939,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766939\/",
+            "url": "http:\/\/39.74.66.177:53733\/i",
             "url_status": "online",
-            "host": "42.233.107.224",
-            "date_added": "2026-01-31 02:13:18 UTC",
+            "host": "39.74.66.177",
+            "date_added": "2026-02-01 03:03:18 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
                 "Mozi"
             ]
         },
         {
-            "id": 3766378,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766378\/",
-            "url": "http:\/\/39.187.126.20:50209\/i",
+            "id": 3766938,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766938\/",
+            "url": "http:\/\/125.40.9.181:45402\/i",
             "url_status": "online",
-            "host": "39.187.126.20",
-            "date_added": "2026-01-31 02:10:11 UTC",
+            "host": "125.40.9.181",
+            "date_added": "2026-02-01 03:02:18 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
                 "Mozi"
             ]
         },
         {
-            "id": 3766377,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766377\/",
-            "url": "http:\/\/61.52.35.217:57444\/i",
+            "id": 3766937,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766937\/",
+            "url": "http:\/\/115.63.45.137:45624\/i",
             "url_status": "online",
-            "host": "61.52.35.217",
-            "date_added": "2026-01-31 01:23:18 UTC",
+            "host": "115.63.45.137",
+            "date_added": "2026-02-01 03:02:17 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
                 "Mozi"
             ]
         },
         {
-            "id": 3766376,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766376\/",
-            "url": "http:\/\/110.37.87.13:38557\/i",
+            "id": 3766935,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766935\/",
+            "url": "http:\/\/77.247.92.106:54738\/bin.sh",
             "url_status": "online",
-            "host": "110.37.87.13",
-            "date_added": "2026-01-31 01:23:17 UTC",
+            "host": "77.247.92.106",
+            "date_added": "2026-02-01 03:02:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
+                "mirai",
                 "Mozi"
             ]
         },
         {
-            "id": 3766375,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766375\/",
-            "url": "http:\/\/42.230.209.226:59218\/i",
+            "id": 3766936,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766936\/",
+            "url": "http:\/\/77.247.92.106:54738\/i",
             "url_status": "online",
-            "host": "42.230.209.226",
-            "date_added": "2026-01-31 01:19:18 UTC",
+            "host": "77.247.92.106",
+            "date_added": "2026-02-01 03:02:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
+                "mirai",
                 "Mozi"
             ]
         },
         {
-            "id": 3766374,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766374\/",
-            "url": "http:\/\/61.54.189.210:46857\/i",
+            "id": 3766934,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766934\/",
+            "url": "http:\/\/110.37.68.203:49586\/i",
             "url_status": "online",
-            "host": "61.54.189.210",
-            "date_added": "2026-01-31 01:11:19 UTC",
+            "host": "110.37.68.203",
+            "date_added": "2026-02-01 03:01:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "threatquery",
             "larted": "true",
             "tags": [
                 "32-bit",
                 "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3766373,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3766373\/",
-            "url": "http:\/\/42.230.209.226:59218\/bin.sh",
-            "url_status": "online",
-            "host": "42.230.209.226",
-            "date_added": "2026-01-31 01:02:21 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
                 "Mozi"
             ]
         }
