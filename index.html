@@ -85,7 +85,8 @@
             Lock, MailWarning, TrendingDown, ShieldAlert, Skull,
             ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone,
             MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink,
-            ArrowUp, Globe, TrendingUp
+            ArrowUp, Globe, TrendingUp, ArrowRight,
+            Briefcase, Heart, Users, FileBadge, Coins, Activity, Bug, ServerOff, Fingerprint, FolderLock
         } from 'lucide-react';
 
         // --- CONSTANTS ---
@@ -289,6 +290,142 @@
                     bg: 'Използвайте опцията за преглед и тест, както и плащане при получаване, когато това е възможно. По този начин намалявате възможността да получите нещо, което не сте поръчали или не отговаря на Вашите потребителски изисквания. Избирайте известни и доказани онлайн магазини и платформи за вашите поръчки.',
                     en: 'Use the review and test option, as well as payment on delivery, whenever possible. This way you reduce the possibility of receiving something you did not order or that does not meet your consumer requirements. Choose well-known and proven online stores and platforms for your orders.'
                 }
+            }
+        ];
+
+
+        const CRIME_TYPES_DATA = [
+            {
+                id: 'bec',
+                title: { bg: 'Подменена банкова сметка', en: 'BEC FRAUD' },
+                subtitle: { bg: 'Business Email Compromise', en: 'Business Email Compromise' },
+                desc: {
+                    bg: 'Финансови измами, при които киберпрестъпници компрометират легитимни бизнес имейл акаунти, за да извършат неразрешени трансфери на средства (сменени IBAN сметки). Те често използват социално инженерство, за да заблудят служителите да извършат плащания към фалшиви сметки, представяйки се за висши мениджъри или доверени партньори. Този вид измама може да доведе до огромни финансови загуби за компаниите и да наруши доверието между бизнес партньорите, изисквайки бърза реакция и сътрудничество с правоприлагащите органи.',
+                    en: 'Financial fraud where cybercriminals compromise legitimate business email accounts to conduct unauthorized fund transfers (changed IBAN accounts). They often use social engineering to trick employees into making payments to fraudulent accounts by impersonating senior executives or trusted partners. This type of fraud can lead to massive financial losses for companies and breach trust between business partners, requiring rapid response and cooperation with law enforcement agencies.'
+                },
+                icon: Briefcase,
+                color: 'from-blue-600 to-indigo-900',
+                img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'investment_fraud',
+                title: { bg: 'ИНВЕСТИЦИОННИ', en: 'INVESTMENT' },
+                subtitle: { bg: 'Финансови измами', en: 'Investment Fraud' },
+                desc: {
+                    bg: 'Измамни схеми, обещаващи нереалистично високи и бързи печалби чрез фалшиви инвестиционни платформи, пирамидални схеми или измамни брокерски услуги. Престъпниците създават професионално изглеждащи уебсайтове и използват фалшиви препоръки, за да убедят жертвите да инвестират средства, които след това изчезват. Често използват тактики на социално инженерство и психологически натиск, като обещават гарантирани печалби от акции, форекс, криптовалути или други инвестиционни инструменти. Жертвите често осъзнават измамата едва когато се опитат да изтеглят средствата си.',
+                    en: 'Fraudulent schemes promising unrealistically high and quick profits through fake investment platforms, pyramid schemes, or fraudulent brokerage services. Criminals create professional-looking websites and use fake testimonials to convince victims to invest funds that subsequently disappear. They often employ social engineering tactics and psychological pressure, promising guaranteed returns from stocks, forex, cryptocurrencies, or other investment instruments. Victims often only realize the fraud when they attempt to withdraw their funds.'
+                },
+                icon: TrendingDown,
+                color: 'from-red-600 to-rose-900',
+                img: 'https://images.unsplash.com/photo-1535320903710-d9cf5b348281?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'romance',
+                title: { bg: 'РОМАНТИЧНИ', en: 'ROMANCE' },
+                subtitle: { bg: 'Романтични измами', en: 'Romance Scams' },
+                desc: {
+                    bg: 'Емоционални измами, при които престъпниците създават фалшиви профили в сайтове за запознанства или социални мрежи и изграждат романтични връзки с жертвите с цел финансова облага. След установяване на доверие, измамниците изфабрикуват спешни ситуации като медицински проблеми, виза проблеми или бизнес затруднения, за да помолят за пари. Често твърдят, че са военни на мисия, инженери в чужбина или успешни бизнесмени. Жертвите губят не само пари, но и емоционална стабилност, като някои продължават да изпращат средства дори след разкриване на измамата поради психологическата манипулация.',
+                    en: 'Emotional fraud where criminals create fake profiles on dating sites or social media and build romantic relationships with victims for financial gain. After establishing trust, scammers fabricate urgent situations such as medical emergencies, visa problems, or business difficulties to request money. They often claim to be military personnel on deployment, engineers abroad, or successful businesspeople. Victims lose not only money but also emotional stability, with some continuing to send funds even after the scam is exposed due to psychological manipulation.'
+                },
+                icon: Heart,
+                color: 'from-pink-600 to-fuchsia-900',
+                img: 'https://images.unsplash.com/photo-1518674660708-0e2c0473e68e?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'children',
+                title: { bg: 'ПРЕСТЪПЛЕНИЯ СРЕЩУ ДЕЦА', en: 'CHILDREN' },
+                subtitle: { bg: 'Детска порнография', en: 'Crimes Against Children' },
+                desc: {
+                    bg: 'Тежки престъпления, включващи производство, притежание, разпространение и търговия с материали със сексуално насилие над деца, както и онлайн тормоз, грууминг и сексуална експлоатация на малолетни. Престъпниците използват интернет платформи, криптирани чат приложения и dark web за обмен на незаконно съдържание и за контакт с потенциални жертви. Тези престъпления причиняват трайни психологически травми на децата-жертви и са приоритет за правоприлагащите органи по целия свят. Сътрудничеството между международните агенции е от критично значение за идентифициране и спасяване на жертвите.',
+                    en: 'Serious crimes involving the production, possession, distribution, and trade of child sexual abuse material, as well as online harassment, grooming, and sexual exploitation of minors. Criminals use internet platforms, encrypted chat applications, and the dark web to exchange illegal content and contact potential victims. These crimes cause lasting psychological trauma to child victims and are a priority for law enforcement agencies worldwide. Cooperation between international agencies is critical for identifying and rescuing victims.'
+                },
+                icon: Users,
+                color: 'from-orange-600 to-amber-900',
+                img: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'ipr',
+                title: { bg: 'АВТОРСКИ ПРАВА', en: 'COPYRIGHT' },
+                subtitle: { bg: 'Интелектуална собственост', en: 'IPR & Counterfeit' },
+                desc: {
+                    bg: 'Нарушаване на авторски и сродни права чрез незаконно разпространение на пиратско цифрово съдържание (филми, музика, софтуер, електронни книги), производство и продажба на фалшиви стоки, включително лукс марки, лекарства и електроника. Киберпрестъпниците използват торент сайтове, стрийминг платформи и онлайн магазини за разпространение на нарушаващо съдържание. Това не само вреди на творците и бранд собствениците финансово, но в случая с фалшиви лекарства и медицински изделия създава сериозни рискове за общественото здраве. Глобализацията на електронната търговия улеснява трансграничната търговия с фалшиви стоки.',
+                    en: 'Infringement of copyright and related rights through illegal distribution of pirated digital content (movies, music, software, e-books), production and sale of counterfeit goods including luxury brands, pharmaceuticals, and electronics. Cybercriminals use torrent sites, streaming platforms, and online stores to distribute infringing content. This not only harms creators and brand owners financially, but in the case of fake medicines and medical devices, creates serious public health risks. The globalization of e-commerce facilitates cross-border trade in counterfeit goods.'
+                },
+                icon: FileBadge,
+                color: 'from-purple-600 to-violet-900',
+                img: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'crypto',
+                title: { bg: 'КРИПТОВАЛУТИ', en: 'CRYPTO' },
+                subtitle: { bg: 'Крипто престъпления', en: 'Cryptocurrency Crimes' },
+                desc: {
+                    bg: 'Престъпления, свързани с кражба на криптовалути чрез хакване на криптоборси, измамни ICO (първични предлагания на монети), фишинг атаки срещу криптопортфейли и злоупотреба с криптовалути за пране на пари от други престъпни дейности. Престъпниците експлоатират анонимността и трансграничния характер на криптовалутните транзакции. Включва също така измами с инвестиции в криптовалути, "rug pulls" при DeFi проекти и използване на криптовалути за заплащане при рансъмуер атаки. Проследяването на криптовалутни транзакции изисква специализирани аналитични инструменти и експертиза.',
+                    en: 'Crimes related to cryptocurrency theft through hacking crypto exchanges, fraudulent ICOs (Initial Coin Offerings), phishing attacks against crypto wallets, and abuse of cryptocurrencies for money laundering from other criminal activities. Criminals exploit the anonymity and cross-border nature of cryptocurrency transactions. Also includes cryptocurrency investment scams, "rug pulls" in DeFi projects, and use of cryptocurrencies for payment in ransomware attacks. Tracking cryptocurrency transactions requires specialized analytical tools and expertise.'
+                },
+                icon: Coins,
+                color: 'from-yellow-500 to-amber-800',
+                img: 'https://images.unsplash.com/photo-1518546305927-5a555bb7020d?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'phishing',
+                title: { bg: 'ФИШИНГ', en: 'PHISHING' },
+                subtitle: { bg: 'Кражба на данни', en: 'Phishing' },
+                desc: {
+                    bg: 'Опити за кражба на чувствителна информация като парoli, данни за кредитни карти, лични данни и банкови сметки чрез фалшиви имейли, SMS съобщения (smishing), телефонни обаждания (vishing) и поддръжни уебсайтове, които имитират легитимни организации. Киберпрестъпниците създават убедителни копия на известни марки, банки и правителствени институции, за да заблудят потребителите. Често използват тактики на спешност и страх, като твърдения за компрометирани акаунти или спечелени награди. Spear phishing атаките са персонализирани и насочени към конкретни индивиди или организации.',
+                    en: 'Attempts to steal sensitive information such as passwords, credit card data, personal information, and bank accounts through fake emails, SMS messages (smishing), phone calls (vishing), and spoofed websites that impersonate legitimate organizations. Cybercriminals create convincing replicas of well-known brands, banks, and government institutions to deceive users. They often use urgency and fear tactics, such as claims of compromised accounts or won prizes. Spear phishing attacks are personalized and targeted at specific individuals or organizations.'
+                },
+                icon: MailWarning,
+                color: 'from-emerald-600 to-teal-900',
+                img: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'ransomware',
+                title: { bg: 'РАНСЪМУЕР', en: 'RANSOMWARE' },
+                subtitle: { bg: 'Изнудване', en: 'Ransomware' },
+                desc: {
+                    bg: 'Вид зловреден софтуер, който криптира данните на жертвата и блокира достъпа до критични системи и файлове, след което иска откуп (обикновено в криптовалута) за декриптиране и възстановяване. Модерните рансъмуер атаки често включват "двойно изнудване" - освен криптиране, престъпниците заплашват да публикуват откраднатите данни. Атаките обикновено се разпространяват чрез фишинг имейли, експлоатация на уязвимости или компрометирани услуги за отдалечен достъп. Рансъмуерът засяга болници, училища, правителствени институции и бизнеси, причинявайки значителни финансови и оперативни щети.',
+                    en: 'A type of malicious software that encrypts the victim\'s data and blocks access to critical systems and files, then demands a ransom (usually in cryptocurrency) for decryption and recovery. Modern ransomware attacks often involve "double extortion" - in addition to encryption, criminals threaten to publish stolen data. Attacks are typically spread through phishing emails, exploitation of vulnerabilities, or compromised remote access services. Ransomware affects hospitals, schools, government institutions, and businesses, causing significant financial and operational damage.'
+                },
+                icon: FolderLock,
+                color: 'from-red-700 to-red-950',
+                img: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'access',
+                title: { bg: 'НЕЗАКОНЕН ДОСТЪП', en: 'UNAUTH ACCESS' },
+                subtitle: { bg: 'Хакерски атаки', en: 'Unauthorized Access' },
+                desc: {
+                    bg: 'Нерегламентиран достъп до компютърни системи, мрежи и бази данни чрез експлоатация на уязвимости, използване на откраднати идентификационни данни или социално инженерство. Хакерите проникват в корпоративни мрежи, правителствени системи и лични устройства с цел кражба на чувствителна информация, търговски тайни, интелектуална собственост или лични данни. След получаване на достъп, престъпниците често установяват backdoors за бъдещ достъп, инсталират кейлогъри и извличат данни за дълъг период, преди да бъдат открити. Включва също кибершпионаж и индустриален шпионаж.',
+                    en: 'Unauthorized access to computer systems, networks, and databases through exploitation of vulnerabilities, use of stolen credentials, or social engineering. Hackers penetrate corporate networks, government systems, and personal devices to steal sensitive information, trade secrets, intellectual property, or personal data. After gaining access, criminals often establish backdoors for future access, install keyloggers, and exfiltrate data over extended periods before being detected. Also includes cyber espionage and industrial espionage.'
+                },
+                icon: Fingerprint,
+                color: 'from-cyan-600 to-blue-900',
+                img: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'ddos',
+                title: { bg: 'DDoS АТАКИ', en: 'DDoS' },
+                subtitle: { bg: 'Отказ на услуга', en: 'Denial of Service' },
+                desc: {
+                    bg: 'Разпределени атаки за отказ на услуга, които целят спиране или сериозно забавяне на достъпа до онлайн услуги, уебсайтове и мрежи чрез претоварване с огромен обем трафик от множество компрометирани устройства (ботнет). Престъпниците използват армии от заразени компютри, IoT устройства и сървъри за едновременно изпращане на заявки към целевата система. DDoS атаките се използват за изнудване, конкурентно саботиране, политически мотивирани акции или като отвличане на вниманието по време на други кибератаки. Могат да причинят значителни финансови загуби и репутационни щети.',
+                    en: 'Distributed Denial of Service attacks aimed at stopping or severely slowing access to online services, websites, and networks by overwhelming them with massive volumes of traffic from multiple compromised devices (botnet). Criminals use armies of infected computers, IoT devices, and servers to simultaneously send requests to the target system. DDoS attacks are used for extortion, competitive sabotage, politically motivated actions, or as a distraction during other cyberattacks. They can cause significant financial losses and reputational damage.'
+                },
+                icon: ServerOff,
+                color: 'from-gray-600 to-slate-900',
+                img: 'https://images.unsplash.com/photo-1558494949-efbdb6b05811?auto=format&fit=crop&q=80&w=1000'
+            },
+            {
+                id: 'malware',
+                title: { bg: 'Компютърни вируси', en: 'MALWARE' },
+                subtitle: { bg: 'Зловреден код', en: 'Malware' },
+                desc: {
+                    bg: 'Разпространение и използване на вируси, троянски коне, червеи, шпионски софтуер, адуер и друг зловреден код, предназначени да навредят, експлоатират или получат неразрешен достъп до компютърни системи. Зловредният софтуер може да краде данни, унищожава файлове, следи потребителската активност, установява backdoors или превръща устройствата в част от ботнет. Разпространява се чрез заразени имейл прикачени файлове, компрометирани уебсайтове, злонамерена реклама, фалшив софтуер и експлоатация на системни уязвимости. Антивирусните решения и редовните актуализации са ключови за защита.',
+                    en: 'Distribution and use of viruses, trojans, worms, spyware, adware, and other malicious code designed to harm, exploit, or gain unauthorized access to computer systems. Malware can steal data, destroy files, monitor user activity, establish backdoors, or turn devices into part of a botnet. It spreads through infected email attachments, compromised websites, malicious advertising, fake software, and exploitation of system vulnerabilities. Antivirus solutions and regular updates are key to protection.'
+                },
+                icon: Bug,
+                color: 'from-lime-600 to-green-900',
+                img: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?auto=format&fit=crop&q=80&w=1000'
             }
         ];
 
@@ -1136,6 +1273,167 @@
             );
         };
 
+
+        // Crime Expanding Cards Component
+        const CrimeTypesSection = ({ lang }) => {
+            const [hoveredId, setHoveredId] = useState(null);
+            const [selectedId, setSelectedId] = useState(null);
+
+            const READ_MORE_TEXT = {
+                bg: "ПРОЧЕТИ ПОВЕЧЕ",
+                en: "READ MORE"
+            };
+
+            // Handle interactions
+            const handleCardClick = (id) => {
+                const isMobile = window.innerWidth < 1024;
+                const isExpanded = hoveredId === id;
+                const isSelected = selectedId === id;
+
+                if (isMobile) {
+                    if (!isExpanded) {
+                        setHoveredId(id);
+                        setSelectedId(null);
+                    } else if (!isSelected) {
+                        setSelectedId(id);
+                    } else {
+                        setHoveredId(null);
+                        setSelectedId(null);
+                    }
+                } else {
+                    // Desktop: Toggle Full Text
+                    setSelectedId(isSelected ? null : id);
+                }
+            };
+
+            const handleMouseEnter = (id) => {
+                setHoveredId(id);
+            };
+
+            const handleMouseLeave = () => {
+                setHoveredId(null);
+                setSelectedId(null);
+            };
+
+            return (
+                <section className="container mx-auto px-4 py-16 mt-24 relative z-10">
+                    <div className="flex flex-col gap-4 h-auto lg:flex-row lg:min-h-[600px] w-full max-w-7xl mx-auto items-stretch">
+                        {CRIME_TYPES_DATA.map((crime) => {
+                            const isExpanded = hoveredId === crime.id;
+                            const isSelected = selectedId === crime.id;
+
+                            return (
+                                <div
+                                    key={crime.id}
+                                    onMouseEnter={() => handleMouseEnter(crime.id)}
+                                    onMouseLeave={handleMouseLeave}
+                                    onClick={() => handleCardClick(crime.id)}
+                                    className={`
+                                        relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]
+                                        border border-gdbop-blue/20 shadow-lg backdrop-blur-md bg-slate-900/40 hover:bg-slate-900/60
+                                        ${isExpanded
+                                            ? `h-auto py-8 lg:h-auto lg:flex-[5] border-gdbop-blue/60 shadow-[0_0_30px_rgba(71,168,246,0.15)] ring-1 ring-gdbop-blue/30 ${isSelected ? 'lg:py-12' : 'lg:py-0'}`
+                                            : 'h-24 lg:h-auto lg:flex-1'
+                                        }
+                                    `}
+                                >
+                                    {/* Background Image */}
+                                    <div className="absolute inset-0 z-0">
+                                        <div className={`absolute inset-0 bg-slate-900/80 transition-opacity duration-500 ${isExpanded ? 'opacity-90' : 'opacity-60'} z-10`}></div>
+                                        <img
+                                            src={crime.img}
+                                            alt=""
+                                            onError={(e) => e.target.style.display = 'none'}
+                                            className={`
+                                                w-full h-full object-cover transition-transform duration-1000
+                                                opacity-50 grayscale group-hover:grayscale-0
+                                                ${isExpanded ? 'scale-110' : 'scale-100'}
+                                            `}
+                                        />
+                                        <div className="absolute inset-0 bg-[linear-gradient(transparent_50%,rgba(0,0,0,0.5)_50%)] bg-[size:100%_4px] opacity-10 pointer-events-none z-10"></div>
+                                    </div>
+
+                                    {/* Persistent Title behavior */}
+                                    <div className={`
+                                        absolute z-40 transition-all duration-500
+                                        ${isExpanded ? 'opacity-0 translate-y-4 pointer-events-none' : 'opacity-100 translate-y-0'}
+                                        
+                                        /* Mobile: Simple text, no frame (Bottom Right) */
+                                        bottom-4 right-4 text-white font-bold text-sm tracking-wider drop-shadow-lg lg:hidden
+                                    `}>
+                                        {crime.title[lang]}
+                                    </div>
+
+                                    {/* Desktop Vertical Framed Title (Hidden on Mobile) */}
+                                    <div className={`
+                                        hidden lg:block absolute z-40 border border-gdbop-blue/50 bg-slate-900/90 backdrop-blur-xl
+                                        px-4 py-2 text-gdbop-blue shadow-[0_0_15px_rgba(71,168,246,0.2)]
+                                        font-bold uppercase transition-all duration-500
+                                        ${crime.id === 'investment_fraud' ? 'text-[10px] tracking-wide' : 'text-xs tracking-widest'}
+                                        ${isExpanded ? 'opacity-0 translate-y-4 scale-95 pointer-events-none' : 'opacity-100 translate-y-0 scale-100'}
+                                        bottom-12 left-0 origin-bottom-left -rotate-90 whitespace-nowrap border-l-0
+                                    `}>
+                                        {crime.title[lang]}
+                                    </div>
+
+                                    {/* Center Icon (Collapsed State) */}
+                                    <div className={`
+                                        absolute left-4 top-1/2 -translate-y-1/2
+                                        transition-all duration-500 z-30
+                                        ${isExpanded ? 'opacity-0 scale-50' : 'opacity-100 scale-100'}
+                                        lg:left-1/2 lg:-translate-x-1/2
+                                    `}>
+                                        <div className="p-3 rounded-full backdrop-blur-md border border-gdbop-blue/30 bg-slate-800/50 text-gdbop-blue shadow-[0_0_15px_rgba(71,168,246,0.1)]">
+                                            <crime.icon size={24} className="drop-shadow-md" />
+                                        </div>
+                                    </div>
+
+                                    {/* Expanded Content */}
+                                    <div className={`
+                                        relative z-20 h-full p-6 flex flex-col justify-end lg:justify-center
+                                        transition-all duration-500
+                                        ${isExpanded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'}
+                                    `}>
+                                        <div className="border-l-4 border-gdbop-blue pl-6 py-2 bg-gradient-to-r from-gdbop-blue/10 to-transparent">
+                                            <h3 className="text-2xl md:text-[1.25rem] font-black text-white uppercase drop-shadow-xl mb-2 tracking-tight">
+                                                {crime.title[lang]}
+                                            </h3>
+                                            <p className="text-gdbop-blue font-mono text-xs md:text-sm uppercase tracking-[0.2em] mb-1">
+                                                {crime.subtitle[lang]}
+                                            </p>
+                                        </div>
+
+                                        {/* Description: Truncated vs Full */}
+                                        <div className={`
+                                            mt-6 relative
+                                            ${isSelected ? 'opacity-100' : 'opacity-90'}
+                                        `}>
+                                            <p className={`
+                                                text-slate-200 text-sm md:text-base leading-relaxed border-t border-gdbop-blue/30 pt-4 font-light
+                                                ${isSelected ? '' : 'line-clamp-4'}
+                                            `}
+                                                style={!isSelected ? { display: '-webkit-box', WebkitLineClamp: 4, WebkitBoxOrient: 'vertical', overflow: 'hidden' } : {}}
+                                            >
+                                                {crime.desc[lang]}
+                                            </p>
+
+                                            {/* Read More Trigger */}
+                                            {!isSelected && (
+                                                <div className="mt-3 flex items-center gap-2 text-gdbop-blue text-xs font-bold tracking-widest uppercase animate-pulse">
+                                                    <span>{READ_MORE_TEXT[lang]}</span>
+                                                    <ArrowRight size={14} />
+                                                </div>
+                                            )}
+                                        </div>
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </section>
+            );
+        };
+
         // Tips Section Component
         const TipsSection = ({ lang }) => {
             const t = TRANSLATIONS[lang];
@@ -1292,6 +1590,7 @@
                     <div className="flex flex-col min-h-screen">
                         <Header lang={lang} />
                         <main className="flex-grow">
+                            <CrimeTypesSection lang={lang} />
                             <TipsSection lang={lang} />
                             <ThreatFeed lang={lang} />
                             <PhishingFeed lang={lang} />
