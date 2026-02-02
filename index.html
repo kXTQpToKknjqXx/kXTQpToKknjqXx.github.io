@@ -1307,12 +1307,18 @@
             };
 
             const handleMouseEnter = (id) => {
-                setHoveredId(id);
+                const isMobile = window.innerWidth < 1024;
+                if (!isMobile) {
+                    setHoveredId(id);
+                }
             };
 
             const handleMouseLeave = () => {
-                setHoveredId(null);
-                setSelectedId(null);
+                const isMobile = window.innerWidth < 1024;
+                if (!isMobile) {
+                    setHoveredId(null);
+                    setSelectedId(null);
+                }
             };
 
             return (
