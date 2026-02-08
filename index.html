@@ -29,6 +29,8 @@
     <!-- Google Fonts -->
     <link href="assets/css/montserrat.css" rel="stylesheet">
 
+
+
     <script>
         tailwind.config = {
             theme: {
@@ -97,12 +99,13 @@
                 tips: "Съвети",
                 video: "Видео",
                 blog: "Блог",
-                threats: "Заплахи",
+                threats: "Бюлетин",
                 contacts: "Контакти",
                 headerTitle: "Борба с киберпрестъпността",
                 headerSubtitle: "ГДБОП-МВР",
                 videoTitle: "Видеоканал",
                 tipsTitle: "СЪВЕТИ ЗА КИБЕРСИГУРНОСТ",
+                crimeTypesTitle: "ЗАПЛАХИ",
                 ctaText: "Ако сте жертва или свидетел на киберпрестъпление, подайте сигнал в най-близкото районно полицейско управление или на място в дирекция",
                 ctaDirectorate: "Киберпрестъпност",
                 ctaMvr: "при ГДБОП-МВР",
@@ -112,7 +115,7 @@
                 rights: "Всички права запазени.",
                 latestFrom: "ПОСЛЕДНО ОТ",
                 live: "НА ЖИВО",
-                threatFeedTitle: "БЮЛЕТИН ЗА ЗАПЛАХИ",
+                threatFeedTitle: "БЮЛЕТИН: ЗЛОВРЕДНИ РЕСУРСИ",
                 blogTitle: "НОВИНИ ОТ FACEBOOK",
                 loading: "Зареждане...",
                 error: "Грешка при зареждане",
@@ -138,12 +141,13 @@
                 tips: "Tips",
                 video: "Video",
                 blog: "Blog",
-                threats: "Threats",
+                threats: "Threat Feed",
                 contacts: "Contacts",
                 headerTitle: "Cybercrime Directorate",
                 headerSubtitle: "Organised Crime General Directorate, Bulgarian Ministry of the Interior",
                 videoTitle: "Video Channel",
                 tipsTitle: "CYBERSECURITY TIPS",
+                crimeTypesTitle: "THREATS",
                 ctaText: "If you are a victim or witness of a cybercrime, report it to the nearest police station or at the Directorate",
                 ctaDirectorate: "Cybercrime",
                 ctaMvr: "at GDCOC-MoI",
@@ -153,7 +157,7 @@
                 rights: "All rights reserved.",
                 latestFrom: "LATEST FROM",
                 live: "LIVE",
-                threatFeedTitle: "THREAT FEED",
+                threatFeedTitle: "THREAT FEED: MALICIOUS LINKS",
                 blogTitle: "FACEBOOK NEWS",
                 loading: "Loading...",
                 error: "Error loading data",
@@ -1276,6 +1280,7 @@
 
         // Crime Expanding Cards Component
         const CrimeTypesSection = ({ lang }) => {
+            const t = TRANSLATIONS[lang];
             const [hoveredId, setHoveredId] = useState(null);
             const [selectedId, setSelectedId] = useState(null);
 
@@ -1339,6 +1344,14 @@
 
             return (
                 <section className="container mx-auto px-4 py-16 mt-24 relative z-10">
+                    <div className="flex items-center justify-center mb-12 gap-3">
+                        <Siren className="text-police-blue animate-pulse" size={32} />
+                        <h3 className="text-2xl md:text-3xl font-bold text-white text-center border-b-2 border-gdbop-blue pb-2">
+                            {t.crimeTypesTitle}
+                        </h3>
+                        <Siren className="text-police-red animate-pulse" size={32} />
+                    </div>
+
                     <div className="flex flex-col gap-4 h-auto lg:flex-row lg:min-h-[600px] w-full max-w-7xl mx-auto items-stretch">
                         {CRIME_TYPES_DATA.map((crime) => {
                             const isExpanded = hoveredId === crime.id;
