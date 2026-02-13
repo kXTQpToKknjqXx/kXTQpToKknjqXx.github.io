@@ -521,32 +521,33 @@
 
             return (
                 <nav className={`fixed top-0 left-0 w-full z-40 transition-all duration-300 ${isScrolled ? 'bg-slate-900/90 backdrop-blur-md shadow-lg border-b border-gdbop-blue/20' : 'bg-transparent'}`}>
-                    <div className="container mx-auto px-4 py-4 flex items-center justify-between relative">
+                    <div className="container mx-auto px-4 py-4 flex items-center justify-between">
                         {/* 1. Logo Section (Left) */}
-                        <div className="flex items-center gap-2 cursor-pointer z-20" onClick={() => scrollToSection('home')}>
+                        {/* 1. Logo Section (Left) */}
+                        <div className="flex-shrink-0 flex items-center gap-2 cursor-pointer w-[220px]" onClick={() => scrollToSection('home')}>
                             <ShieldCheck className="text-gdbop-blue" size={28} />
                             <span className="font-bold text-white tracking-wider hidden xl:block">CYBERCRIME.BG</span>
                         </div>
 
                         {/* 2. Navigation Items (Centered) - Desktop Only */}
-                        <div className="hidden lg:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 items-center gap-1 xl:gap-2">
+                        <div className="hidden lg:flex flex-1 justify-center items-center gap-0.5 xl:gap-1 px-1">
                             {navItems.map((item) => (
                                 item.isLink ? (
                                     <a
                                         key={item.id}
                                         href={item.id}
-                                        className="px-2 py-2 text-[11px] xl:text-xs font-bold text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-1.5 group whitespace-nowrap"
+                                        className="px-1.5 py-2 text-[10px] xl:text-[11px] 2xl:text-xs font-bold text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-1 group whitespace-nowrap"
                                     >
-                                        <item.icon size={14} className="text-police-red group-hover:scale-110 transition-transform" />
+                                        <item.icon size={13} className="text-police-red group-hover:scale-110 transition-transform" />
                                         {item.label}
                                     </a>
                                 ) : (
                                     <button
                                         key={item.id}
                                         onClick={() => scrollToSection(item.id)}
-                                        className="px-2 py-2 text-[11px] xl:text-xs font-bold text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-1.5 group whitespace-nowrap"
+                                        className="px-1.5 py-2 text-[10px] xl:text-[11px] 2xl:text-xs font-bold text-slate-300 hover:text-white hover:bg-white/10 rounded-full transition-all flex items-center gap-1 group whitespace-nowrap"
                                     >
-                                        <item.icon size={14} className="text-gdbop-blue group-hover:scale-110 transition-transform" />
+                                        <item.icon size={13} className="text-gdbop-blue group-hover:scale-110 transition-transform" />
                                         {item.label}
                                     </button>
                                 )
@@ -554,7 +555,7 @@
                         </div>
 
                         {/* 3. Controls Section (Right) - Desktop Only */}
-                        <div className="hidden lg:flex items-center gap-4 z-20">
+                        <div className="hidden lg:flex flex-shrink-0 items-center justify-end gap-3 w-[220px]">
                             {/* GDCOC Link */}
                             <a
                                 href="https://gdbop.bg"
