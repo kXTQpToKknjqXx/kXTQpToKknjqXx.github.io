@@ -2,92 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3787289,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787289\/",
-            "url": "http:\/\/175.175.254.51:35467\/bin.sh",
+            "id": 3787829,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787829\/",
+            "url": "http:\/\/27.37.112.62:53303\/i",
             "url_status": "online",
-            "host": "175.175.254.51",
-            "date_added": "2026-02-28 02:21:13 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3787288,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787288\/",
-            "url": "https:\/\/github.com\/meneater69\/R6-Recoil-Reducer\/raw\/refs\/heads\/main\/poncelet\/Recoil-Reducer-v1.4.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-02-28 02:15:13 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "tcains1",
-            "larted": "true",
-            "tags": [
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 3787287,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787287\/",
-            "url": "https:\/\/raw.githubusercontent.com\/meneater69\/R6-Recoil-Reducer\/refs\/heads\/main\/poncelet\/Recoil-Reducer-v1.4.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-02-28 02:15:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "tcains1",
-            "larted": "true",
-            "tags": [
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 3787286,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787286\/",
-            "url": "http:\/\/42.235.91.157:59114\/bin.sh",
-            "url_status": "online",
-            "host": "42.235.91.157",
-            "date_added": "2026-02-28 02:13:24 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3787285,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787285\/",
-            "url": "http:\/\/110.36.29.40:58250\/i",
-            "url_status": "offline",
-            "host": "110.36.29.40",
-            "date_added": "2026-02-28 02:06:38 UTC",
+            "host": "27.37.112.62",
+            "date_added": "2026-03-01 02:52:21 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -103,32 +23,33 @@
             ]
         },
         {
-            "id": 3787284,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787284\/",
-            "url": "https:\/\/github.com\/IronTraderKnow\/World-of-Tanks\/raw\/refs\/heads\/main\/Loader.zip",
+            "id": 3787828,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787828\/",
+            "url": "http:\/\/42.227.176.93:34814\/i",
             "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-02-28 01:41:09 UTC",
+            "host": "42.227.176.93",
+            "date_added": "2026-03-01 02:52:20 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "tcains1",
-            "larted": "true",
+            "reporter": "geenensp",
+            "larted": "false",
             "tags": [
-                "pw-500600",
-                "ScarfaceStealer",
-                "zip"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3787283,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787283\/",
-            "url": "http:\/\/110.36.29.40:58250\/bin.sh",
+            "id": 3787827,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787827\/",
+            "url": "http:\/\/39.77.4.125:34265\/bin.sh",
             "url_status": "online",
-            "host": "110.36.29.40",
-            "date_added": "2026-02-28 01:37:24 UTC",
+            "host": "39.77.4.125",
+            "date_added": "2026-03-01 02:51:21 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -144,12 +65,34 @@
             ]
         },
         {
-            "id": 3787282,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787282\/",
-            "url": "http:\/\/182.113.201.246:44715\/i",
+            "id": 3787826,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787826\/",
+            "url": "http:\/\/58.23.178.174:58815\/i",
             "url_status": "online",
-            "host": "182.113.201.246",
-            "date_added": "2026-02-28 01:36:24 UTC",
+            "host": "58.23.178.174",
+            "date_added": "2026-03-01 02:47:21 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "arm",
+                "elf",
+                "mirai",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3787824,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787824\/",
+            "url": "http:\/\/110.36.19.51:58350\/i",
+            "url_status": "online",
+            "host": "110.36.19.51",
+            "date_added": "2026-03-01 02:44:21 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -165,41 +108,108 @@
             ]
         },
         {
-            "id": 3787280,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787280\/",
-            "url": "https:\/\/raw.githubusercontent.com\/yutangru1114\/hwidtool\/refs\/heads\/main\/src\/Software_1.9-beta.1.zip",
+            "id": 3787825,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787825\/",
+            "url": "http:\/\/115.58.135.224:58373\/bin.sh",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-02-28 01:36:08 UTC",
+            "host": "115.58.135.224",
+            "date_added": "2026-03-01 02:44:21 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "tcains1",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "SmartLoader",
-                "zip"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3787281,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787281\/",
-            "url": "https:\/\/github.com\/yutangru1114\/hwidtool\/raw\/refs\/heads\/main\/src\/Software_1.9-beta.1.zip",
+            "id": 3787823,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787823\/",
+            "url": "http:\/\/42.59.115.225:59235\/bin.sh",
             "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-02-28 01:36:08 UTC",
+            "host": "42.59.115.225",
+            "date_added": "2026-03-01 02:37:25 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "tcains1",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "SmartLoader",
-                "zip"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3787822,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787822\/",
+            "url": "http:\/\/27.37.112.62:53303\/bin.sh",
+            "url_status": "online",
+            "host": "27.37.112.62",
+            "date_added": "2026-03-01 02:32:25 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3787821,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787821\/",
+            "url": "http:\/\/110.36.24.105:42229\/i",
+            "url_status": "online",
+            "host": "110.36.24.105",
+            "date_added": "2026-03-01 02:26:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3787820,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3787820\/",
+            "url": "http:\/\/42.228.125.13:43597\/bin.sh",
+            "url_status": "online",
+            "host": "42.228.125.13",
+            "date_added": "2026-03-01 02:24:22 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         }
     ]
