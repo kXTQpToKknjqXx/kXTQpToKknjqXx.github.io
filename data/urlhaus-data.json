@@ -2,50 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3797014,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797014\/",
-            "url": "https:\/\/n4-orbit-moon.secretovalle.in.net\/verification.google",
+            "id": 3797579,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797579\/",
+            "url": "http:\/\/42.231.250.218:46008\/i",
             "url_status": "online",
-            "host": "n4-orbit-moon.secretovalle.in.net",
-            "date_added": "2026-03-16 03:13:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3797013,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797013\/",
-            "url": "https:\/\/x0-space-open.altasphera.in.net\/verification.google",
-            "url_status": "online",
-            "host": "x0-space-open.altasphera.in.net",
-            "date_added": "2026-03-16 03:10:11 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3797012,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797012\/",
-            "url": "http:\/\/117.221.54.194:38886\/i",
-            "url_status": "online",
-            "host": "117.221.54.194",
-            "date_added": "2026-03-16 03:07:22 UTC",
+            "host": "42.231.250.218",
+            "date_added": "2026-03-17 02:31:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -61,12 +23,12 @@
             ]
         },
         {
-            "id": 3797011,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797011\/",
-            "url": "http:\/\/117.221.54.194:38886\/bin.sh",
+            "id": 3797578,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797578\/",
+            "url": "http:\/\/115.61.114.175:40761\/bin.sh",
             "url_status": "online",
-            "host": "117.221.54.194",
-            "date_added": "2026-03-16 03:06:21 UTC",
+            "host": "115.61.114.175",
+            "date_added": "2026-03-17 02:29:07 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -82,12 +44,12 @@
             ]
         },
         {
-            "id": 3797010,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797010\/",
-            "url": "http:\/\/110.38.192.158:35845\/i",
+            "id": 3797577,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797577\/",
+            "url": "http:\/\/113.224.122.202:47709\/i",
             "url_status": "online",
-            "host": "110.38.192.158",
-            "date_added": "2026-03-16 03:00:24 UTC",
+            "host": "113.224.122.202",
+            "date_added": "2026-03-17 02:24:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -103,50 +65,12 @@
             ]
         },
         {
-            "id": 3797009,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797009\/",
-            "url": "https:\/\/k9-rim-outer.altasphera.in.net\/verification.google",
+            "id": 3797576,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797576\/",
+            "url": "http:\/\/110.37.65.64:49864\/i",
             "url_status": "online",
-            "host": "k9-rim-outer.altasphera.in.net",
-            "date_added": "2026-03-16 02:49:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3797008,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797008\/",
-            "url": "https:\/\/m8-sync-vision.puroflusso.in.net\/verification.google",
-            "url_status": "online",
-            "host": "m8-sync-vision.puroflusso.in.net",
-            "date_added": "2026-03-16 02:44:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3797007,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797007\/",
-            "url": "http:\/\/112.248.163.41:51949\/bin.sh",
-            "url_status": "online",
-            "host": "112.248.163.41",
-            "date_added": "2026-03-16 02:42:38 UTC",
+            "host": "110.37.65.64",
+            "date_added": "2026-03-17 02:19:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -162,31 +86,96 @@
             ]
         },
         {
-            "id": 3797006,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797006\/",
-            "url": "https:\/\/a4-scan-point.puroflusso.in.net\/verification.google",
+            "id": 3797575,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797575\/",
+            "url": "http:\/\/120.84.212.138:38495\/i",
             "url_status": "online",
-            "host": "a4-scan-point.puroflusso.in.net",
-            "date_added": "2026-03-16 02:38:08 UTC",
+            "host": "120.84.212.138",
+            "date_added": "2026-03-17 02:14:13 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ACRStealer",
-                "ClearFake"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3797005,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797005\/",
-            "url": "http:\/\/220.168.236.202:59698\/i",
+            "id": 3797574,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797574\/",
+            "url": "http:\/\/42.231.250.218:46008\/bin.sh",
             "url_status": "online",
-            "host": "220.168.236.202",
-            "date_added": "2026-03-16 02:37:15 UTC",
+            "host": "42.231.250.218",
+            "date_added": "2026-03-17 02:07:14 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3797573,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797573\/",
+            "url": "http:\/\/42.239.188.177:35354\/i",
+            "url_status": "online",
+            "host": "42.239.188.177",
+            "date_added": "2026-03-17 02:06:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3797572,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797572\/",
+            "url": "http:\/\/110.37.3.239:60885\/i",
+            "url_status": "online",
+            "host": "110.37.3.239",
+            "date_added": "2026-03-17 01:51:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3797571,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797571\/",
+            "url": "http:\/\/219.70.90.108:51405\/i",
+            "url_status": "online",
+            "host": "219.70.90.108",
+            "date_added": "2026-03-17 01:50:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -200,6 +189,25 @@
                 "elf",
                 "mirai",
                 "Mozi"
+            ]
+        },
+        {
+            "id": 3797570,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3797570\/",
+            "url": "https:\/\/l0-main-v7.navispazio.in.net\/verification.google",
+            "url_status": "offline",
+            "host": "l0-main-v7.navispazio.in.net",
+            "date_added": "2026-03-17 01:44:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ACRStealer",
+                "ClearFake"
             ]
         }
     ]
