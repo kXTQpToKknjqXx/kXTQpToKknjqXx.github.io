@@ -2,155 +2,30 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3808062,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808062\/",
-            "url": "https:\/\/path-bridge.linearbackbone.in.net\/verification.google",
+            "id": 3808749,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808749\/",
+            "url": "https:\/\/dark-matter.cosmoforge.in.net\/verification.google",
             "url_status": "online",
-            "host": "path-bridge.linearbackbone.in.net",
-            "date_added": "2026-03-30 03:19:07 UTC",
+            "host": "dark-matter.cosmoforge.in.net",
+            "date_added": "2026-03-31 02:53:12 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "malware_domain",
-                "surbl": "not listed"
+                "surbl": "listed"
             },
             "reporter": "anonymous",
-            "larted": "true",
+            "larted": "false",
             "tags": [
-                "ACRStealer",
                 "ClearFake"
             ]
         },
         {
-            "id": 3808061,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808061\/",
-            "url": "http:\/\/39.87.239.190:47182\/bin.sh",
+            "id": 3808748,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808748\/",
+            "url": "https:\/\/nova-core.cosmoforge.in.net\/verification.google",
             "url_status": "online",
-            "host": "39.87.239.190",
-            "date_added": "2026-03-30 03:17:18 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3808060,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808060\/",
-            "url": "http:\/\/78.172.181.187:42299\/i",
-            "url_status": "online",
-            "host": "78.172.181.187",
-            "date_added": "2026-03-30 03:13:19 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3808059,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808059\/",
-            "url": "http:\/\/123.130.205.114:46464\/i",
-            "url_status": "online",
-            "host": "123.130.205.114",
-            "date_added": "2026-03-30 03:11:34 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3808058,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808058\/",
-            "url": "https:\/\/link-secure.linearbackbone.in.net\/verification.google",
-            "url_status": "online",
-            "host": "link-secure.linearbackbone.in.net",
-            "date_added": "2026-03-30 03:06:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3808057,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808057\/",
-            "url": "http:\/\/78.172.181.187:42299\/bin.sh",
-            "url_status": "online",
-            "host": "78.172.181.187",
-            "date_added": "2026-03-30 03:05:16 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3808056,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808056\/",
-            "url": "http:\/\/61.53.90.238:58076\/i",
-            "url_status": "online",
-            "host": "61.53.90.238",
-            "date_added": "2026-03-30 03:01:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3808055,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808055\/",
-            "url": "https:\/\/task-logic.sectoralcontrol.in.net\/verification.google",
-            "url_status": "offline",
-            "host": "task-logic.sectoralcontrol.in.net",
-            "date_added": "2026-03-30 02:59:06 UTC",
+            "host": "nova-core.cosmoforge.in.net",
+            "date_added": "2026-03-31 02:48:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -164,12 +39,33 @@
             ]
         },
         {
-            "id": 3808054,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808054\/",
-            "url": "https:\/\/switch-gear.sectoralcontrol.in.net\/verification.google",
+            "id": 3808747,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808747\/",
+            "url": "http:\/\/42.230.40.84:32883\/i",
             "url_status": "online",
-            "host": "switch-gear.sectoralcontrol.in.net",
-            "date_added": "2026-03-30 02:51:07 UTC",
+            "host": "42.230.40.84",
+            "date_added": "2026-03-31 02:45:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3808746,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808746\/",
+            "url": "https:\/\/void-gate.cosmoforge.in.net\/verification.google",
+            "url_status": "online",
+            "host": "void-gate.cosmoforge.in.net",
+            "date_added": "2026-03-31 02:43:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -183,12 +79,31 @@
             ]
         },
         {
-            "id": 3808053,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808053\/",
-            "url": "http:\/\/110.39.244.198:40172\/i",
+            "id": 3808745,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808745\/",
+            "url": "https:\/\/star-field.cosmoforge.in.net\/verification.google",
             "url_status": "online",
-            "host": "110.39.244.198",
-            "date_added": "2026-03-30 02:48:11 UTC",
+            "host": "star-field.cosmoforge.in.net",
+            "date_added": "2026-03-31 02:37:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ACRStealer",
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3808744,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808744\/",
+            "url": "http:\/\/222.141.46.48:51990\/i",
+            "url_status": "online",
+            "host": "222.141.46.48",
+            "date_added": "2026-03-31 02:34:07 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -201,6 +116,84 @@
                 "elf",
                 "mips",
                 "Mozi"
+            ]
+        },
+        {
+            "id": 3808742,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808742\/",
+            "url": "https:\/\/github.com\/Yns70\/textgame\/raw\/refs\/heads\/main\/brachiorrhachidian\/Software-1.0-beta.5.zip",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-03-31 02:33:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "tcains1",
+            "larted": "true",
+            "tags": [
+                "SmartLoader",
+                "zip"
+            ]
+        },
+        {
+            "id": 3808743,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808743\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Yns70\/textgame\/refs\/heads\/main\/brachiorrhachidian\/Software-1.0-beta.5.zip",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-03-31 02:33:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "tcains1",
+            "larted": "true",
+            "tags": [
+                "SmartLoader",
+                "zip"
+            ]
+        },
+        {
+            "id": 3808741,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808741\/",
+            "url": "http:\/\/110.37.52.81:59981\/i",
+            "url_status": "online",
+            "host": "110.37.52.81",
+            "date_added": "2026-03-31 02:32:15 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3808740,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3808740\/",
+            "url": "https:\/\/github.com\/lovlovlo15\/chronicles-of-aethergate\/raw\/refs\/heads\/main\/saves\/of-aethergate-chronicles-v2.3.zip",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-03-31 02:32:11 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "tcains1",
+            "larted": "true",
+            "tags": [
+                "SmartLoader",
+                "zip"
             ]
         }
     ]
