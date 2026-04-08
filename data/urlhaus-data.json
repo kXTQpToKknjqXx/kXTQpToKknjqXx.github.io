@@ -2,88 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3813283,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813283\/",
-            "url": "https:\/\/base-matrix.axiomatrix.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
+            "id": 3814004,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3814004\/",
+            "url": "http:\/\/182.127.108.234:34944\/bin.sh",
             "url_status": "online",
-            "host": "base-matrix.axiomatrix.in.net",
-            "date_added": "2026-04-07 02:53:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3813282,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813282\/",
-            "url": "https:\/\/fixed-point.axiomatrix.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
-            "url_status": "online",
-            "host": "fixed-point.axiomatrix.in.net",
-            "date_added": "2026-04-07 02:48:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3813281,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813281\/",
-            "url": "https:\/\/mesh-static.axiomatrix.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
-            "url_status": "online",
-            "host": "mesh-static.axiomatrix.in.net",
-            "date_added": "2026-04-07 02:43:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3813280,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813280\/",
-            "url": "https:\/\/core-logic.axiomatrix.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
-            "url_status": "online",
-            "host": "core-logic.axiomatrix.in.net",
-            "date_added": "2026-04-07 02:37:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ACRStealer",
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3813279,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813279\/",
-            "url": "http:\/\/117.254.96.157:32782\/i",
-            "url_status": "online",
-            "host": "117.254.96.157",
-            "date_added": "2026-04-07 02:35:11 UTC",
+            "host": "182.127.108.234",
+            "date_added": "2026-04-08 03:13:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -99,51 +23,49 @@
             ]
         },
         {
-            "id": 3813278,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813278\/",
-            "url": "http:\/\/110.39.226.242:43214\/i",
+            "id": 3814003,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3814003\/",
+            "url": "https:\/\/infer-unit.inferenciumgrid.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
             "url_status": "online",
-            "host": "110.39.226.242",
-            "date_added": "2026-04-07 02:32:16 UTC",
+            "host": "infer-unit.inferenciumgrid.in.net",
+            "date_added": "2026-04-08 03:12:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3813277,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813277\/",
-            "url": "https:\/\/rule-set.axiomatrix.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
-            "url_status": "online",
-            "host": "rule-set.axiomatrix.in.net",
-            "date_added": "2026-04-07 02:32:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
             "reporter": "anonymous",
             "larted": "true",
             "tags": [
+                "ACRStealer",
                 "ClearFake"
             ]
         },
         {
-            "id": 3813276,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813276\/",
-            "url": "http:\/\/27.156.176.175:50260\/i",
+            "id": 3814002,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3814002\/",
+            "url": "http:\/\/222.127.49.161:56858\/bin.sh",
             "url_status": "online",
-            "host": "27.156.176.175",
-            "date_added": "2026-04-07 02:27:17 UTC",
+            "host": "222.127.49.161",
+            "date_added": "2026-04-08 03:12:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": [
+                "mirai"
+            ]
+        },
+        {
+            "id": 3814001,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3814001\/",
+            "url": "http:\/\/196.191.231.12:36198\/i",
+            "url_status": "online",
+            "host": "196.191.231.12",
+            "date_added": "2026-04-08 03:10:18 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -160,12 +82,34 @@
             ]
         },
         {
-            "id": 3813275,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813275\/",
-            "url": "https:\/\/exist-api.ontologicalflux.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/verification.google",
+            "id": 3814000,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3814000\/",
+            "url": "http:\/\/196.191.231.12:36198\/bin.sh",
             "url_status": "online",
-            "host": "exist-api.ontologicalflux.in.net",
-            "date_added": "2026-04-07 02:26:07 UTC",
+            "host": "196.191.231.12",
+            "date_added": "2026-04-08 03:07:18 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "arm",
+                "elf",
+                "mirai",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3813999,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813999\/",
+            "url": "https:\/\/logic-gate.dialectonforge.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "url_status": "online",
+            "host": "logic-gate.dialectonforge.in.net",
+            "date_added": "2026-04-08 03:07:13 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -174,16 +118,17 @@
             "reporter": "anonymous",
             "larted": "true",
             "tags": [
+                "ACRStealer",
                 "ClearFake"
             ]
         },
         {
-            "id": 3813274,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813274\/",
-            "url": "http:\/\/115.48.152.54:37505\/i",
+            "id": 3813998,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813998\/",
+            "url": "http:\/\/182.127.108.234:34944\/i",
             "url_status": "online",
-            "host": "115.48.152.54",
-            "date_added": "2026-04-07 02:23:19 UTC",
+            "host": "182.127.108.234",
+            "date_added": "2026-04-08 03:04:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -196,6 +141,62 @@
                 "elf",
                 "mips",
                 "Mozi"
+            ]
+        },
+        {
+            "id": 3813997,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813997\/",
+            "url": "https:\/\/thesis-log.dialectonforge.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "url_status": "online",
+            "host": "thesis-log.dialectonforge.in.net",
+            "date_added": "2026-04-08 03:01:09 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ACRStealer",
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3813996,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813996\/",
+            "url": "http:\/\/117.209.26.181:58616\/i",
+            "url_status": "online",
+            "host": "117.209.26.181",
+            "date_added": "2026-04-08 02:57:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": [
+                "mirai"
+            ]
+        },
+        {
+            "id": 3813995,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3813995\/",
+            "url": "https:\/\/debate-hub.dialectonforge.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "url_status": "online",
+            "host": "debate-hub.dialectonforge.in.net",
+            "date_added": "2026-04-08 02:56:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ACRStealer",
+                "ClearFake"
             ]
         }
     ]
