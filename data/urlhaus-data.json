@@ -2,51 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3824077,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824077\/",
-            "url": "http:\/\/27.204.230.251:52904\/bin.sh",
+            "id": 3824828,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824828\/",
+            "url": "http:\/\/110.38.215.152:40329\/i",
             "url_status": "online",
-            "host": "27.204.230.251",
-            "date_added": "2026-04-17 03:24:20 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "false",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3824076,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824076\/",
-            "url": "https:\/\/soft-cov.fortene7vous.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
-            "url_status": "online",
-            "host": "soft-cov.fortene7vous.in.net",
-            "date_added": "2026-04-17 03:20:14 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3824075,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824075\/",
-            "url": "http:\/\/60.19.222.68:60666\/bin.sh",
-            "url_status": "online",
-            "host": "60.19.222.68",
-            "date_added": "2026-04-17 03:19:17 UTC",
+            "host": "110.38.215.152",
+            "date_added": "2026-04-18 02:54:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -62,12 +23,47 @@
             ]
         },
         {
-            "id": 3824074,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824074\/",
-            "url": "http:\/\/39.64.242.58:34765\/i",
+            "id": 3824827,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824827\/",
+            "url": "https:\/\/sun-light3.wimso4rel.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
             "url_status": "online",
-            "host": "39.64.242.58",
-            "date_added": "2026-04-17 03:18:17 UTC",
+            "host": "sun-light3.wimso4rel.in.net",
+            "date_added": "2026-04-18 02:49:09 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "malware_domain",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake",
+                "NetSupport"
+            ]
+        },
+        {
+            "id": 3824826,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824826\/",
+            "url": "http:\/\/123.4.253.209:33143\/i",
+            "url_status": "online",
+            "host": "123.4.253.209",
+            "date_added": "2026-04-18 02:47:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 3824825,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824825\/",
+            "url": "http:\/\/219.155.111.60:54152\/bin.sh",
+            "url_status": "online",
+            "host": "219.155.111.60",
+            "date_added": "2026-04-18 02:46:07 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -83,12 +79,12 @@
             ]
         },
         {
-            "id": 3824073,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824073\/",
-            "url": "http:\/\/123.8.24.231:43022\/bin.sh",
+            "id": 3824824,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824824\/",
+            "url": "http:\/\/218.248.44.253:54683\/bin.sh",
             "url_status": "online",
-            "host": "123.8.24.231",
-            "date_added": "2026-04-17 03:13:11 UTC",
+            "host": "218.248.44.253",
+            "date_added": "2026-04-18 02:45:12 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -104,30 +100,53 @@
             ]
         },
         {
-            "id": 3824072,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824072\/",
-            "url": "https:\/\/spedus.fortene7vous.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "id": 3824823,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824823\/",
+            "url": "https:\/\/blue-cloud2.wimso4rel.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
             "url_status": "online",
-            "host": "spedus.fortene7vous.in.net",
-            "date_added": "2026-04-17 03:13:09 UTC",
+            "host": "blue-cloud2.wimso4rel.in.net",
+            "date_added": "2026-04-18 02:41:05 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake",
+                "NetSupport"
+            ]
+        },
+        {
+            "id": 3824822,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824822\/",
+            "url": "http:\/\/105.226.10.165:44977\/i",
+            "url_status": "online",
+            "host": "105.226.10.165",
+            "date_added": "2026-04-18 02:35:15 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "32-bit",
+                "arm",
+                "elf",
+                "mirai",
+                "Mozi"
             ]
         },
         {
-            "id": 3824071,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824071\/",
-            "url": "https:\/\/vvood-forge.savor-woman.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "id": 3824821,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824821\/",
+            "url": "https:\/\/sky-view1.wimso4rel.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
             "url_status": "online",
-            "host": "vvood-forge.savor-woman.in.net",
-            "date_added": "2026-04-17 03:08:08 UTC",
+            "host": "sky-view1.wimso4rel.in.net",
+            "date_added": "2026-04-18 02:33:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -136,61 +155,47 @@
             "reporter": "anonymous",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "ClearFake",
+                "NetSupport"
             ]
         },
         {
-            "id": 3824070,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824070\/",
-            "url": "https:\/\/393llqb.savor-woman.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "id": 3824820,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824820\/",
+            "url": "http:\/\/27.202.246.71:50610\/bin.sh",
             "url_status": "online",
-            "host": "393llqb.savor-woman.in.net",
-            "date_added": "2026-04-17 03:02:07 UTC",
+            "host": "27.202.246.71",
+            "date_added": "2026-04-18 02:31:15 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3824069,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824069\/",
-            "url": "https:\/\/kel-venor.savor-woman.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
+            "id": 3824817,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824817\/",
+            "url": "http:\/\/79.106.45.20:46120\/i",
             "url_status": "online",
-            "host": "kel-venor.savor-woman.in.net",
-            "date_added": "2026-04-17 02:57:08 UTC",
+            "host": "79.106.45.20",
+            "date_added": "2026-04-18 02:27:05 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "GAYINT_DOT_ORG",
             "larted": "true",
             "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3824068,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3824068\/",
-            "url": "https:\/\/scalesign.savor-woman.in.net\/05fe317c-0981-4de2-bc8a-930d369db441\/ck-3d80df5d12cdfe6450a782fc87bf66b444.google",
-            "url_status": "online",
-            "host": "scalesign.savor-woman.in.net",
-            "date_added": "2026-04-17 02:54:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
+                "mirai"
             ]
         }
     ]
