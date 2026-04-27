@@ -2,12 +2,30 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3831820,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831820\/",
-            "url": "https:\/\/mati-ns3w.raxen-tech.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "id": 3832788,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832788\/",
+            "url": "https:\/\/gold-land-4m.raxen-serv.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
             "url_status": "online",
-            "host": "mati-ns3w.raxen-tech.in.net",
-            "date_added": "2026-04-26 03:35:12 UTC",
+            "host": "gold-land-4m.raxen-serv.in.net",
+            "date_added": "2026-04-27 03:39:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "malware_domain",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3832787,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832787\/",
+            "url": "https:\/\/noir-2.raxen-serv.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "url_status": "online",
+            "host": "noir-2.raxen-serv.in.net",
+            "date_added": "2026-04-27 03:31:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -20,80 +38,30 @@
             ]
         },
         {
-            "id": 3831819,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831819\/",
-            "url": "http:\/\/182.113.11.27:53368\/i",
-            "url_status": "online",
-            "host": "182.113.11.27",
-            "date_added": "2026-04-26 03:32:08 UTC",
+            "id": 3832786,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832786\/",
+            "url": "http:\/\/192.21.160.221:42411\/Mozi.a",
+            "url_status": "offline",
+            "host": "192.21.160.221",
+            "date_added": "2026-04-27 03:29:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 3831818,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831818\/",
-            "url": "http:\/\/123.8.11.12:47705\/i",
-            "url_status": "online",
-            "host": "123.8.11.12",
-            "date_added": "2026-04-26 03:32:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 3831817,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831817\/",
-            "url": "https:\/\/homb-1h.raxen-tech.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
-            "url_status": "online",
-            "host": "homb-1h.raxen-tech.in.net",
-            "date_added": "2026-04-26 03:29:12 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
+            "reporter": "botnetkiller",
+            "larted": "false",
             "tags": [
-                "ClearFake"
+                "ua-wget"
             ]
         },
         {
-            "id": 3831816,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831816\/",
-            "url": "https:\/\/pes-ghj0.raxen-tech.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "id": 3832785,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832785\/",
+            "url": "http:\/\/182.116.117.162:37931\/i",
             "url_status": "online",
-            "host": "pes-ghj0.raxen-tech.in.net",
-            "date_added": "2026-04-26 03:24:14 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3831815,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831815\/",
-            "url": "http:\/\/42.232.108.110:49333\/i",
-            "url_status": "online",
-            "host": "42.232.108.110",
-            "date_added": "2026-04-26 03:18:18 UTC",
+            "host": "182.116.117.162",
+            "date_added": "2026-04-27 03:27:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -109,12 +77,66 @@
             ]
         },
         {
-            "id": 3831814,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831814\/",
-            "url": "http:\/\/113.239.244.238:54927\/i",
+            "id": 3832784,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832784\/",
+            "url": "http:\/\/125.44.43.28:49287\/i",
             "url_status": "online",
-            "host": "113.239.244.238",
-            "date_added": "2026-04-26 03:07:09 UTC",
+            "host": "125.44.43.28",
+            "date_added": "2026-04-27 03:27:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3832783,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832783\/",
+            "url": "https:\/\/fast-fire-9.raxen-serv.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "url_status": "online",
+            "host": "fast-fire-9.raxen-serv.in.net",
+            "date_added": "2026-04-27 03:26:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3832782,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832782\/",
+            "url": "https:\/\/zeit-5.raxen-serv.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "url_status": "online",
+            "host": "zeit-5.raxen-serv.in.net",
+            "date_added": "2026-04-27 03:20:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3832781,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832781\/",
+            "url": "http:\/\/182.114.198.247:41420\/i",
+            "url_status": "online",
+            "host": "182.114.198.247",
+            "date_added": "2026-04-27 03:18:11 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -130,12 +152,12 @@
             ]
         },
         {
-            "id": 3831813,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831813\/",
-            "url": "https:\/\/freur6r.raxen-tech.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
+            "id": 3832780,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832780\/",
+            "url": "https:\/\/blue-mond-3k.raxen-serv.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
             "url_status": "online",
-            "host": "freur6r.raxen-tech.in.net",
-            "date_added": "2026-04-26 03:06:10 UTC",
+            "host": "blue-mond-3k.raxen-serv.in.net",
+            "date_added": "2026-04-27 03:15:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -148,39 +170,24 @@
             ]
         },
         {
-            "id": 3831812,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831812\/",
-            "url": "http:\/\/196.190.105.170:35252\/bin.sh",
+            "id": 3832779,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3832779\/",
+            "url": "http:\/\/61.52.157.229:44309\/i",
             "url_status": "online",
-            "host": "196.190.105.170",
-            "date_added": "2026-04-26 03:02:06 UTC",
+            "host": "61.52.157.229",
+            "date_added": "2026-04-27 03:14:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "GAYINT_DOT_ORG",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "mirai"
-            ]
-        },
-        {
-            "id": 3831811,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3831811\/",
-            "url": "https:\/\/fire-02k6.raxen-tech.in.net\/cdk-msdn-3457325-null\/load-file0dsdf567.chk",
-            "url_status": "online",
-            "host": "fire-02k6.raxen-tech.in.net",
-            "date_added": "2026-04-26 03:00:12 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         }
     ]
