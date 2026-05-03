@@ -2,30 +2,48 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3836735,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836735\/",
-            "url": "https:\/\/prime.longwave5hot.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
+            "id": 3837565,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837565\/",
+            "url": "https:\/\/beta.rapidfirepixel.lat\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
             "url_status": "online",
-            "host": "prime.longwave5hot.surf",
-            "date_added": "2026-05-02 03:29:06 UTC",
+            "host": "beta.rapidfirepixel.lat",
+            "date_added": "2026-05-03 03:40:08 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "malware_domain",
+                "spamhaus_dbl": "abused_legit_malware",
                 "surbl": "listed"
             },
             "reporter": "anonymous",
-            "larted": "false",
+            "larted": "true",
             "tags": [
                 "ClearFake"
             ]
         },
         {
-            "id": 3836734,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836734\/",
-            "url": "http:\/\/42.230.45.196:48559\/i",
+            "id": 3837564,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837564\/",
+            "url": "https:\/\/infra.rapidfirepixel.lat\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
             "url_status": "online",
-            "host": "42.230.45.196",
-            "date_added": "2026-05-02 03:22:17 UTC",
+            "host": "infra.rapidfirepixel.lat",
+            "date_added": "2026-05-03 03:36:09 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3837563,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837563\/",
+            "url": "http:\/\/125.45.66.19:57969\/i",
+            "url_status": "online",
+            "host": "125.45.66.19",
+            "date_added": "2026-05-03 03:27:15 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -41,12 +59,12 @@
             ]
         },
         {
-            "id": 3836733,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836733\/",
-            "url": "https:\/\/sonic.longwave5hot.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
+            "id": 3837562,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837562\/",
+            "url": "https:\/\/prime.rapidfirepixel.lat\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
             "url_status": "online",
-            "host": "sonic.longwave5hot.surf",
-            "date_added": "2026-05-02 03:22:07 UTC",
+            "host": "prime.rapidfirepixel.lat",
+            "date_added": "2026-05-03 03:27:11 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -59,12 +77,30 @@
             ]
         },
         {
-            "id": 3836732,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836732\/",
-            "url": "http:\/\/42.7.202.19:44678\/i",
+            "id": 3837561,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837561\/",
+            "url": "http:\/\/123.9.34.66:52844\/bin.sh",
             "url_status": "online",
-            "host": "42.7.202.19",
-            "date_added": "2026-05-02 03:19:11 UTC",
+            "host": "123.9.34.66",
+            "date_added": "2026-05-03 03:27:06 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3837560,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837560\/",
+            "url": "http:\/\/123.8.44.4:58837\/i",
+            "url_status": "online",
+            "host": "123.8.44.4",
+            "date_added": "2026-05-03 03:25:15 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -80,102 +116,70 @@
             ]
         },
         {
-            "id": 3836731,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836731\/",
-            "url": "https:\/\/drift.longwave5hot.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
+            "id": 3837559,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837559\/",
+            "url": "http:\/\/115.61.114.174:49425\/i",
             "url_status": "online",
-            "host": "drift.longwave5hot.surf",
-            "date_added": "2026-05-02 03:17:08 UTC",
+            "host": "115.61.114.174",
+            "date_added": "2026-05-03 03:17:17 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3836730,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836730\/",
-            "url": "https:\/\/neon.longwave5hot.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
+            "id": 3837558,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837558\/",
+            "url": "http:\/\/113.237.104.96:42873\/i",
             "url_status": "online",
-            "host": "neon.longwave5hot.surf",
-            "date_added": "2026-05-02 03:11:11 UTC",
+            "host": "113.237.104.96",
+            "date_added": "2026-05-03 03:17:06 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 3837557,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837557\/",
+            "url": "http:\/\/123.14.177.118:37490\/i",
+            "url_status": "online",
+            "host": "123.14.177.118",
+            "date_added": "2026-05-03 03:16:14 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3836729,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836729\/",
-            "url": "https:\/\/kilo.casino-fascin.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
+            "id": 3837556,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3837556\/",
+            "url": "http:\/\/110.39.226.150:54538\/bin.sh",
             "url_status": "online",
-            "host": "kilo.casino-fascin.surf",
-            "date_added": "2026-05-02 03:06:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3836728,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836728\/",
-            "url": "https:\/\/macro.casino-fascin.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
-            "url_status": "online",
-            "host": "macro.casino-fascin.surf",
-            "date_added": "2026-05-02 03:00:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3836727,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836727\/",
-            "url": "https:\/\/pixel.casino-fascin.surf\/9fd51fb7-b3ad-4c8f-bf05-b5423d14e06c\/user_6747.google",
-            "url_status": "online",
-            "host": "pixel.casino-fascin.surf",
-            "date_added": "2026-05-02 02:53:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "true",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3836726,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3836726\/",
-            "url": "http:\/\/219.157.176.4:39635\/bin.sh",
-            "url_status": "online",
-            "host": "219.157.176.4",
-            "date_added": "2026-05-02 02:49:24 UTC",
+            "host": "110.39.226.150",
+            "date_added": "2026-05-03 03:15:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
