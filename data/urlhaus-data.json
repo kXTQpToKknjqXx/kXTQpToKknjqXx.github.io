@@ -2,51 +2,15 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3839099,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839099\/",
-            "url": "http:\/\/taskid.brix9mira.lat\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
-            "url_status": "offline",
-            "host": "taskid.brix9mira.lat",
-            "date_added": "2026-05-05 03:28:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "malware_domain",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3839100,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839100\/",
-            "url": "https:\/\/taskid.brix9mira.lat\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
-            "url_status": "offline",
-            "host": "taskid.brix9mira.lat",
-            "date_added": "2026-05-05 03:28:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "malware_domain",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3839098,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839098\/",
-            "url": "https:\/\/optweb.flen3qor.lat\/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv\/access-id9245.filter",
+            "id": 3840171,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840171\/",
+            "url": "https:\/\/ipnodes.dbuswet.surf\/kiss-m0dem-defndr-myrai-sdf934\/kwtor.dll",
             "url_status": "online",
-            "host": "optweb.flen3qor.lat",
-            "date_added": "2026-05-05 03:28:09 UTC",
+            "host": "ipnodes.dbuswet.surf",
+            "date_added": "2026-05-06 03:43:10 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "not listed",
+                "spamhaus_dbl": "malware_domain",
                 "surbl": "not listed"
             },
             "reporter": "anonymous",
@@ -56,83 +20,33 @@
             ]
         },
         {
-            "id": 3839097,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839097\/",
-            "url": "http:\/\/182.121.104.175:47211\/bin.sh",
-            "url_status": "offline",
-            "host": "182.121.104.175",
-            "date_added": "2026-05-05 03:27:21 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "false",
-            "tags": null
-        },
-        {
-            "id": 3839096,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839096\/",
-            "url": "http:\/\/115.56.176.203:50374\/bin.sh",
+            "id": 3840170,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840170\/",
+            "url": "https:\/\/hotfixs.dbuswet.surf\/kiss-m0dem-defndr-myrai-sdf934\/kwtor.dll",
             "url_status": "online",
-            "host": "115.56.176.203",
-            "date_added": "2026-05-05 03:27:06 UTC",
+            "host": "hotfixs.dbuswet.surf",
+            "date_added": "2026-05-06 03:40:08 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "not listed",
+                "spamhaus_dbl": "malware_domain",
                 "surbl": "not listed"
             },
-            "reporter": "GAYINT_DOT_ORG",
+            "reporter": "anonymous",
             "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 3839095,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839095\/",
-            "url": "https:\/\/proxys.grov6lira.lat\/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv\/access-id9245.filter",
-            "url_status": "offline",
-            "host": "proxys.grov6lira.lat",
-            "date_added": "2026-05-05 03:24:24 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "malware_domain",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
             "tags": [
                 "ClearFake"
             ]
         },
         {
-            "id": 3839094,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839094\/",
-            "url": "http:\/\/comweb.brix9mira.lat\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
-            "url_status": "offline",
-            "host": "comweb.brix9mira.lat",
-            "date_added": "2026-05-05 03:22:21 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "malware_domain",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3839093,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839093\/",
-            "url": "https:\/\/comweb.brix9mira.lat\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
+            "id": 3840169,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840169\/",
+            "url": "https:\/\/srvlogs.digitalcloudnet.surf\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
             "url_status": "online",
-            "host": "comweb.brix9mira.lat",
-            "date_added": "2026-05-05 03:22:10 UTC",
+            "host": "srvlogs.digitalcloudnet.surf",
+            "date_added": "2026-05-06 03:36:08 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "malware_domain",
+                "spamhaus_dbl": "abused_legit_malware",
                 "surbl": "listed"
             },
             "reporter": "anonymous",
@@ -142,12 +56,102 @@
             ]
         },
         {
-            "id": 3839092,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839092\/",
-            "url": "http:\/\/42.6.250.229:44369\/bin.sh",
+            "id": 3840168,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840168\/",
+            "url": "https:\/\/bitfoxs.boxemoj.surf\/kiss-m0dem-defndr-myrai-sdf934\/kwtor.dll",
             "url_status": "online",
-            "host": "42.6.250.229",
-            "date_added": "2026-05-05 03:21:21 UTC",
+            "host": "bitfoxs.boxemoj.surf",
+            "date_added": "2026-05-06 03:29:09 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3840167,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840167\/",
+            "url": "https:\/\/netapis.digitalcloudnet.surf\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
+            "url_status": "online",
+            "host": "netapis.digitalcloudnet.surf",
+            "date_added": "2026-05-06 03:29:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3840166,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840166\/",
+            "url": "https:\/\/webcdnx.digitalcloudnet.surf\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
+            "url_status": "online",
+            "host": "webcdnx.digitalcloudnet.surf",
+            "date_added": "2026-05-06 03:23:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3840165,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840165\/",
+            "url": "https:\/\/topsvcs.boxemoj.surf\/kiss-m0dem-defndr-myrai-sdf934\/kwtor.dll",
+            "url_status": "online",
+            "host": "topsvcs.boxemoj.surf",
+            "date_added": "2026-05-06 03:22:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3840164,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840164\/",
+            "url": "https:\/\/srvhubs.digitalcloudnet.surf\/sh5hne-c8b9b4-sskjy-znq2k2of-ybay3z\/usr294-verif.confirm",
+            "url_status": "online",
+            "host": "srvhubs.digitalcloudnet.surf",
+            "date_added": "2026-05-06 03:18:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3840163,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840163\/",
+            "url": "http:\/\/42.224.64.159:57322\/bin.sh",
+            "url_status": "online",
+            "host": "42.224.64.159",
+            "date_added": "2026-05-06 03:18:07 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -163,19 +167,19 @@
             ]
         },
         {
-            "id": 3839091,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3839091\/",
-            "url": "https:\/\/lanhop.grov6lira.lat\/klpq2ia-77q9xy8b-kiew9b-vkd6-8aiuqtv\/access-id9245.filter",
-            "url_status": "offline",
-            "host": "lanhop.grov6lira.lat",
-            "date_added": "2026-05-05 03:13:21 UTC",
+            "id": 3840162,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3840162\/",
+            "url": "https:\/\/opsmgrs.boxemoj.surf\/kiss-m0dem-defndr-myrai-sdf934\/kwtor.dll",
+            "url_status": "online",
+            "host": "opsmgrs.boxemoj.surf",
+            "date_added": "2026-05-06 03:16:11 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "malware_domain",
+                "spamhaus_dbl": "abused_legit_malware",
                 "surbl": "listed"
             },
             "reporter": "anonymous",
-            "larted": "false",
+            "larted": "true",
             "tags": [
                 "ClearFake"
             ]
