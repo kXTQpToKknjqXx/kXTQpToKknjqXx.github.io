@@ -2,48 +2,54 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3841021,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841021\/",
-            "url": "https:\/\/appsrch.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "appsrch.sorix7el.lat",
-            "date_added": "2026-05-07 03:42:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841022,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841022\/",
-            "url": "http:\/\/appsrch.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "appsrch.sorix7el.lat",
-            "date_added": "2026-05-07 03:42:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841020,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841020\/",
-            "url": "http:\/\/42.232.230.42:45154\/i",
+            "id": 3841664,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841664\/",
+            "url": "http:\/\/175.153.67.207:46247\/bin.sh",
             "url_status": "online",
-            "host": "42.232.230.42",
-            "date_added": "2026-05-07 03:37:20 UTC",
+            "host": "175.153.67.207",
+            "date_added": "2026-05-08 03:35:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "false",
+            "tags": [
+                "32-bit",
+                "arm",
+                "elf",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3841663,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841663\/",
+            "url": "http:\/\/115.59.1.156:50970\/i",
+            "url_status": "online",
+            "host": "115.59.1.156",
+            "date_added": "2026-05-08 03:35:11 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "false",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3841662,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841662\/",
+            "url": "http:\/\/119.189.239.175:59288\/bin.sh",
+            "url_status": "online",
+            "host": "119.189.239.175",
+            "date_added": "2026-05-08 03:34:18 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -59,15 +65,15 @@
             ]
         },
         {
-            "id": 3841019,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841019\/",
-            "url": "https:\/\/ziparks.poi5oneducation.lat\/sh1ne-apps-testsh-zec833-lives7z\/put34b.camp",
+            "id": 3841661,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841661\/",
+            "url": "https:\/\/syskeys.scornful-up.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
             "url_status": "offline",
-            "host": "ziparks.poi5oneducation.lat",
-            "date_added": "2026-05-07 03:36:34 UTC",
+            "host": "syskeys.scornful-up.lat",
+            "date_added": "2026-05-08 03:32:22 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "malware_domain",
+                "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
             "reporter": "anonymous",
@@ -77,16 +83,16 @@
             ]
         },
         {
-            "id": 3841017,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841017\/",
-            "url": "http:\/\/webdocs.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
+            "id": 3841660,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841660\/",
+            "url": "http:\/\/syskeys.scornful-up.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
             "url_status": "offline",
-            "host": "webdocs.sorix7el.lat",
-            "date_added": "2026-05-07 03:35:06 UTC",
+            "host": "syskeys.scornful-up.lat",
+            "date_added": "2026-05-08 03:32:21 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
             "reporter": "anonymous",
             "larted": "false",
@@ -95,66 +101,71 @@
             ]
         },
         {
-            "id": 3841018,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841018\/",
-            "url": "https:\/\/webdocs.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "webdocs.sorix7el.lat",
-            "date_added": "2026-05-07 03:35:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841016,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841016\/",
-            "url": "http:\/\/syskeys.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "syskeys.sorix7el.lat",
-            "date_added": "2026-05-07 03:29:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841015,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841015\/",
-            "url": "https:\/\/syskeys.sorix7el.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "syskeys.sorix7el.lat",
-            "date_added": "2026-05-07 03:29:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841014,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841014\/",
-            "url": "https:\/\/osbases.puerto-ricans.lat\/sh1ne-apps-testsh-zec833-lives7z\/put34b.camp",
+            "id": 3841659,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841659\/",
+            "url": "https:\/\/jobadms.tavro9xel.lat\/kl0n-green-excel-yy3775-get65\/gett3.verification",
             "url_status": "online",
-            "host": "osbases.puerto-ricans.lat",
-            "date_added": "2026-05-07 03:28:09 UTC",
+            "host": "jobadms.tavro9xel.lat",
+            "date_added": "2026-05-08 03:32:14 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake",
+                "SnappyClient"
+            ]
+        },
+        {
+            "id": 3841658,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841658\/",
+            "url": "http:\/\/115.63.51.131:35894\/bin.sh",
+            "url_status": "online",
+            "host": "115.63.51.131",
+            "date_added": "2026-05-08 03:30:21 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3841657,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841657\/",
+            "url": "https:\/\/rawdats.tavro9xel.lat\/kl0n-green-excel-yy3775-get65\/gett3.verification",
+            "url_status": "online",
+            "host": "rawdats.tavro9xel.lat",
+            "date_added": "2026-05-08 03:27:26 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake",
+                "SnappyClient"
+            ]
+        },
+        {
+            "id": 3841656,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841656\/",
+            "url": "https:\/\/netmans.parliament5almon.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
+            "url_status": "online",
+            "host": "netmans.parliament5almon.lat",
+            "date_added": "2026-05-08 03:26:48 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -163,25 +174,27 @@
             "reporter": "anonymous",
             "larted": "true",
             "tags": [
-                "ClearFake"
+                "ClearFake",
+                "SnappyClient"
             ]
         },
         {
-            "id": 3841013,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841013\/",
-            "url": "https:\/\/netmans.5dorexin.lat\/draw-msft-cl0ud-acc-trust7934\/gettwo.dll",
-            "url_status": "offline",
-            "host": "netmans.5dorexin.lat",
-            "date_added": "2026-05-07 03:25:07 UTC",
+            "id": 3841655,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841655\/",
+            "url": "https:\/\/tcpcons.parliament5almon.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
+            "url_status": "online",
+            "host": "tcpcons.parliament5almon.lat",
+            "date_added": "2026-05-08 03:22:11 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
                 "surbl": "listed"
             },
             "reporter": "anonymous",
-            "larted": "false",
+            "larted": "true",
             "tags": [
-                "ClearFake"
+                "ClearFake",
+                "SnappyClient"
             ]
         }
     ]
