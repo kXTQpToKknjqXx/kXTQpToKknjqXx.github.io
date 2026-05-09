@@ -2,54 +2,48 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3841664,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841664\/",
-            "url": "http:\/\/175.153.67.207:46247\/bin.sh",
-            "url_status": "online",
-            "host": "175.153.67.207",
-            "date_added": "2026-05-08 03:35:12 UTC",
+            "id": 3842643,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842643\/",
+            "url": "http:\/\/api.netnodeset.pics\/c2cb43a1-3db9-486a-a707-ee88bcdb4813\/google.ocx",
+            "url_status": "offline",
+            "host": "api.netnodeset.pics",
+            "date_added": "2026-05-09 03:36:20 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "not listed",
+                "spamhaus_dbl": "malware_domain",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "anonymous",
             "larted": "false",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "Mozi"
+                "ClearFake"
             ]
         },
         {
-            "id": 3841663,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841663\/",
-            "url": "http:\/\/115.59.1.156:50970\/i",
+            "id": 3842642,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842642\/",
+            "url": "https:\/\/api.netnodeset.pics\/c2cb43a1-3db9-486a-a707-ee88bcdb4813\/google.ocx",
             "url_status": "online",
-            "host": "115.59.1.156",
-            "date_added": "2026-05-08 03:35:11 UTC",
+            "host": "api.netnodeset.pics",
+            "date_added": "2026-05-09 03:36:17 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "not listed",
+                "spamhaus_dbl": "malware_domain",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "anonymous",
             "larted": "false",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "ClearFake"
             ]
         },
         {
-            "id": 3841662,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841662\/",
-            "url": "http:\/\/119.189.239.175:59288\/bin.sh",
+            "id": 3842641,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842641\/",
+            "url": "http:\/\/219.157.182.198:35968\/bin.sh",
             "url_status": "online",
-            "host": "119.189.239.175",
-            "date_added": "2026-05-08 03:34:18 UTC",
+            "host": "219.157.182.198",
+            "date_added": "2026-05-09 03:34:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -65,48 +59,66 @@
             ]
         },
         {
-            "id": 3841661,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841661\/",
-            "url": "https:\/\/syskeys.scornful-up.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
-            "url_status": "offline",
-            "host": "syskeys.scornful-up.lat",
-            "date_added": "2026-05-08 03:32:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841660,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841660\/",
-            "url": "http:\/\/syskeys.scornful-up.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
-            "url_status": "offline",
-            "host": "syskeys.scornful-up.lat",
-            "date_added": "2026-05-08 03:32:21 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake"
-            ]
-        },
-        {
-            "id": 3841659,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841659\/",
-            "url": "https:\/\/jobadms.tavro9xel.lat\/kl0n-green-excel-yy3775-get65\/gett3.verification",
+            "id": 3842640,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842640\/",
+            "url": "https:\/\/opsmgr.websyncbox.pics\/73922b30-d888-4af7-9bb4-e76054f7aa33\/check.so",
             "url_status": "online",
-            "host": "jobadms.tavro9xel.lat",
-            "date_added": "2026-05-08 03:32:14 UTC",
+            "host": "opsmgr.websyncbox.pics",
+            "date_added": "2026-05-09 03:33:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3842639,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842639\/",
+            "url": "https:\/\/cdnx.netnodeset.pics\/c2cb43a1-3db9-486a-a707-ee88bcdb4813\/google.ocx",
+            "url_status": "offline",
+            "host": "cdnx.netnodeset.pics",
+            "date_added": "2026-05-09 03:31:21 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "malware_domain",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3842638,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842638\/",
+            "url": "https:\/\/cpu.websyncbox.pics\/73922b30-d888-4af7-9bb4-e76054f7aa33\/check.so",
+            "url_status": "online",
+            "host": "cpu.websyncbox.pics",
+            "date_added": "2026-05-09 03:28:11 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "abused_legit_malware",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "true",
+            "tags": [
+                "ClearFake"
+            ]
+        },
+        {
+            "id": 3842637,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842637\/",
+            "url": "https:\/\/srv.netnodeset.pics\/c2cb43a1-3db9-486a-a707-ee88bcdb4813\/google.ocx",
+            "url_status": "online",
+            "host": "srv.netnodeset.pics",
+            "date_added": "2026-05-09 03:27:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -120,52 +132,30 @@
             ]
         },
         {
-            "id": 3841658,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841658\/",
-            "url": "http:\/\/115.63.51.131:35894\/bin.sh",
-            "url_status": "online",
-            "host": "115.63.51.131",
-            "date_added": "2026-05-08 03:30:21 UTC",
+            "id": 3842636,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842636\/",
+            "url": "https:\/\/vpsrun.websyncbox.pics\/73922b30-d888-4af7-9bb4-e76054f7aa33\/check.so",
+            "url_status": "offline",
+            "host": "vpsrun.websyncbox.pics",
+            "date_added": "2026-05-09 03:24:22 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3841657,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841657\/",
-            "url": "https:\/\/rawdats.tavro9xel.lat\/kl0n-green-excel-yy3775-get65\/gett3.verification",
-            "url_status": "online",
-            "host": "rawdats.tavro9xel.lat",
-            "date_added": "2026-05-08 03:27:26 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
+                "spamhaus_dbl": "malware_domain",
                 "surbl": "not listed"
             },
             "reporter": "anonymous",
-            "larted": "true",
+            "larted": "false",
             "tags": [
-                "ClearFake",
-                "SnappyClient"
+                "ClearFake"
             ]
         },
         {
-            "id": 3841656,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841656\/",
-            "url": "https:\/\/netmans.parliament5almon.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
+            "id": 3842635,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842635\/",
+            "url": "https:\/\/gitlabhubs.sorix2en.pics\/c2cb43a1-3db9-486a-a707-ee88bcdb4813\/google.ocx",
             "url_status": "online",
-            "host": "netmans.parliament5almon.lat",
-            "date_added": "2026-05-08 03:26:48 UTC",
+            "host": "gitlabhubs.sorix2en.pics",
+            "date_added": "2026-05-09 03:23:10 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "abused_legit_malware",
@@ -179,22 +169,24 @@
             ]
         },
         {
-            "id": 3841655,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3841655\/",
-            "url": "https:\/\/tcpcons.parliament5almon.lat\/sh1ne-logs-neppy-upd8335-www3\/get123c.camp",
+            "id": 3842634,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3842634\/",
+            "url": "http:\/\/219.155.209.246:59399\/i",
             "url_status": "online",
-            "host": "tcpcons.parliament5almon.lat",
-            "date_added": "2026-05-08 03:22:11 UTC",
+            "host": "219.155.209.246",
+            "date_added": "2026-05-09 03:20:14 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
             },
-            "reporter": "anonymous",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "ClearFake",
-                "SnappyClient"
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         }
     ]
