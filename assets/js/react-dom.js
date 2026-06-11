@@ -33,4 +33,3 @@ react-dom/cjs/react-dom.production.min.js:
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=client.bundle.mjs.map
