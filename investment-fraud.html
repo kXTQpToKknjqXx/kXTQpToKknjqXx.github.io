@@ -161,6 +161,7 @@
                 page: "Страница",
                 of: "от",
                 backToHome: "Към Началото",
+                backHome: "Към Началото",
                 important: "Важно Съобщение",
                 warningText: "Списък на сайтове и домейни, за които дирекция Киберпрестъпност при ГДБОП-МВР е установила, че се използват за извършване на Инвестиционни измами! Ако Ви приканват или вече сте инвестирали средства в някои от тях, незабавно преустановете всякакви плащания и комуникация с измамниците и сигнализирайте полицията! Липсата на сайт в този списък не означава, че той не е измамен!",
                 warningText2: "List of sites and domains that Bulgarian Cybercrime Unit consider to be used to commit Investment Fraud and Scams! If you are urged or have already invested in any of them, immediately stop all payments and communication with scammers and report to police! Absence of a site on this list does not mean that it is not fraudulent!",
@@ -169,7 +170,8 @@
                 atMvr: "при ГДБОП-МВР",
                 rights: "Всички права запазени.",
                 partOf: "част от ГДБОП",
-                toGdbop: "Към gdbop.bg →"
+                toGdbop: "Към gdbop.bg →",
+                loading: "Зареждане на домейни..."
             },
             en: {
                 title: "Investment Fraud",
@@ -185,6 +187,7 @@
                 page: "Page",
                 of: "of",
                 backToHome: "Back to Home",
+                backHome: "Back to Home",
                 important: "Important Message",
                 warningText: "List of sites and domains that Bulgarian Cybercrime Unit consider to be used to commit Investment Fraud and Scams! If you are urged or have already invested in any of them, immediately stop all payments and communication with scammers and report to police! Square brackets added intentionally to prevent users from visiting bad website! Absence of a site on this list does not mean that it is not fraudulent!",
                 warningText2: "List of sites and domains that Bulgarian Cybercrime Unit consider to be used to commit Investment Fraud and Scams! If you are urged or have already invested in any of them, immediately stop all payments and communication with scammers and report to police! Square brackets added intentionally to prevent users from visiting bad website! Absence of a site on this list does not mean that it is not fraudulent!",
@@ -193,76 +196,13 @@
                 atMvr: "at GDCOC-MoI",
                 rights: "All rights reserved.",
                 partOf: "part of GDCOC",
-                toGdbop: "To gdbop.bg →"
+                toGdbop: "To gdbop.bg →",
+                loading: "Loading domains..."
             }
         };
 
         // --- DATA ---
-        const DOMAINS = [ 
-            "acrossystem.world" ,"sorvico.com", "fondex.ac", "cryptonovanet.top",
-            "marathon-digitalfs.net", "osk.2371vip.cc", "ercgx.com", "aurawex.com", "stlfdr.cc", "tksellerpro.com", "paysolo.net", "bull-market.cfd", 
-            "christianlouboutinworkhub.com", "apex-proximals.com", "bela-chain.com", "kastabroker.com", "ashutoshm.com", "batm.pro", 
-            "dashboard.base4asset-advisory.org", "imtoka.com", "security-center-olaf.world", "acira-pay.netlify.app", "riovax.win", "cryptopened.com",
-            "cryptopen.com", "chainsanalyse.com", "member-zone.info", "member-zone.pro", "memberaccount.icu", "memberzone.digital",
-            "merc-consulting.net", "wt.memberaccount.digital", "monixplc.com", "gcffc.co", "pay1-exchange.com", "r-os.cc", "vip.investubs.com", 
-            "investubs.com", "primus.mn", "shop.tk7.gyi.com", "shop.dbmtk.com", "wxpostex.com", "dashboard.base4asset-advisory.net",
-            "nchian.com", "altscopx.com", "primus.ms", "bull-coin.top", "acys.cc", "hitnspin227.com", "capitaltradeasset.com", "cryptopened.com", 
-            "flintrade.com", "mig785.com", "alddn-etf.com", "academy-golden.com", "v-r.cc", "user.crescent-trustee.pro", "platform.beta-global.com", 
-            "bfbdt5.com", "verida-afi.com", "ip-t.trade", "bats.currency-l.com", "stst0ck.com", "ttiok.com", "renatechai.com",
-            "olympus-games.net", "stlfdr.cc", "fpkifw.cc", "m.nasdaqkgroup.cc", "crescent-trustee.org", "ipgatetrade.pro", "saxogroup.biz", 
-            "bg.finance-investapp.com", "brevistechnology.co", "wealthoa.com", "aclon-finance.net", "cfixtrade.com", "bitstus.com",
-            "connectiveneuron.dev", "comexvault.com", "comexcloud.shop", "ammapp.cc", "tubezuo3.pro", "cacewuo0.pro", "taktkk.shop", "teletabi.sbs",
-            "fastertradingfx.com", "pay1exchange.com", "gpgttkk.net", "moon-market.com", "aliexpress.hnyoueryuan.com", "usdc-eth.icu",
-            "dashboard.white-arrow.org", "fondex.io", "bats.currency-r.com", "tkyin.com", "vip.bybxt.com", "limbeto.com",
-            "fastertradingfx.com", "yuart.sbs", "trevolswapro.com", "ic-market.app", "usumming.com", "dashboard.system-capital.org",
-            "user.maca-trading.com", "fxpeaktrade.com", "gacapitalm.com", "brugazom.com", "hillsfinancialgroup.io", "tiktok.tkyin.com",
-            "avatrada.com", "pp66p.lol", "concordia-fp.com", "elevatetrading.org", "wv65175.com", "isptraders.com", "oakwell-cl.net",
-            "b-tl.cc", "paklucktrading.com", "fiveskweb.com", "trust.market-ic.trade", "richtechglobal.com", "voip520.com",
-            "user.altaconivestment.info", "aibot5r.cc", "aibotz.cc", "zobest.tv", "user.memberaccount.icu", "tiktshop.cc",
-            "ytbsbe.top", "zobest.co", "nflixcasting.com", "yiaospc.com", "keiob.com", "trackaml.com", "trade.green-art.org",
-            "onlinedigitainvestmentplatform.com", "global-trd.com", "hcpoes.cc", "freyabot.com", "apvapp.com", "losssmall.com",
-            "malllegend.com", "jp-gaultier-marketplace.com", "aliexpresvip1.com", "trendlawyers.com", "ytbmyy.top", "ytbhib.top",
-            "dcqqp.com", "ytbenn.top", "app.spaceaius.com", "ytbzkl.top", "ytbjcb.cfd", "lwexgr.com", "pearlcommercialfinance.co.uk",
-            "onchainpro.vip", "solaxy-dashboard.web.app", "h-cl.top", "vanadotrade.com", "therealcop.com", "zobest.vip",
-            "vexgroup.one", "vixspacehub.com", "apexcryptotrades.com", "profittrades.vip", "pairminer.com", "vcjobnetwork.com",
-            "algoesp.com", "netviewtrading.com", "lasbert.com", "wealthsolutionsltd.com", "fxmeridian.com", "web3.dytodx.com",
-            "affluenceexpress.com", "live.royal-ventures.vip", "trade350app.net", "ripple-etf.online", "lasbert.ltd",
-            "lasbert.net", "ytbstr.top", "dashboard.capital-system.org", "trade.green-art.biz", "s-group.io",
-            "trade.greenartinv.net", "capitalunipremier.com", "bilaxt.com", "uk-tkmall.azureedge.net", "dcqwn.com",
-            "glvirtualworkforce.com", "capital-system.org", "crazywins.life", "ytbxzu.top", "bitcone.net", "bitconemine.cc",
-            "goinvesthub.com", "term.w-sol.online", "vtbglf.top", "prospbid.com", "trade.pamioerutex.com", "fihao.com",
-            "zqdlb.com", "ytbwjw.top", "xuex.top", "capital-systematics.com", "you2bevideos.homes", "coinstem.com",
-            "sigma-exchange.com", "ytbglf.top", "ytbors.top", "trade.alpha-solutuons.cc", "bg.batm.pro", "usdttodefi.net",
-            "m-i.pro", "vipsolutionprivateltd.com", "vipsolutionprivate.com", "quaerocapital.pro", "vex-group.pro",
-            "ordercast.city", "bigonejyc.top", "unifiedtrustb.online", "offvteam.shop", "s-systemsgroupltd.com",
-            "angloadvies.online", "v-g.cc", "hoponline.cc", "shopfusion.vip", "bgshopp11.com", "bmfnvt.com", "soltechx.com",
-            "maxtrademarket.com", "klbfteam.top", "scm-investment.com", "rjteam.cc", "kunacv.com", "rjteam.top",
-            "trade.contract-group.cc", "user.curion-finance.info", "app-flutterlab.com", "interbrokers.trade",
-            "interbrokers.pro", "pw20.com", "bigonea2.com", "gainvalley.com", "fppremium.com", "express-wallet.com",
-            "tikmining.com", "mine-lab.biz", "cryptobrowser.site", "dnny.com", "cco-market.com", "imperialchange.com",
-            "nod-exchanger.com", "bigonea.vip", "l3n.cam", "aipoolweb3.com", "investing24.com", "mine.anokas.tech",
-            "esteltechnologies.world", "jaxxliberty.io", "zforex.com", "app.ntost.com", "marketmakers.cc", "vindateam.shop",
-            "tostadon.com", "corpteck.com", "gs-company.pro", "activex.trademql5.com", "switchmarkets.com", "m.dwdfv.com",
-            "flutterlab.net", "octeam.com", "consistcapital.com", "rockhillcapital.org", "zsline.com", "merixstudio.top",
-            "mcuteam.top", "btczzcoins.cc", "mcateam.cc", "izalandos.com", "m.fsfwe.com", "trade.carat-company.cc",
-            "bitcise.com", "hanbitsco.com", "hee34ee.com", "repaste.top", "repaste.cc", "tk849611.com", "bytecryptojo.top",
-            "assemblyglobal.com", "shop1e.js-mn.com", "neweraiscoming.top", "link.makebig.money", "makebig.money",
-            "esteltechnologies.ltd", "fadsteam.shop", "trade.cap-platform.cc", "fadsteam.top", "skillledgermf.top",
-            "skillcrafting.top", "metamax.vip", "blocktasker.top", "ethweb1.vip", "ecateam.shop",
-            "cryptocapital-investment.com", "okdefi19.xyz", "repaste.com", "cointaskproqz.top", "crescentcapitalmg.com",
-            "facsteam.top", "trustcoin.vip", "tsh-portal.trade", "doex.com", "bigone.z11.web.core.windows.net",
-            "shopbbob.com", "shoplieo.com", "capi-platform.co", "fadsteam.cc", "capi-invest.co", "xpoken.com",
-            "coin-wealth-trade.org", "oniccapitals.com", "webtrader.makani.vc", "client.makani.vc",
-            "user.atlas-finance.info", "akselinvest.ltd", "kku2uuqu.xyz", "skteam.shop", "site.cashbackoptimizer.com",
-            "stocket.net", "tethermexm.com", "axexkku.com", "bigoneexchange.org", "bigonevip.org", "bigonea.org",
-            "therealrealka.com", "agmunion.vip", "horizon-limited.group", "oeteam.shop", "octeam.shop", "naristech.com",
-            "comp-cap.co", "t-capital.ltd", "avaloncapmark.org", "casseize.com", "explorefxtrades.live", "gfemarkets.com",
-            "eth20vip.com", "a-in.cc", "e-f.pro", "drydenpartners.com", "freelancetrustfunds.com", "braiinsminer.com", "mbsos.com",
-            "extremetechnology.live", "easymining.top", "edgefinance.ltd", "bybio2.vip", "zigeo.com", "vector-fin.com", "hermitage-holding.co",
-            "homebosslife.org", "q-ca.cc", "g-inv.cc", "simplexswifttrade.com", "mirainvestments.ltd", "jumomall.com", "compasscapital.cc",
-            "wh-c.cc", "btcetftoken.io", "xtradesness.com", "hfinvest.net", "vmlyrpro.com", "c-ca.cc", "bitcoin-sprint.com", "bitcoinsprint.io",
-            "wiltonoptions.com", "wiltonoption.com", "omersfinance.ltd", "importcapital.cc", "tinder-miner.com", "trade.van-guard.eu"
-        ];
+        // Domains are fetched dynamically from data/investment-fraud-domains.json
 
         // --- COMPONENTS ---
 
@@ -348,16 +288,17 @@
         // 4. Domain Search & List
         const ITEMS_PER_PAGE = 30;
 
-        const DomainSearch = ({ lang }) => {
+        const DomainSearch = ({ lang, domains = [], loading }) => {
             const t = TRANSLATIONS[lang];
             const [searchQuery, setSearchQuery] = useState('');
             const [currentPage, setCurrentPage] = useState(1);
 
             const filteredDomains = useMemo(() => {
-                if (!searchQuery.trim()) return DOMAINS;
+                if (loading) return [];
+                if (!searchQuery.trim()) return domains;
                 const lowerQuery = searchQuery.toLowerCase();
-                return DOMAINS.filter(domain => domain.toLowerCase().includes(lowerQuery));
-            }, [searchQuery]);
+                return domains.filter(domain => domain.toLowerCase().includes(lowerQuery));
+            }, [searchQuery, domains, loading]);
 
             useEffect(() => {
                 setCurrentPage(1);
@@ -444,10 +385,10 @@
                             </div>
                             <div className="flex gap-4 items-center justify-center text-sm font-medium">
                                 <div className="px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-gdbop-blue whitespace-nowrap">
-                                    <span className="font-bold text-white">{DOMAINS.length}</span> {t.total}
+                                    <span className="font-bold text-white">{loading ? '...' : domains.length}</span> {t.total}
                                 </div>
                                 <div className="px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-police-red whitespace-nowrap">
-                                    <span className="font-bold text-white">{filteredDomains.length}</span> {t.found}
+                                    <span className="font-bold text-white">{loading ? '...' : filteredDomains.length}</span> {t.found}
                                 </div>
                             </div>
                         </div>
@@ -455,7 +396,12 @@
 
                     {/* Results Grid */}
                     <div className="glass-panel rounded-xl overflow-hidden border-t-0">
-                        {filteredDomains.length > 0 ? (
+                        {loading ? (
+                            <div className="p-16 text-center flex flex-col items-center justify-center">
+                                <div className="w-12 h-12 border-4 border-gdbop-blue border-t-transparent rounded-full animate-spin mb-4"></div>
+                                <p className="text-slate-400 font-mono">{t.loading}</p>
+                            </div>
+                        ) : filteredDomains.length > 0 ? (
                             <>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-slate-800/50">
                                     {paginatedDomains.map((domain, index) => (
@@ -670,6 +616,24 @@
         // --- MAIN APP ---
         const App = () => {
             const [lang, setLang] = useState('bg');
+            const [domains, setDomains] = useState([]);
+            const [loading, setLoading] = useState(true);
+
+            useEffect(() => {
+                const fetchDomains = async () => {
+                    try {
+                        const response = await fetch('data/investment-fraud-domains.json');
+                        if (!response.ok) throw new Error('Failed to fetch domains');
+                        const data = await response.json();
+                        setDomains(data);
+                    } catch (err) {
+                        console.error('Error fetching domains:', err);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+                fetchDomains();
+            }, []);
 
             return (
                 <>
@@ -716,7 +680,7 @@
 
                     <Header lang={lang} />
                     <WarningSection lang={lang} />
-                    <DomainSearch lang={lang} />
+                    <DomainSearch lang={lang} domains={domains} loading={loading} />
                     <Footer lang={lang} />
                     <BackToTop />
                 </>
