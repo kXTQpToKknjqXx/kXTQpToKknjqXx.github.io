@@ -1,0 +1,49 @@
+name: Build (esbuild + Tailwind)
+
+# Precompiles src/*.jsx -> assets/js/dist/*.bundle.js and Tailwind ->
+# assets/css/tailwind.min.css, then commits the build output back to main.
+#
+# The site is still served as plain static files by GitHub Pages (no change
+# to Pages settings needed) - this workflow just keeps the *compiled*
+# artifacts in sync with the *source* whenever the source changes, the same
+# pattern already used by fetch-data.yml for the threat-feed data.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tailwind.config.js'
+      - 'build.mjs'
+      - 'package.json'
+      - 'package-lock.json'
+      - '*.html'
+  workflow_dispatch:
+
+jobs:
+  build-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: node build.mjs
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add assets/js/dist assets/css/tailwind.min.css
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Build: recompile JS/CSS from source [skip ci]" && git push)
