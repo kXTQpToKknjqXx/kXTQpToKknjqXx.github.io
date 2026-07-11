@@ -485,15 +485,32 @@
                         </div>
 
                         {/* Mobile Menu Button (Hamburger) */}
-                        <div className="lg:hidden flex items-center gap-4 ml-auto">
-                            {/* Mobile Language Toggle */}
-                            <button
-                                onClick={() => setLang(lang === 'bg' ? 'en' : 'bg')}
-                                className="flex items-center gap-2 px-3 py-1.5 bg-slate-800/50 border border-slate-700/50 rounded-full text-gdbop-blue hover:bg-gdbop-blue hover:text-white transition-all text-xs font-bold font-mono"
-                            >
-                                <Globe size={16} />
-                                {lang === 'bg' ? 'EN' : 'BG'}
-                            </button>
+                        <div className="lg:hidden flex items-center gap-3 ml-auto">
+                            {/* Mobile Controls Pill (GDCOC badge + Language) */}
+                            <div className="flex items-center gap-2 px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full">
+                                <a
+                                    href="https://gdbop.bg"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center gap-2 border-r border-slate-700/50 pr-2 opacity-70 hover:opacity-100 transition-opacity group/gdcoc"
+                                >
+                                    <img
+                                        src={lang === 'en' ? 'images/gdcoc_logo_en.png' : 'images/gdcoc_logo_bg.png'}
+                                        alt="GDCOC Logo"
+                                        className="h-5 w-auto"
+                                    />
+                                    <span className="text-[10px] text-slate-400 group-hover/gdcoc:text-slate-200 transition-colors uppercase tracking-wide whitespace-nowrap hidden sm:inline">
+                                        {t.partOf}
+                                    </span>
+                                </a>
+                                <button
+                                    onClick={() => setLang(lang === 'bg' ? 'en' : 'bg')}
+                                    className="flex items-center gap-1 text-gdbop-blue hover:text-white transition-colors text-xs font-bold font-mono"
+                                >
+                                    <Globe size={14} />
+                                    {lang === 'bg' ? 'EN' : 'BG'}
+                                </button>
+                            </div>
 
                             <button
                                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -528,25 +545,6 @@
                                     </button>
                                 )
                             ))}
-
-                            {/* GDCOC Link (Mobile) */}
-                            <div className="border-t border-slate-700/50 mt-2 pt-2">
-                                <a
-                                    href="https://gdbop.bg"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-4 text-left font-medium text-slate-300 hover:text-white hover:bg-white/10 rounded-lg transition-all flex items-center gap-3"
-                                >
-                                    <img
-                                        src={lang === 'en' ? 'images/gdcoc_logo_en.png' : 'images/gdcoc_logo_bg.png'}
-                                        alt="GDCOC Logo"
-                                        className="h-6 w-auto"
-                                    />
-                                    <span className="uppercase tracking-wide text-sm">
-                                        {t.partOf}
-                                    </span>
-                                </a>
-                            </div>
                         </div>
                     )}
                 </nav>
