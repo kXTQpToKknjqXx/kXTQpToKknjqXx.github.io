@@ -456,7 +456,7 @@
                         </div>
 
                         {/* 3. Controls Section (Right) - Desktop Only */}
-                        <div className="hidden lg:flex flex-shrink-0 items-center justify-end gap-3 w-[220px]">
+                        <div className="hidden lg:flex flex-shrink-0 items-center justify-end gap-3 px-3 py-1.5 bg-slate-900/80 backdrop-blur-md border border-slate-700/50 rounded-full">
                             {/* GDCOC Link */}
                             <a
                                 href="https://gdbop.bg"
