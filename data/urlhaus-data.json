@@ -2,60 +2,52 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3885314,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885314\/",
-            "url": "http:\/\/196.189.198.193:44465\/bin.sh",
-            "url_status": "online",
-            "host": "196.189.198.193",
-            "date_added": "2026-07-12 03:27:15 UTC",
+            "id": 3885730,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885730\/",
+            "url": "https:\/\/viuc.jadoou.icu\/2ea55e65-9381-448c-83ae-b586ecb21725",
+            "url_status": "offline",
+            "host": "viuc.jadoou.icu",
+            "date_added": "2026-07-13 03:31:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": null
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake",
+                "win-0x0cd5",
+                "windows"
+            ]
         },
         {
-            "id": 3885313,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885313\/",
-            "url": "http:\/\/220.184.3.184:37223\/bin.sh",
-            "url_status": "online",
-            "host": "220.184.3.184",
-            "date_added": "2026-07-12 03:26:17 UTC",
+            "id": 3885729,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885729\/",
+            "url": "https:\/\/kclujyvd.jadoou.one\/8a37023d-da5e-4cd1-afa2-30e4cf93a223",
+            "url_status": "offline",
+            "host": "kclujyvd.jadoou.one",
+            "date_added": "2026-07-13 03:23:13 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": null
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake",
+                "win-0x4679",
+                "windows"
+            ]
         },
         {
-            "id": 3885312,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885312\/",
-            "url": "http:\/\/175.165.70.97:43547\/i",
+            "id": 3885728,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885728\/",
+            "url": "http:\/\/27.207.247.52:58330\/i",
             "url_status": "online",
-            "host": "175.165.70.97",
-            "date_added": "2026-07-12 03:22:12 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 3885311,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885311\/",
-            "url": "http:\/\/115.57.215.161:51040\/bin.sh",
-            "url_status": "online",
-            "host": "115.57.215.161",
-            "date_added": "2026-07-12 03:21:21 UTC",
+            "host": "27.207.247.52",
+            "date_added": "2026-07-13 03:16:31 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -71,53 +63,54 @@
             ]
         },
         {
-            "id": 3885310,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885310\/",
-            "url": "https:\/\/yfekdkqg.jadoobet.forum\/50ec875e-53cc-4ca3-97f8-1fcd3c7015ed",
-            "url_status": "offline",
-            "host": "yfekdkqg.jadoobet.forum",
-            "date_added": "2026-07-12 03:16:09 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "anonymous",
-            "larted": "false",
-            "tags": [
-                "ClearFake",
-                "win-0x4679",
-                "windows"
-            ]
-        },
-        {
-            "id": 3885309,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885309\/",
-            "url": "http:\/\/95.182.89.105\/data_arm6",
+            "id": 3885727,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885727\/",
+            "url": "http:\/\/61.52.40.139:48827\/i",
             "url_status": "online",
-            "host": "95.182.89.105",
-            "date_added": "2026-07-12 03:11:31 UTC",
+            "host": "61.52.40.139",
+            "date_added": "2026-07-13 02:59:28 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "botnetkiller",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "arm",
+                "32-bit",
                 "elf",
-                "mirai",
-                "ua-wget"
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3885308,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885308\/",
-            "url": "http:\/\/115.52.21.30:38573\/bin.sh",
+            "id": 3885726,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885726\/",
+            "url": "http:\/\/182.121.173.158:58649\/i",
             "url_status": "online",
-            "host": "115.52.21.30",
-            "date_added": "2026-07-12 03:11:14 UTC",
+            "host": "182.121.173.158",
+            "date_added": "2026-07-13 02:52:28 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3885725,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885725\/",
+            "url": "http:\/\/115.50.54.75:33198\/i",
+            "url_status": "online",
+            "host": "115.50.54.75",
+            "date_added": "2026-07-13 02:52:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -130,66 +123,85 @@
             ]
         },
         {
-            "id": 3885300,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885300\/",
-            "url": "http:\/\/95.182.89.105\/data_mips-uclibc",
+            "id": 3885724,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885724\/",
+            "url": "http:\/\/110.36.3.201:35761\/i",
             "url_status": "online",
-            "host": "95.182.89.105",
-            "date_added": "2026-07-12 03:10:19 UTC",
+            "host": "110.36.3.201",
+            "date_added": "2026-07-13 02:47:21 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "botnetkiller",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
+                "32-bit",
                 "elf",
                 "mips",
-                "mirai",
-                "ua-wget"
+                "Mozi"
             ]
         },
         {
-            "id": 3885301,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885301\/",
-            "url": "http:\/\/95.182.89.105\/data_arm5",
+            "id": 3885723,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885723\/",
+            "url": "http:\/\/61.52.40.139:48827\/bin.sh",
             "url_status": "online",
-            "host": "95.182.89.105",
-            "date_added": "2026-07-12 03:10:19 UTC",
+            "host": "61.52.40.139",
+            "date_added": "2026-07-13 02:46:32 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "botnetkiller",
+            "reporter": "geenensp",
             "larted": "true",
             "tags": [
-                "arm",
+                "32-bit",
                 "elf",
-                "mirai",
-                "ua-wget"
+                "mips",
+                "Mozi"
             ]
         },
         {
-            "id": 3885302,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885302\/",
-            "url": "http:\/\/95.182.89.105\/data_arm4",
-            "url_status": "online",
-            "host": "95.182.89.105",
-            "date_added": "2026-07-12 03:10:19 UTC",
+            "id": 3885722,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885722\/",
+            "url": "https:\/\/klsv.betturkey.bet\/4b942d50-0dbb-40cb-a21e-ea0da5fca9a2",
+            "url_status": "offline",
+            "host": "klsv.betturkey.bet",
+            "date_added": "2026-07-13 02:34:13 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "botnetkiller",
-            "larted": "true",
+            "reporter": "anonymous",
+            "larted": "false",
             "tags": [
-                "arm",
-                "elf",
-                "mirai",
-                "ua-wget"
+                "ClearFake",
+                "win-0x0cd5",
+                "windows"
+            ]
+        },
+        {
+            "id": 3885721,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3885721\/",
+            "url": "https:\/\/vspzxyds.jadoobet.info\/525bfad0-1f3b-42b4-80cd-9d82a22c5e41",
+            "url_status": "offline",
+            "host": "vspzxyds.jadoobet.info",
+            "date_added": "2026-07-13 02:26:13 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake",
+                "win-0x4679",
+                "windows"
             ]
         }
     ]
