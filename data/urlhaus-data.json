@@ -2,98 +2,46 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3887905,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887905\/",
-            "url": "http:\/\/125.43.226.48:37804\/i",
+            "id": 3888470,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888470\/",
+            "url": "http:\/\/115.48.144.122:55166\/i",
             "url_status": "online",
-            "host": "125.43.226.48",
-            "date_added": "2026-07-18 02:54:24 UTC",
+            "host": "115.48.144.122",
+            "date_added": "2026-07-19 03:26:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "false",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
+            "reporter": "GAYINT_DOT_ORG",
+            "larted": "true",
+            "tags": null
         },
         {
-            "id": 3887904,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887904\/",
-            "url": "http:\/\/113.221.99.137:37914\/bin.sh",
+            "id": 3888469,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888469\/",
+            "url": "http:\/\/219.156.52.131:33086\/bin.sh",
             "url_status": "online",
-            "host": "113.221.99.137",
-            "date_added": "2026-07-18 02:48:25 UTC",
+            "host": "219.156.52.131",
+            "date_added": "2026-07-19 03:22:15 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "GAYINT_DOT_ORG",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
                 "Mozi"
             ]
         },
         {
-            "id": 3887903,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887903\/",
-            "url": "http:\/\/180.252.217.48:36167\/i",
-            "url_status": "online",
-            "host": "180.252.217.48",
-            "date_added": "2026-07-18 02:46:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3887902,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887902\/",
-            "url": "http:\/\/220.202.89.211:49820\/bin.sh",
-            "url_status": "online",
-            "host": "220.202.89.211",
-            "date_added": "2026-07-18 02:37:21 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3887901,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887901\/",
-            "url": "https:\/\/cvyfg.kopicoffeeco.com\/eaceebcc-f71a-4197-bc59-c4d7999dda4b",
+            "id": 3888468,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888468\/",
+            "url": "https:\/\/hcrty.funxbet.casino\/ce0bd297-f5b4-4b33-a407-d1774700642e",
             "url_status": "offline",
-            "host": "cvyfg.kopicoffeeco.com",
-            "date_added": "2026-07-18 02:33:16 UTC",
+            "host": "hcrty.funxbet.casino",
+            "date_added": "2026-07-19 03:22:12 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -108,12 +56,12 @@
             ]
         },
         {
-            "id": 3887900,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887900\/",
-            "url": "http:\/\/27.215.52.27:55049\/i",
+            "id": 3888467,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888467\/",
+            "url": "http:\/\/61.53.99.119:36871\/bin.sh",
             "url_status": "online",
-            "host": "27.215.52.27",
-            "date_added": "2026-07-18 02:29:28 UTC",
+            "host": "61.53.99.119",
+            "date_added": "2026-07-19 03:08:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -129,12 +77,12 @@
             ]
         },
         {
-            "id": 3887899,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887899\/",
-            "url": "http:\/\/125.43.226.48:37804\/bin.sh",
+            "id": 3888466,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888466\/",
+            "url": "http:\/\/123.5.173.102:40544\/i",
             "url_status": "online",
-            "host": "125.43.226.48",
-            "date_added": "2026-07-18 02:27:22 UTC",
+            "host": "123.5.173.102",
+            "date_added": "2026-07-19 03:07:27 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -150,15 +98,56 @@
             ]
         },
         {
-            "id": 3887898,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887898\/",
-            "url": "https:\/\/isrjnxfeb.fg777kito.com\/bdb0016d-67f8-4a83-884c-939ef66be9c7",
+            "id": 3888465,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888465\/",
+            "url": "https:\/\/ru4xmcs2.onjabet1.com\/?ublib=ee1777d4-ab13-4af6-aecf-86a52e7447d2",
             "url_status": "offline",
-            "host": "isrjnxfeb.fg777kito.com",
-            "date_added": "2026-07-18 02:22:14 UTC",
+            "host": "ru4xmcs2.onjabet1.com",
+            "date_added": "2026-07-19 02:59:13 UTC",
             "threat": "malware_download",
             "blacklists": {
-                "spamhaus_dbl": "malware_domain",
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake",
+                "mac-0x76c7",
+                "macOS"
+            ]
+        },
+        {
+            "id": 3888464,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888464\/",
+            "url": "http:\/\/42.224.15.77:57410\/bin.sh",
+            "url_status": "online",
+            "host": "42.224.15.77",
+            "date_added": "2026-07-19 02:49:29 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 3888463,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888463\/",
+            "url": "https:\/\/uina.noodlesbymomi.com\/2a0ff218-d68a-46b0-89dd-d88d117bf55d",
+            "url_status": "offline",
+            "host": "uina.noodlesbymomi.com",
+            "date_added": "2026-07-19 02:40:27 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
             "reporter": "anonymous",
@@ -170,12 +159,32 @@
             ]
         },
         {
-            "id": 3887897,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887897\/",
-            "url": "http:\/\/182.126.120.34:40375\/i",
+            "id": 3888462,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888462\/",
+            "url": "https:\/\/yxzsj.derbi.promo\/3f922363-2f4c-4493-a2a3-f57215a3f660",
+            "url_status": "offline",
+            "host": "yxzsj.derbi.promo",
+            "date_added": "2026-07-19 02:21:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "ClearFake",
+                "win-0x4679",
+                "windows"
+            ]
+        },
+        {
+            "id": 3888461,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3888461\/",
+            "url": "http:\/\/202.107.5.69:52110\/i",
             "url_status": "online",
-            "host": "182.126.120.34",
-            "date_added": "2026-07-18 02:20:23 UTC",
+            "host": "202.107.5.69",
+            "date_added": "2026-07-19 02:20:28 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -187,24 +196,6 @@
                 "32-bit",
                 "elf",
                 "mips",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 3887896,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3887896\/",
-            "url": "http:\/\/182.127.35.76:41368\/i",
-            "url_status": "online",
-            "host": "182.127.35.76",
-            "date_added": "2026-07-18 02:11:16 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "GAYINT_DOT_ORG",
-            "larted": "true",
-            "tags": [
                 "Mozi"
             ]
         }
