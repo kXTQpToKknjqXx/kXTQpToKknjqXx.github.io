@@ -24,7 +24,7 @@ import os
 import re
 import sys
 import urllib.request
-import urllib.parse
+import urllib.error
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DOMAINS_PATH = os.path.join(REPO_ROOT, "data", "investment-fraud-domains.json")
@@ -47,10 +47,20 @@ DOMAIN_RE = re.compile(
 
 def api_call(method, params=None):
     url = f"{API_BASE}/{method}"
-    if params:
-        url += "?" + urllib.parse.urlencode(params)
-    with urllib.request.urlopen(url, timeout=30) as resp:
-        return json.load(resp)
+    data = json.dumps(params or {}).encode("utf-8")
+    req = urllib.request.Request(
+        url,
+        data=data,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return json.load(resp)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        print(f"::warning::Telegram API error calling {method}: HTTP {e.code} - {body}")
+        return {"ok": False, "error_code": e.code, "description": body}
 
 
 def load_offset():
