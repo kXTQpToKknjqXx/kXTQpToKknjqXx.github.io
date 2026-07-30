@@ -190,7 +190,7 @@ def main():
             reply(chat_id, f"ℹ️ {domain} вече е в списъка.", message_id)
             continue
 
-        domains.append(domain)
+        domains.insert(0, domain)
         existing.add(domain)
         changed = True
 
