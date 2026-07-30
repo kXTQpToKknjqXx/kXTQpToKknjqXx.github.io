@@ -1,0 +1,45 @@
+name: Telegram domain intake (/push)
+
+# Polls the configured Telegram bot for new "/push domain.com" messages from
+# an allow-listed group + set of user ids, validates and normalizes the
+# domain, and commits it straight into data/investment-fraud-domains.json.
+# The site fetches that file at runtime (see src/investment-fraud.jsx), so no
+# build step is needed here - a plain commit is enough for it to show up.
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: telegram-push
+  cancel-in-progress: false
+
+jobs:
+  poll-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Poll Telegram and update domain list
+        id: poll
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_ALLOWED_USER_IDS: ${{ secrets.TELEGRAM_ALLOWED_USER_IDS }}
+        run: python3 .github/scripts/telegram_push.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data/investment-fraud-domains.json .github/telegram-offset.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Telegram: add domain(s) via /push [skip ci]" && git push)
