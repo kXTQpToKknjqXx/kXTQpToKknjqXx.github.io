@@ -44,6 +44,17 @@ DOMAIN_RE = re.compile(
     r"^(?!-)[A-Za-z0-9-]{1,63}(?<!-)(\.(?!-)[A-Za-z0-9-]{1,63}(?<!-))+$"
 )
 
+HELP_TEXT = (
+    "🤖 Как да добавям домейни:\n\n"
+    "/push домейн.com — добавя домейн в списъка с измамни домейни на сайта.\n"
+    "Може да пратиш и цял линк (https://домейн.com/страница) — ботът сам изчиства до голия домейн.\n\n"
+    "Примери:\n"
+    "/push evil-scam.com\n"
+    "/push https://fake-broker.io/login\n\n"
+    "Само одобрени потребители могат да добавят домейни. Ако нямаш права, обърни се към администратор на групата.\n\n"
+    "Домейнът се появява на сайта до няколко минути след /push (не веднага)."
+)
+
 
 def api_call(method, params=None):
     url = f"{API_BASE}/{method}"
@@ -159,7 +170,10 @@ def main():
             continue
 
         text = (message.get("text") or "").strip()
-        if not text.lower().startswith("/push"):
+        text_lower = text.lower()
+        is_push = text_lower.startswith("/push")
+        is_help = text_lower.startswith("/help") or text_lower.startswith("/start")
+        if not (is_push or is_help):
             continue
 
         chat_id = str(message.get("chat", {}).get("id", ""))
@@ -171,9 +185,14 @@ def main():
         if chat_id != str(CHAT_ID):
             continue  # command from a different chat entirely, ignore silently
 
+        if is_help:
+            # Anyone in the group can ask for help, regardless of allowlist.
+            reply(chat_id, HELP_TEXT, message_id)
+            continue
+
         if user_id not in ALLOWED_USER_IDS:
             print(f"Ignoring /push from non-allowlisted user {user_id} ({username})")
-            reply(chat_id, "⛔️ Нямаш права да добавяш домейни.", message_id)
+            reply(chat_id, "⛔️ Нямаш права да добавяш домейни. Пробвай /help за повече информация.", message_id)
             continue
 
         parts = text.split(maxsplit=1)
