@@ -2,213 +2,192 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 3930098,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930098\/",
-            "url": "https:\/\/raw.githubusercontent.com\/mistertechie06\/x402-payments-skill\/main\/examples\/paid-api-seller\/app\/api\/joke\/payments-x-skill-Sivapithecus.zip",
+            "id": 3944133,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944133\/",
+            "url": "http:\/\/119.187.197.115:57303\/i",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:46 UTC",
+            "host": "119.187.197.115",
+            "date_added": "2026-10-07 05:02:35 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "adliwahid",
+            "larted": "false",
+            "tags": null
+        },
+        {
+            "id": 3944132,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944132\/",
+            "url": "http:\/\/123.9.200.156:42154\/i",
+            "url_status": "online",
+            "host": "123.9.200.156",
+            "date_added": "2026-10-07 05:02:35 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "false",
+            "tags": null
+        },
+        {
+            "id": 3944131,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944131\/",
+            "url": "http:\/\/95.9.35.137:40441\/i",
+            "url_status": "online",
+            "host": "95.9.35.137",
+            "date_added": "2026-10-07 04:55:51 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "32-bit",
+                "arm",
+                "elf",
+                "mirai",
+                "Mozi"
             ]
         },
         {
-            "id": 3930097,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930097\/",
-            "url": "https:\/\/raw.githubusercontent.com\/jokapoa\/mcp-brasil\/HEAD\/src\/mcp_brasil\/data\/tce_pi\/mcp_brasil_v3.7.zip",
+            "id": 3944130,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944130\/",
+            "url": "https:\/\/donutclients.st\/TotemCounter-26.2.jar",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:42 UTC",
+            "host": "donutclients.st",
+            "date_added": "2026-10-07 04:55:41 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "wok",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "jar",
+                "java",
+                "stealer",
+                "vm"
             ]
         },
         {
-            "id": 3930096,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930096\/",
-            "url": "https:\/\/raw.githubusercontent.com\/chris83254\/fastapi-boilerplate\/master\/app\/schemas\/boilerplate_fastapi_2.5-alpha.5.zip",
+            "id": 3944129,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944129\/",
+            "url": "http:\/\/115.62.186.251:52572\/i",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:40 UTC",
+            "host": "115.62.186.251",
+            "date_added": "2026-10-07 04:55:39 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "adliwahid",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "Mozi"
             ]
         },
         {
-            "id": 3930095,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930095\/",
-            "url": "https:\/\/raw.githubusercontent.com\/sajibkd\/shadd\/refs\/heads\/main\/src\/Software_1.7.zip",
+            "id": 3944128,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944128\/",
+            "url": "http:\/\/154.242.13.34:43259\/i",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:36 UTC",
+            "host": "154.242.13.34",
+            "date_added": "2026-10-07 04:55:39 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "adliwahid",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "Mozi"
             ]
         },
         {
-            "id": 3930092,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930092\/",
-            "url": "https:\/\/raw.githubusercontent.com\/jhosuemiscanvilchez\/ssh-api\/refs\/heads\/main\/pericycloid\/ssh_api_v3.9.zip",
+            "id": 3944127,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944127\/",
+            "url": "http:\/\/115.55.229.99:46995\/i",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:30 UTC",
+            "host": "115.55.229.99",
+            "date_added": "2026-10-07 04:55:38 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "adliwahid",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "Mozi"
             ]
         },
         {
-            "id": 3930093,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930093\/",
-            "url": "https:\/\/raw.githubusercontent.com\/h3yjuice\/service-job-card\/refs\/heads\/main\/images\/service-card-job-2.5.zip",
+            "id": 3944126,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944126\/",
+            "url": "http:\/\/185.89.156.101:35112\/bin.sh",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:30 UTC",
+            "host": "185.89.156.101",
+            "date_added": "2026-10-07 04:55:36 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "adliwahid",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "mirai"
             ]
         },
         {
-            "id": 3930094,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930094\/",
-            "url": "https:\/\/raw.githubusercontent.com\/Gaurav24-01\/WIFI-RESOLVER\/refs\/heads\/main\/enterozoa\/RESOLVER_WIF_2.3.zip",
+            "id": 3944125,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944125\/",
+            "url": "https:\/\/www.dropbox.com\/scl\/fi\/jnf0ecydm1z63frnge1mn\/Docsend.exe?rlkey=01seodht5j6nnix645ejn3a5r&st=vcdaxsj2&dl=1",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:30 UTC",
+            "host": "www.dropbox.com",
+            "date_added": "2026-10-07 04:49:45 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "lucibee",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                "IRAHook",
+                "rat",
+                "stealer"
             ]
         },
         {
-            "id": 3930091,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930091\/",
-            "url": "https:\/\/raw.githubusercontent.com\/Vadim3590\/derive-aliases\/refs\/heads\/main\/src\/derive_aliases_v2.5.zip",
+            "id": 3944124,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3944124\/",
+            "url": "https:\/\/www.dropbox.com\/scl\/fi\/dcbo57pem0pjqzx65giot\/MateFalls-Setup-1.0.0.exe?rlkey=yc7kc4vm6iy1urr0wh1xwta91&dl=1",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:16 UTC",
+            "host": "www.dropbox.com",
+            "date_added": "2026-10-07 04:49:44 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "shmulc",
+            "reporter": "fabdow",
             "larted": "false",
             "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 3930090,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930090\/",
-            "url": "https:\/\/raw.githubusercontent.com\/inerrable-snick538\/GithubDesktopWSL\/refs\/heads\/main\/wsl-daemon\/Desktop_Github_WSL_1.3.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:10 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "shmulc",
-            "larted": "false",
-            "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 3930089,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/3930089\/",
-            "url": "https:\/\/raw.githubusercontent.com\/nadyadiagnostic188\/ekcd-ontology\/refs\/heads\/main\/checksums\/ontology-ekcd-v2.2.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-06 05:51:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "shmulc",
-            "larted": "false",
-            "tags": [
-                "github",
-                "LuaJIT-loader",
-                "SmartLoader",
-                "zip"
+                " Dropbox",
+                " java",
+                " MateFalls",
+                " stealer",
+                "infostealer"
             ]
         }
     ]
