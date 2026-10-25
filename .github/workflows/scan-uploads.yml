@@ -38,11 +38,12 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq clamav
           sudo systemctl stop clamav-freshclam || true
-          pip install --quiet boto3 pillow
+          pip install --quiet boto3 pillow cvdupdate
 
       # The signature database is large and the public mirrors rate-limit repeated
       # full downloads from shared runner addresses, so keep it between runs and
-      # only fetch the differences.
+      # only fetch what changed. (cvdupdate, ClamAV's own mirroring tool, is used
+      # instead of freshclam, which could not read a custom config on the runner.)
       - name: Date
         id: day
         run: echo "d=$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
@@ -57,10 +58,9 @@ jobs:
 
       - name: Update definitions
         run: |
-          mkdir -p "$HOME/clamdb"
-          printf 'DatabaseDirectory %s\nDatabaseMirror database.clamav.net\n' "$HOME/clamdb" > "$HOME/freshclam.conf"
+          cvd config set --dbdir "$HOME/clamdb"
           # a failed update is fine if an older database is already there; with none, stop
-          freshclam --config-file="$HOME/freshclam.conf" --quiet || test -s "$HOME/clamdb/main.cvd" -o -s "$HOME/clamdb/main.cld"
+          cvd update || test -s "$HOME/clamdb/main.cvd" -o -s "$HOME/clamdb/main.cld"
 
       - name: Run
         run: SCAN_CMD="clamscan --database=$HOME/clamdb" python3 .github/scripts/scan_uploads.py
