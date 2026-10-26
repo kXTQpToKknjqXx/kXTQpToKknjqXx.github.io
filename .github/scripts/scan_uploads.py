@@ -14,20 +14,35 @@ Usage:
 Environment:
   R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET
   SCAN_CMD  scanner command, default "clamscan" (exit 0 clean, 1 infected, else error)
+  VT_API_KEY  optional: also look up each file's SHA-256 on VirusTotal (hash only,
+              the file is never uploaded); known-malicious files are rejected
 """
+import hashlib
 import io
+import json
 import os
 import re
 import shlex
 import subprocess
 import sys
 import tempfile
+import time
+import urllib.error
+import urllib.request
 import uuid
 from concurrent.futures import ThreadPoolExecutor
 
 MAX_BYTES = int(1.5 * 1024 * 1024)  # same limit as the Worker
 CHUNK = 150  # files per scanner run (bounds memory; one signature load per chunk)
 WORKERS = 8  # parallel downloads / re-encodes / uploads
+
+# VirusTotal, hash lookups only. The free public API allows 4 lookups a minute and
+# 500 a day; this is an extra signal on top of ClamAV, so any failure (quota,
+# network, unknown hash) simply means "no opinion" and never blocks a release.
+VT_URL = "https://www.virustotal.com/api/v3/files/"
+VT_INTERVAL = 15.5  # seconds between lookups (4 per minute)
+VT_MAX_PER_RUN = 30  # keeps one run well inside the job timeout
+VT_MIN_DETECTIONS = 2  # engines that must call it malicious (avoids single-engine false positives)
 MAX_PIXELS = 40_000_000
 KEY_RE = re.compile(
     r"^quarantine/(MVR-GDBOP-\d{8}-[A-Z2-9]{5})/"
@@ -172,12 +187,58 @@ class DirStore:
         os.remove(self._p(key))
 
 
+def _vt_get(sha256, api_key):
+    """JSON for a hash VirusTotal knows, None if it does not. Raises otherwise.
+
+    Only the hash goes out: a GET with no body.
+    """
+    req = urllib.request.Request(VT_URL + sha256, headers={"x-apikey": api_key, "accept": "application/json"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            return json.load(resp)
+    except urllib.error.HTTPError as err:
+        err.close()
+        if err.code == 404:
+            return None
+        raise
+
+
+def vt_verdicts(blobs, api_key, sleep=time.sleep):
+    """Maps each key to 'malicious' | 'known-clean' | 'unknown' using hash lookups."""
+    out = {key: "unknown" for key in blobs}
+    if not api_key:
+        return out
+    for i, (key, data) in enumerate(blobs.items()):
+        if i >= VT_MAX_PER_RUN:
+            break
+        if i:
+            sleep(VT_INTERVAL)
+        try:
+            info = _vt_get(hashlib.sha256(data).hexdigest(), api_key)
+        except urllib.error.HTTPError as err:
+            err.close()
+            if err.code in (401, 403, 429):  # bad key or quota used up: stop asking this run
+                break
+            continue
+        except Exception:
+            continue
+        if info is None:
+            continue
+        stats = (info.get("data") or {}).get("attributes", {}).get("last_analysis_stats", {}) or {}
+        try:
+            malicious = int(stats.get("malicious", 0) or 0)
+        except (TypeError, ValueError):
+            malicious = 0
+        out[key] = "malicious" if malicious >= VT_MIN_DETECTIONS else "known-clean"
+    return out
+
+
 def _chunks(items, n):
     for i in range(0, len(items), n):
         yield items[i : i + n]
 
 
-def process(store, scan_cmd="clamscan"):
+def process(store, scan_cmd="clamscan", vt_key=None, sleep=time.sleep):
     counts = {"clean": 0, "rejected": 0, "ignored": 0, "errors": 0}
     pending = []  # (key, report_id, name, ext)
     for key in list(store.list("quarantine/")):
@@ -226,13 +287,21 @@ def process(store, scan_cmd="clamscan"):
                 else:
                     blobs[item[0]] = (item, data)
             verdicts = scan_batch({k: v[1] for k, v in blobs.items()}, scan_cmd)
-            to_release = []
+            passed = {}
             for key, (item, data) in blobs.items():
                 verdict = verdicts[key]
                 if verdict == "infected":
                     reject(item, "infected"); counts["rejected"] += 1
                 elif verdict == "error":
                     counts["errors"] += 1  # stays in quarantine, retried next run
+                else:
+                    passed[key] = (item, data)
+            # second opinion on what ClamAV let through: hash lookup of the original file
+            vt = vt_verdicts({k: v[1] for k, v in passed.items()}, vt_key, sleep)
+            to_release = []
+            for key, (item, data) in passed.items():
+                if vt[key] == "malicious":
+                    reject(item, "infected"); counts["rejected"] += 1
                 else:
                     to_release.append((item, data))
             for item, ok in pool.map(release, to_release):
@@ -246,7 +315,7 @@ def process(store, scan_cmd="clamscan"):
 def main(argv):
     local = argv[argv.index("--local") + 1] if "--local" in argv else None
     store = DirStore(local) if local else S3Store()
-    counts = process(store, os.environ.get("SCAN_CMD", "clamscan"))
+    counts = process(store, os.environ.get("SCAN_CMD", "clamscan"), os.environ.get("VT_API_KEY") or None)
     return 1 if counts["errors"] else 0
 
 
