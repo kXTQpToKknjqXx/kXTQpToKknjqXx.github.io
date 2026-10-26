@@ -2,6 +2,11 @@ name: Scan uploads
 
 # Maintenance job. The repository is public, so its runs and logs are too: every
 # step always runs, nothing is printed, and the exit code is the only signal.
+#
+# Supply chain: actions are pinned to full commit SHAs, Python packages to exact
+# versions with hashes (.github/scripts/requirements-scan.txt), and the secrets
+# are given ONLY to the final step, so nothing installed or restored earlier can
+# read them.
 on:
   workflow_dispatch:
   schedule:
@@ -17,19 +22,16 @@ permissions:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    env:
-      R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-      R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-      R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-      R2_BUCKET: ${{ secrets.R2_BUCKET }}
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
         with:
           python-version: '3.12'
 
@@ -38,7 +40,7 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq clamav
           sudo systemctl stop clamav-freshclam || true
-          pip install --quiet boto3 pillow cvdupdate
+          pip install --quiet --require-hashes --no-deps --only-binary=:all: -r .github/scripts/requirements-scan.txt
 
       # The signature database is large and the public mirrors rate-limit repeated
       # full downloads from shared runner addresses, so keep it between runs and
@@ -49,7 +51,7 @@ jobs:
         run: echo "d=$(date -u +%Y%m%d)" >> "$GITHUB_OUTPUT"
 
       - name: Restore definitions
-        uses: actions/cache@v4
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
           path: ~/clamdb
           key: clamdb-${{ steps.day.outputs.d }}
@@ -63,4 +65,11 @@ jobs:
           cvd update || test -s "$HOME/clamdb/main.cvd" -o -s "$HOME/clamdb/main.cld"
 
       - name: Run
+        env:
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
+          # optional: SHA-256 lookups on VirusTotal (the files themselves are never sent)
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
         run: SCAN_CMD="clamscan --database=$HOME/clamdb" python3 .github/scripts/scan_uploads.py
