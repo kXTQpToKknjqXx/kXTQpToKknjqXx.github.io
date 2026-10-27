@@ -2,48 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4014023,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014023\/",
-            "url": "http:\/\/222.140.156.162:49986\/i",
+            "id": 4034870,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034870\/",
+            "url": "https:\/\/github.com\/xxXdemidXxx\/discord_obhod_app\/releases\/download\/v0.6.0\/ByPass-win-x64.zip",
             "url_status": "online",
-            "host": "222.140.156.162",
-            "date_added": "2026-10-26 04:02:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4014022,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014022\/",
-            "url": "http:\/\/123.5.153.31:53142\/bin.sh",
-            "url_status": "online",
-            "host": "123.5.153.31",
-            "date_added": "2026-10-26 04:02:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4014021,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014021\/",
-            "url": "http:\/\/42.55.16.112:53324\/i",
-            "url_status": "online",
-            "host": "42.55.16.112",
-            "date_added": "2026-10-26 03:51:15 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-27 04:20:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -52,16 +16,74 @@
             "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "elf"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4014020,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014020\/",
-            "url": "http:\/\/42.224.5.186:40773\/bin.sh",
+            "id": 4034867,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034867\/",
+            "url": "https:\/\/raw.githubusercontent.com\/lesterlost\/Zapret-Build-Titanfall-2\/refs\/heads\/main\/Titanfall%202.rar",
             "url_status": "online",
-            "host": "42.224.5.186",
-            "date_added": "2026-10-26 03:47:08 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-10-27 04:20:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4034868,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034868\/",
+            "url": "https:\/\/github.com\/Yumekomooree\/Private-Morphe-s-Zapret-Fork\/releases\/download\/banan\/BETA.rar",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-27 04:20:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4034869,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034869\/",
+            "url": "https:\/\/github.com\/loadeddypper\/empty\/releases\/download\/0.02\/splwow.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-27 04:20:08 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "AsyncRAT",
+                "github"
+            ]
+        },
+        {
+            "id": 4034866,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034866\/",
+            "url": "http:\/\/59.97.255.246:56631\/i",
+            "url_status": "online",
+            "host": "59.97.255.246",
+            "date_added": "2026-10-27 04:17:06 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -74,12 +96,12 @@
             ]
         },
         {
-            "id": 4014019,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014019\/",
-            "url": "http:\/\/42.224.5.186:40773\/i",
+            "id": 4034865,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034865\/",
+            "url": "http:\/\/5.167.122.87:55987\/bin.sh",
             "url_status": "online",
-            "host": "42.224.5.186",
-            "date_added": "2026-10-26 03:47:08 UTC",
+            "host": "5.167.122.87",
+            "date_added": "2026-10-27 04:17:05 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -87,71 +109,15 @@
             },
             "reporter": "adliwahid",
             "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
+            "tags": null
         },
         {
-            "id": 4014018,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014018\/",
-            "url": "http:\/\/222.140.156.162:49986\/bin.sh",
+            "id": 4034864,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034864\/",
+            "url": "http:\/\/182.235.148.10:37693\/bin.sh",
             "url_status": "online",
-            "host": "222.140.156.162",
-            "date_added": "2026-10-26 03:47:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4014017,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014017\/",
-            "url": "http:\/\/182.112.30.75:59760\/i",
-            "url_status": "online",
-            "host": "182.112.30.75",
-            "date_added": "2026-10-26 03:32:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4014016,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014016\/",
-            "url": "http:\/\/42.230.46.2:43484\/bin.sh",
-            "url_status": "online",
-            "host": "42.230.46.2",
-            "date_added": "2026-10-26 03:32:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4014015,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014015\/",
-            "url": "http:\/\/216.126.86.45:51941\/bin.sh",
-            "url_status": "online",
-            "host": "216.126.86.45",
-            "date_added": "2026-10-26 03:19:12 UTC",
+            "host": "182.235.148.10",
+            "date_added": "2026-10-27 04:09:16 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -168,12 +134,12 @@
             ]
         },
         {
-            "id": 4014014,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4014014\/",
-            "url": "http:\/\/182.114.194.78:33888\/i",
+            "id": 4034863,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034863\/",
+            "url": "http:\/\/39.79.148.123:55039\/i",
             "url_status": "online",
-            "host": "182.114.194.78",
-            "date_added": "2026-10-26 03:17:07 UTC",
+            "host": "39.79.148.123",
+            "date_added": "2026-10-27 04:02:06 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -181,7 +147,48 @@
             },
             "reporter": "adliwahid",
             "larted": "true",
-            "tags": null
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4034862,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034862\/",
+            "url": "http:\/\/42.178.125.54:44276\/i",
+            "url_status": "online",
+            "host": "42.178.125.54",
+            "date_added": "2026-10-27 03:49:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4034859,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034859\/",
+            "url": "http:\/\/123.14.97.143:46749\/i",
+            "url_status": "online",
+            "host": "123.14.97.143",
+            "date_added": "2026-10-27 03:47:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": [
+                "Mozi"
+            ]
         }
     ]
 }
