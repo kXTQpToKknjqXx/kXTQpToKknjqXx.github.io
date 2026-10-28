@@ -2,12 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4034870,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034870\/",
-            "url": "https:\/\/github.com\/xxXdemidXxx\/discord_obhod_app\/releases\/download\/v0.6.0\/ByPass-win-x64.zip",
+            "id": 4038866,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038866\/",
+            "url": "https:\/\/github.com\/naturalcabinpuzzle\/GITHUb-DisCORd-YOutUbe\/releases\/download\/1.16.0\/zapret-discord-youtube.zip",
             "url_status": "online",
             "host": "github.com",
-            "date_added": "2026-10-27 04:20:09 UTC",
+            "date_added": "2026-10-28 04:56:52 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -21,12 +21,12 @@
             ]
         },
         {
-            "id": 4034867,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034867\/",
-            "url": "https:\/\/raw.githubusercontent.com\/lesterlost\/Zapret-Build-Titanfall-2\/refs\/heads\/main\/Titanfall%202.rar",
+            "id": 4038865,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038865\/",
+            "url": "https:\/\/github.com\/SideMartinBreak\/FloWseaL-discoRD_YOutUBE\/releases\/download\/1.10.7\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-10-27 04:20:08 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:46 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -40,12 +40,12 @@
             ]
         },
         {
-            "id": 4034868,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034868\/",
-            "url": "https:\/\/github.com\/Yumekomooree\/Private-Morphe-s-Zapret-Fork\/releases\/download\/banan\/BETA.rar",
+            "id": 4038864,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038864\/",
+            "url": "https:\/\/github.com\/Scaledecoupling\/gITHuB_floWSEal-ZaPrEt_diScoRD\/releases\/download\/1.15.3\/zapret-discord-youtube.zip",
             "url_status": "online",
             "host": "github.com",
-            "date_added": "2026-10-27 04:20:08 UTC",
+            "date_added": "2026-10-28 04:56:45 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -59,12 +59,12 @@
             ]
         },
         {
-            "id": 4034869,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034869\/",
-            "url": "https:\/\/github.com\/loadeddypper\/empty\/releases\/download\/0.02\/splwow.exe",
+            "id": 4038863,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038863\/",
+            "url": "https:\/\/github.com\/fiberotokagemound\/GItHub-dISCOrd-YOutUBE0\/releases\/download\/1.11.6\/zapret-discord-youtube.zip",
             "url_status": "online",
             "host": "github.com",
-            "date_added": "2026-10-27 04:20:08 UTC",
+            "date_added": "2026-10-28 04:56:41 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -73,121 +73,122 @@
             "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "AsyncRAT",
-                "github"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4034866,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034866\/",
-            "url": "http:\/\/59.97.255.246:56631\/i",
+            "id": 4038862,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038862\/",
+            "url": "https:\/\/github.com\/Sectionoverdeem\/zAPReT-GITHub-diSCOrD\/releases\/download\/1.11.4\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "59.97.255.246",
-            "date_added": "2026-10-27 04:17:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:40 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "Mozi"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4034865,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034865\/",
-            "url": "http:\/\/5.167.122.87:55987\/bin.sh",
+            "id": 4038861,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038861\/",
+            "url": "https:\/\/github.com\/novaswordsmithsoar\/FlOwSEAL-ZAprET-DIScord-yOuTUBe\/releases\/download\/1.9.3\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "5.167.122.87",
-            "date_added": "2026-10-27 04:17:05 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:37 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4034864,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034864\/",
-            "url": "http:\/\/182.235.148.10:37693\/bin.sh",
-            "url_status": "online",
-            "host": "182.235.148.10",
-            "date_added": "2026-10-27 04:09:16 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4034863,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034863\/",
-            "url": "http:\/\/39.79.148.123:55039\/i",
+            "id": 4038860,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038860\/",
+            "url": "https:\/\/github.com\/Recordflunozzle47\/ZaPret-gIThuB-dIscORD\/releases\/download\/1.9.8\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "39.79.148.123",
-            "date_added": "2026-10-27 04:02:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:37 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "Mozi"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4034862,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034862\/",
-            "url": "http:\/\/42.178.125.54:44276\/i",
+            "id": 4038859,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038859\/",
+            "url": "https:\/\/github.com\/fiberotokagemound\/GithuB_DIScOrd_yOuTUBe\/releases\/download\/1.11.1\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "42.178.125.54",
-            "date_added": "2026-10-27 03:49:10 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:36 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4034859,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4034859\/",
-            "url": "http:\/\/123.14.97.143:46749\/i",
+            "id": 4038858,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038858\/",
+            "url": "https:\/\/github.com\/Recordflunozzle47\/FLOwseAL_DIsCord_yoUtUBE\/releases\/download\/1.9.9\/zapret-discord-youtube.zip",
             "url_status": "online",
-            "host": "123.14.97.143",
-            "date_added": "2026-10-27 03:47:07 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:33 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "Mozi"
+                "github",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4038857,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4038857\/",
+            "url": "https:\/\/github.com\/surgeshadowvilla\/GithuB-flowseAL_zAPReT_DiSCoRD\/releases\/download\/1.7.9\/zapret-discord-youtube.zip",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-28 04:56:30 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "zapret"
             ]
         }
     ]
