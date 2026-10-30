@@ -2,198 +2,203 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4042197,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042197\/",
-            "url": "http:\/\/196.190.1.39:37921\/bin.sh",
+            "id": 4046600,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046600\/",
+            "url": "https:\/\/github.com\/WidthRainHoist\/happ\/releases\/download\/happ\/happ_windows_7_32bit.exe",
             "url_status": "online",
-            "host": "196.190.1.39",
-            "date_added": "2026-10-29 05:13:19 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:37 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4042196,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042196\/",
-            "url": "http:\/\/105.225.89.95:56881\/i",
-            "url_status": "online",
-            "host": "105.225.89.95",
-            "date_added": "2026-10-29 05:12:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4042195,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042195\/",
-            "url": "http:\/\/196.189.130.28:47063\/bin.sh",
-            "url_status": "online",
-            "host": "196.189.130.28",
-            "date_added": "2026-10-29 05:12:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4042194,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042194\/",
-            "url": "http:\/\/222.137.143.236:49759\/bin.sh",
-            "url_status": "online",
-            "host": "222.137.143.236",
-            "date_added": "2026-10-29 05:02:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4042193,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042193\/",
-            "url": "http:\/\/42.227.42.211:51122\/i",
-            "url_status": "online",
-            "host": "42.227.42.211",
-            "date_added": "2026-10-29 05:02:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4042192,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042192\/",
-            "url": "http:\/\/182.117.79.172:58059\/i",
-            "url_status": "offline",
-            "host": "182.117.79.172",
-            "date_added": "2026-10-29 04:50:22 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
+            "reporter": "wristhulk",
             "larted": "false",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "exe",
+                "github",
+                "SalatStealer"
             ]
         },
         {
-            "id": 4042191,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042191\/",
-            "url": "http:\/\/139.202.233.82:39414\/bin.sh",
+            "id": 4046599,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046599\/",
+            "url": "https:\/\/github.com\/WarblerJetty\/happ-proxy\/releases\/download\/happ-proxy\/happ_windows_arm64.exe",
             "url_status": "online",
-            "host": "139.202.233.82",
-            "date_added": "2026-10-29 04:47:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:37 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": [
-                "mirai"
-            ]
-        },
-        {
-            "id": 4042190,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042190\/",
-            "url": "http:\/\/113.53.69.164:49238\/i",
-            "url_status": "offline",
-            "host": "113.53.69.164",
-            "date_added": "2026-10-29 04:47:04 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "false",
-            "tags": null
-        },
-        {
-            "id": 4042189,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042189\/",
-            "url": "http:\/\/105.225.89.95:56881\/bin.sh",
-            "url_status": "online",
-            "host": "105.225.89.95",
-            "date_added": "2026-10-29 04:46:20 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
+                "exe",
+                "github",
+                "SalatStealer"
             ]
         },
         {
-            "id": 4042188,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4042188\/",
-            "url": "http:\/\/222.137.100.254:52861\/bin.sh",
+            "id": 4046598,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046598\/",
+            "url": "https:\/\/github.com\/WidthRainHoist\/happ-proxy\/releases\/download\/happ\/happ_windows.exe",
             "url_status": "online",
-            "host": "222.137.100.254",
-            "date_added": "2026-10-29 04:46:20 UTC",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:36 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "true",
+            "reporter": "wristhulk",
+            "larted": "false",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046597,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046597\/",
+            "url": "https:\/\/github.com\/WarblerJetty\/happ-windows\/releases\/download\/happ-windows\/happ_windows_7_32bit.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:36 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046596,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046596\/",
+            "url": "https:\/\/github.com\/VolumePulseTurbine\/happ-desktop\/releases\/download\/happ-desktop\/happ_windows_7_64bit.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:35 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046595,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046595\/",
+            "url": "https:\/\/github.com\/VolumePulseTurbine\/happ-windows\/releases\/download\/happ-windows\/happ_windows_7_64bit.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046594,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046594\/",
+            "url": "https:\/\/github.com\/WidthRainHoist\/happ-desktop\/releases\/download\/happ\/happ_windows.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046593,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046593\/",
+            "url": "https:\/\/github.com\/VolumePulseTurbine\/happ-desktop\/releases\/download\/happ-desktop\/happ_windows_7_32bit.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046592,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046592\/",
+            "url": "https:\/\/github.com\/VolumePulseTurbine\/happ-proxy\/releases\/download\/happ-proxy\/happ_windows_7_32bit.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
+            ]
+        },
+        {
+            "id": 4046591,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4046591\/",
+            "url": "https:\/\/github.com\/WidthRainHoist\/happ-vpn\/releases\/download\/happ\/happ_windows_arm64.exe",
+            "url_status": "online",
+            "host": "github.com",
+            "date_added": "2026-10-30 05:16:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "false",
+            "tags": [
+                "exe",
+                "github",
+                "SalatStealer"
             ]
         }
     ]
