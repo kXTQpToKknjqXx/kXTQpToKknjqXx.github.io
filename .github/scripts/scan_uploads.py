@@ -17,6 +17,7 @@ Environment:
   VT_API_KEY  optional: also look up each file's SHA-256 on VirusTotal (hash only,
               the file is never uploaded); known-malicious files are rejected
 """
+import datetime
 import hashlib
 import io
 import json
@@ -40,6 +41,7 @@ WORKERS = 8  # parallel downloads / re-encodes / uploads
 # 500 a day; this is an extra signal on top of ClamAV, so any failure (quota,
 # network, unknown hash) simply means "no opinion" and never blocks a release.
 VT_URL = "https://www.virustotal.com/api/v3/files/"
+SIGNATURE_RE = re.compile(r"[^\w.:+-]")  # a detection name, whatever the scanner printed
 VT_INTERVAL = 15.5  # seconds between lookups (4 per minute)
 VT_MAX_PER_RUN = 30  # keeps one run well inside the job timeout
 VT_MIN_DETECTIONS = 2  # engines that must call it malicious (avoids single-engine false positives)
@@ -87,13 +89,14 @@ def reencode(data: bytes, kind: str) -> bytes:
     return out.getvalue()
 
 
-def scan_batch(blobs, scan_cmd):
+def scan_batch(blobs, scan_cmd, signatures=None):
     """Scan many files with ONE scanner process (the signature database is loaded once).
 
     `blobs` maps a caller key to bytes; returns the same keys mapped to
     'clean' | 'infected' | 'error'. Files get random names in a temp dir. Exit code
     0 = all clean, 1 = infected (the scanner names them; if it names none, every
     file in the batch is treated as infected), anything else = error for all.
+    `signatures`, if given, receives the scanner's detection name for each infected key.
     """
     if not blobs:
         return {}
@@ -114,11 +117,14 @@ def scan_batch(blobs, scan_cmd):
     if proc.returncode == 0:
         return {key: "clean" for key in blobs}
     if proc.returncode == 1:
-        found = set()
+        found = {}
         for line in proc.stdout.splitlines():
             if line.endswith(" FOUND") and ": " in line:
-                found.add(os.path.basename(line[: line.rindex(": ")]))
+                cut = line.rindex(": ")
+                found[os.path.basename(line[:cut])] = line[cut + 2 : -len(" FOUND")]
         infected = {names[n] for n in found if n in names} or set(blobs)
+        if signatures is not None:
+            signatures.update({names[n]: SIGNATURE_RE.sub("", sig)[:100] for n, sig in found.items() if n in names})
         return {key: ("infected" if key in infected else "clean") for key in blobs}
     return {key: "error" for key in blobs}
 
@@ -203,8 +209,11 @@ def _vt_get(sha256, api_key):
         raise
 
 
-def vt_verdicts(blobs, api_key, sleep=time.sleep):
-    """Maps each key to 'malicious' | 'known-clean' | 'unknown' using hash lookups."""
+def vt_verdicts(blobs, api_key, sleep=time.sleep, detections=None):
+    """Maps each key to 'malicious' | 'known-clean' | 'unknown' using hash lookups.
+
+    `detections`, if given, receives the number of engines for each malicious key.
+    """
     out = {key: "unknown" for key in blobs}
     if not api_key:
         return out
@@ -230,6 +239,8 @@ def vt_verdicts(blobs, api_key, sleep=time.sleep):
         except (TypeError, ValueError):
             malicious = 0
         out[key] = "malicious" if malicious >= VT_MIN_DETECTIONS else "known-clean"
+        if out[key] == "malicious" and detections is not None:
+            detections[key] = malicious
     return out
 
 
@@ -252,9 +263,18 @@ def process(store, scan_cmd="clamscan", vt_key=None, sleep=time.sleep):
         report_id, stem, ext = m.groups()
         pending.append((key, report_id, f"{stem}.{ext}", ext))
 
-    def reject(item, reason):
-        key, report_id, name, _ = item
-        store.put(f"rejected/{report_id}/{name}", reason.encode(), "text/plain")
+    def reject(item, reason, data, **details):
+        """The file is deleted; this small private record of why it was refused stays."""
+        key, report_id, name, ext = item
+        record = {
+            "reason": reason,
+            "sha256": hashlib.sha256(data).hexdigest(),
+            "size": len(data),
+            "type": ext,
+            "scanned_at": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+            **details,
+        }
+        store.put(f"rejected/{report_id}/{name}", json.dumps(record).encode(), "application/json")
         store.delete(key)
 
     def fetch(item):
@@ -281,34 +301,36 @@ def process(store, scan_cmd="clamscan", vt_key=None, sleep=time.sleep):
                 if data is None:  # vanished or unreadable: try again next run
                     counts["errors"] += 1
                 elif len(data) > MAX_BYTES:
-                    reject(item, "too_large"); counts["rejected"] += 1
+                    reject(item, "too_large", data); counts["rejected"] += 1
                 elif detect(data) != item[3]:
-                    reject(item, "invalid"); counts["rejected"] += 1
+                    reject(item, "invalid", data); counts["rejected"] += 1
                 else:
                     blobs[item[0]] = (item, data)
-            verdicts = scan_batch({k: v[1] for k, v in blobs.items()}, scan_cmd)
+            signatures = {}
+            verdicts = scan_batch({k: v[1] for k, v in blobs.items()}, scan_cmd, signatures)
             passed = {}
             for key, (item, data) in blobs.items():
                 verdict = verdicts[key]
                 if verdict == "infected":
-                    reject(item, "infected"); counts["rejected"] += 1
+                    reject(item, "infected", data, source="clamav", signature=signatures.get(key, "")); counts["rejected"] += 1
                 elif verdict == "error":
                     counts["errors"] += 1  # stays in quarantine, retried next run
                 else:
                     passed[key] = (item, data)
             # second opinion on what ClamAV let through: hash lookup of the original file
-            vt = vt_verdicts({k: v[1] for k, v in passed.items()}, vt_key, sleep)
+            detections = {}
+            vt = vt_verdicts({k: v[1] for k, v in passed.items()}, vt_key, sleep, detections)
             to_release = []
             for key, (item, data) in passed.items():
                 if vt[key] == "malicious":
-                    reject(item, "infected"); counts["rejected"] += 1
+                    reject(item, "infected", data, source="virustotal", detections=detections.get(key, 0)); counts["rejected"] += 1
                 else:
                     to_release.append((item, data))
-            for item, ok in pool.map(release, to_release):
+            for (item, data), (_, ok) in zip(to_release, pool.map(release, to_release)):
                 if ok:
                     counts["clean"] += 1
                 else:
-                    reject(item, "invalid"); counts["rejected"] += 1
+                    reject(item, "invalid", data); counts["rejected"] += 1
     return counts
 
 
