@@ -24,6 +24,7 @@ import json
 import os
 import re
 import shlex
+import struct
 import subprocess
 import sys
 import tempfile
@@ -65,11 +66,51 @@ def detect(data: bytes) -> str:
     return ""
 
 
+def dimensions(data: bytes, kind: str):
+    """(width, height) as declared in the file header, read WITHOUT decoding pixels,
+    or None if the header can't be parsed. Used to reject oversized images before
+    Image.open(): some Pillow decoders allocate a full canvas while opening (e.g. APNG
+    background disposal, GHSA-5xm2-6676-qcp9), before any pixel-count check can run."""
+    try:
+        if kind == "png":
+            if data[12:16] != b"IHDR":
+                return None
+            return struct.unpack(">II", data[16:24])  # IHDR width, height
+        if kind == "jpg":
+            i, n = 2, len(data)
+            while i + 9 <= n and data[i] == 0xFF:
+                marker = data[i + 1]
+                if 0xC0 <= marker <= 0xCF and marker not in (0xC4, 0xC8, 0xCC):  # SOFn
+                    h, w = struct.unpack(">HH", data[i + 5 : i + 9])
+                    return w, h
+                if 0xD0 <= marker <= 0xD9 or marker == 0x01:  # standalone, no length
+                    i += 2
+                    continue
+                i += 2 + struct.unpack(">H", data[i + 2 : i + 4])[0]
+            return None
+        if kind == "webp":
+            fourcc = data[12:16]
+            if fourcc == b"VP8X":
+                return (int.from_bytes(data[24:27], "little") + 1, int.from_bytes(data[27:30], "little") + 1)
+            if fourcc == b"VP8 ":  # lossy: 14-bit dims after the 3-byte start code
+                return (struct.unpack("<H", data[26:28])[0] & 0x3FFF, struct.unpack("<H", data[28:30])[0] & 0x3FFF)
+            if fourcc == b"VP8L" and data[20] == 0x2F:  # lossless: packed 14-bit dims
+                b = int.from_bytes(data[21:25], "little")
+                return ((b & 0x3FFF) + 1, ((b >> 14) & 0x3FFF) + 1)
+            return None
+    except (struct.error, IndexError):
+        return None
+    return None
+
+
 def reencode(data: bytes, kind: str) -> bytes:
     """Decode and rebuild the image from raw pixels so no metadata or trailing data survives."""
     from PIL import Image, ImageOps
 
     Image.MAX_IMAGE_PIXELS = MAX_PIXELS
+    dims = dimensions(data, kind)
+    if dims and dims[0] * dims[1] > MAX_PIXELS:
+        raise ValueError("too many pixels")  # refuse on the header, before Image.open() allocates
     with Image.open(io.BytesIO(data), formats=[FORMATS[kind]]) as im:
         if im.width * im.height > MAX_PIXELS:
             raise ValueError("too many pixels")
