@@ -2,12 +2,34 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4047944,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047944\/",
-            "url": "http:\/\/196.189.98.110:50427\/bin.sh",
+            "id": 4049308,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049308\/",
+            "url": "http:\/\/123.188.42.80:34289\/i",
             "url_status": "online",
-            "host": "196.189.98.110",
-            "date_added": "2026-10-31 04:57:06 UTC",
+            "host": "123.188.42.80",
+            "date_added": "2026-11-01 05:26:21 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "ksi_digital",
+            "larted": "true",
+            "tags": [
+                "cowrie",
+                "elf",
+                "honeypot",
+                "mipsel",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4049307,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049307\/",
+            "url": "http:\/\/123.235.220.250:41217\/i",
+            "url_status": "online",
+            "host": "123.235.220.250",
+            "date_added": "2026-11-01 05:19:06 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -19,136 +41,17 @@
                 "32-bit",
                 "arm",
                 "elf",
+                "mirai",
                 "Mozi"
             ]
         },
         {
-            "id": 4047943,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047943\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.8\/orbitus-service-0.8.zip",
+            "id": 4049306,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049306\/",
+            "url": "http:\/\/39.90.238.94:37659\/bin.sh",
             "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047942,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047942\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.9\/orbitus-service-0.9.7z",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047941,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047941\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.9\/orbitus-service-0.9.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047940,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047940\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.7\/orbitus-service-0.7.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047939,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047939\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.9\/orbitus-service-0.9.rar",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047938,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047938\/",
-            "url": "https:\/\/github.com\/FunsyMe\/orbitus-service\/releases\/download\/v0.8b\/orbitus-service-0.8b.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-10-31 04:56:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4047937,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047937\/",
-            "url": "http:\/\/170.84.133.235:59891\/i",
-            "url_status": "online",
-            "host": "170.84.133.235",
-            "date_added": "2026-10-31 04:47:07 UTC",
+            "host": "39.90.238.94",
+            "date_added": "2026-11-01 05:17:07 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -161,12 +64,12 @@
             ]
         },
         {
-            "id": 4047936,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047936\/",
-            "url": "http:\/\/180.191.20.148:34982\/i",
+            "id": 4049305,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049305\/",
+            "url": "http:\/\/210.208.111.220:47673\/bin.sh",
             "url_status": "online",
-            "host": "180.191.20.148",
-            "date_added": "2026-10-31 04:17:07 UTC",
+            "host": "210.208.111.220",
+            "date_added": "2026-11-01 05:17:06 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -179,12 +82,106 @@
             ]
         },
         {
-            "id": 4047935,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4047935\/",
-            "url": "http:\/\/123.11.76.217:37289\/bin.sh",
+            "id": 4049304,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049304\/",
+            "url": "http:\/\/105.186.64.212:40219\/i",
             "url_status": "online",
-            "host": "123.11.76.217",
-            "date_added": "2026-10-31 04:17:06 UTC",
+            "host": "105.186.64.212",
+            "date_added": "2026-11-01 05:16:06 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": [
+                "mirai"
+            ]
+        },
+        {
+            "id": 4049303,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049303\/",
+            "url": "http:\/\/115.171.55.140:56002\/bin.sh",
+            "url_status": "online",
+            "host": "115.171.55.140",
+            "date_added": "2026-11-01 05:02:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": [
+                "mirai"
+            ]
+        },
+        {
+            "id": 4049301,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049301\/",
+            "url": "http:\/\/61.52.26.116:37129\/i",
+            "url_status": "online",
+            "host": "61.52.26.116",
+            "date_added": "2026-11-01 05:02:06 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": [
+                "mirai"
+            ]
+        },
+        {
+            "id": 4049302,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049302\/",
+            "url": "http:\/\/115.52.151.52:36191\/bin.sh",
+            "url_status": "online",
+            "host": "115.52.151.52",
+            "date_added": "2026-11-01 05:02:06 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4049300,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049300\/",
+            "url": "http:\/\/123.235.220.250:41217\/bin.sh",
+            "url_status": "online",
+            "host": "123.235.220.250",
+            "date_added": "2026-11-01 04:50:16 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "arm",
+                "elf",
+                "mirai",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4049299,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049299\/",
+            "url": "http:\/\/78.166.209.173:36322\/i",
+            "url_status": "online",
+            "host": "78.166.209.173",
+            "date_added": "2026-11-01 04:47:05 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
