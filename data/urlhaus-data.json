@@ -2,195 +2,202 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4049308,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049308\/",
-            "url": "http:\/\/123.188.42.80:34289\/i",
+            "id": 4050203,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050203\/",
+            "url": "https:\/\/github.com\/atomzonedart\/hAPp-prOXY\/releases\/download\/1.12.1\/happ.zip",
             "url_status": "online",
-            "host": "123.188.42.80",
-            "date_added": "2026-11-01 05:26:21 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:14:28 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "ksi_digital",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "cowrie",
-                "elf",
-                "honeypot",
-                "mipsel",
-                "Mozi"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049307,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049307\/",
-            "url": "http:\/\/123.235.220.250:41217\/i",
+            "id": 4050202,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050202\/",
+            "url": "https:\/\/github.com\/attomoverconform\/prizRaK-bOx-giThub\/releases\/download\/v1.0.20\/prizrak-box.zip",
             "url_status": "online",
-            "host": "123.235.220.250",
-            "date_added": "2026-11-01 05:19:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:14:05 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049306,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049306\/",
-            "url": "http:\/\/39.90.238.94:37659\/bin.sh",
+            "id": 4050201,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050201\/",
+            "url": "https:\/\/github.com\/atomzonedart\/happ-WINdOWs\/releases\/download\/1.12.2\/happ.zip",
             "url_status": "online",
-            "host": "39.90.238.94",
-            "date_added": "2026-11-01 05:17:07 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:14:04 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "mirai"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049305,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049305\/",
-            "url": "http:\/\/210.208.111.220:47673\/bin.sh",
+            "id": 4050200,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050200\/",
+            "url": "https:\/\/github.com\/attomoverconform\/VPNbot\/releases\/download\/v1.0.20\/vpnbot.zip",
             "url_status": "online",
-            "host": "210.208.111.220",
-            "date_added": "2026-11-01 05:17:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:13:58 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "mirai"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049304,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049304\/",
-            "url": "http:\/\/105.186.64.212:40219\/i",
+            "id": 4050199,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050199\/",
+            "url": "https:\/\/raw.githubusercontent.com\/attomoverconform\/prizRaK-bOx-giThub\/refs\/heads\/main\/prizrak-box.bat",
             "url_status": "online",
-            "host": "105.186.64.212",
-            "date_added": "2026-11-01 05:16:06 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-02 04:13:53 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "mirai"
+                "dropper",
+                "github",
+                "SalatStealer"
             ]
         },
         {
-            "id": 4049303,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049303\/",
-            "url": "http:\/\/115.171.55.140:56002\/bin.sh",
+            "id": 4050196,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050196\/",
+            "url": "https:\/\/github.com\/atomzonedart\/HaPP\/releases\/download\/1.12.1\/happ.zip",
             "url_status": "online",
-            "host": "115.171.55.140",
-            "date_added": "2026-11-01 05:02:19 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:13:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "mirai"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049301,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049301\/",
-            "url": "http:\/\/61.52.26.116:37129\/i",
+            "id": 4050197,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050197\/",
+            "url": "https:\/\/github.com\/atomzonedart\/hAPP_PlUs\/releases\/download\/1.12.0\/happ.zip",
             "url_status": "online",
-            "host": "61.52.26.116",
-            "date_added": "2026-11-01 05:02:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:13:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "mirai"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049302,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049302\/",
-            "url": "http:\/\/115.52.151.52:36191\/bin.sh",
+            "id": 4050198,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050198\/",
+            "url": "https:\/\/github.com\/attomoverconform\/MY-RemNAwavE\/releases\/download\/v1.5\/my-remnawave.zip",
             "url_status": "online",
-            "host": "115.52.151.52",
-            "date_added": "2026-11-01 05:02:06 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 04:13:08 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "Mozi"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         },
         {
-            "id": 4049300,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049300\/",
-            "url": "http:\/\/123.235.220.250:41217\/bin.sh",
+            "id": 4050195,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050195\/",
+            "url": "https:\/\/github.com\/BaranK35\/Slipstream2\/releases\/download\/v0.3.6\/Slipstream_0.3.6_x64-setup.exe",
             "url_status": "online",
-            "host": "123.235.220.250",
-            "date_added": "2026-11-01 04:50:16 UTC",
+            "host": "github.com",
+            "date_added": "2026-11-02 03:53:14 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
+                "github",
+                "zapret"
             ]
         },
         {
-            "id": 4049299,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4049299\/",
-            "url": "http:\/\/78.166.209.173:36322\/i",
+            "id": 4050194,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050194\/",
+            "url": "https:\/\/raw.githubusercontent.com\/awarenesslionmesh\/dISCoRDzaPReT\/refs\/heads\/main\/service.bat",
             "url_status": "online",
-            "host": "78.166.209.173",
-            "date_added": "2026-11-01 04:47:05 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-02 03:45:09 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
+            "reporter": "wristhulk",
             "larted": "true",
             "tags": [
-                "Mozi"
+                "github",
+                "SalatStealer",
+                "zapret"
             ]
         }
     ]
