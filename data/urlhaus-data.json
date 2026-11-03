@@ -2,112 +2,12 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4050203,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050203\/",
-            "url": "https:\/\/github.com\/atomzonedart\/hAPp-prOXY\/releases\/download\/1.12.1\/happ.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:14:28 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050202,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050202\/",
-            "url": "https:\/\/github.com\/attomoverconform\/prizRaK-bOx-giThub\/releases\/download\/v1.0.20\/prizrak-box.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:14:05 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050201,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050201\/",
-            "url": "https:\/\/github.com\/atomzonedart\/happ-WINdOWs\/releases\/download\/1.12.2\/happ.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:14:04 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050200,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050200\/",
-            "url": "https:\/\/github.com\/attomoverconform\/VPNbot\/releases\/download\/v1.0.20\/vpnbot.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:13:58 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050199,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050199\/",
-            "url": "https:\/\/raw.githubusercontent.com\/attomoverconform\/prizRaK-bOx-giThub\/refs\/heads\/main\/prizrak-box.bat",
+            "id": 4054478,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054478\/",
+            "url": "https:\/\/raw.githubusercontent.com\/InvestigatorShack\/Happ-proXy\/refs\/heads\/main\/serivce.bat",
             "url_status": "online",
             "host": "raw.githubusercontent.com",
-            "date_added": "2026-11-02 04:13:53 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "dropper",
-                "github",
-                "SalatStealer"
-            ]
-        },
-        {
-            "id": 4050196,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050196\/",
-            "url": "https:\/\/github.com\/atomzonedart\/HaPP\/releases\/download\/1.12.1\/happ.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:13:08 UTC",
+            "date_added": "2026-11-03 06:02:41 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
@@ -122,71 +22,172 @@
             ]
         },
         {
-            "id": 4050197,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050197\/",
-            "url": "https:\/\/github.com\/atomzonedart\/hAPP_PlUs\/releases\/download\/1.12.0\/happ.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:13:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050198,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050198\/",
-            "url": "https:\/\/github.com\/attomoverconform\/MY-RemNAwavE\/releases\/download\/v1.5\/my-remnawave.zip",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 04:13:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SalatStealer",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050195,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050195\/",
-            "url": "https:\/\/github.com\/BaranK35\/Slipstream2\/releases\/download\/v0.3.6\/Slipstream_0.3.6_x64-setup.exe",
-            "url_status": "online",
-            "host": "github.com",
-            "date_added": "2026-11-02 03:53:14 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "zapret"
-            ]
-        },
-        {
-            "id": 4050194,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4050194\/",
-            "url": "https:\/\/raw.githubusercontent.com\/awarenesslionmesh\/dISCoRDzaPReT\/refs\/heads\/main\/service.bat",
+            "id": 4054477,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054477\/",
+            "url": "https:\/\/raw.githubusercontent.com\/AlchemistPlain\/HaPP\/refs\/heads\/main\/serivce.bat",
             "url_status": "online",
             "host": "raw.githubusercontent.com",
-            "date_added": "2026-11-02 03:45:09 UTC",
+            "date_added": "2026-11-03 06:02:40 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054476,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054476\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Featheriacelebrate90\/hApp-VPN\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:37 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054475,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054475\/",
+            "url": "https:\/\/raw.githubusercontent.com\/HemomancerAura\/haPP-WinDOWS\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:37 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054474,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054474\/",
+            "url": "https:\/\/raw.githubusercontent.com\/FlameClassRun\/HaPP_plUS\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:34 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054473,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054473\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Ditchchureckon15\/haPp-VpN\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:31 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054472,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054472\/",
+            "url": "https:\/\/raw.githubusercontent.com\/InvestigatorShack\/hapP-PlUs\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:31 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054471,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054471\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Galaxytraobelisk\/HaPP-pLUs\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:31 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054470,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054470\/",
+            "url": "https:\/\/raw.githubusercontent.com\/HandcuffPremier\/HAPP-plUS\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:26 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "wristhulk",
+            "larted": "true",
+            "tags": [
+                "github",
+                "SalatStealer",
+                "zapret"
+            ]
+        },
+        {
+            "id": 4054469,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4054469\/",
+            "url": "https:\/\/raw.githubusercontent.com\/HarborOceanHarbor\/HApp_pRoxY\/refs\/heads\/main\/serivce.bat",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-03 06:02:23 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
