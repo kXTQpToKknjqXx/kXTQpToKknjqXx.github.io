@@ -2,166 +2,192 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4059849,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059849\/",
-            "url": "http:\/\/61.52.46.177:53226\/i",
+            "id": 4061451,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061451\/",
+            "url": "http:\/\/196.251.107.58\/UniversalBrowser.exe",
             "url_status": "online",
-            "host": "61.52.46.177",
-            "date_added": "2026-11-08 05:32:07 UTC",
+            "host": "196.251.107.58",
+            "date_added": "2026-11-09 05:41:06 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "false",
-            "tags": null
-        },
-        {
-            "id": 4059850,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059850\/",
-            "url": "http:\/\/39.76.134.245:53151\/bin.sh",
-            "url_status": "online",
-            "host": "39.76.134.245",
-            "date_added": "2026-11-08 05:32:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "false",
-            "tags": null
-        },
-        {
-            "id": 4059848,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059848\/",
-            "url": "http:\/\/170.84.133.234:45593\/i",
-            "url_status": "online",
-            "host": "170.84.133.234",
-            "date_added": "2026-11-08 05:32:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "false",
-            "tags": null
-        },
-        {
-            "id": 4059845,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059845\/",
-            "url": "http:\/\/115.50.229.150:48322\/i",
-            "url_status": "online",
-            "host": "115.50.229.150",
-            "date_added": "2026-11-08 05:17:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059846,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059846\/",
-            "url": "http:\/\/115.58.86.2:52921\/i",
-            "url_status": "online",
-            "host": "115.58.86.2",
-            "date_added": "2026-11-08 05:17:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059847,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059847\/",
-            "url": "http:\/\/125.160.143.22:48853\/i",
-            "url_status": "online",
-            "host": "125.160.143.22",
-            "date_added": "2026-11-08 05:17:07 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059842,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059842\/",
-            "url": "http:\/\/113.255.195.84:43347\/i",
-            "url_status": "online",
-            "host": "113.255.195.84",
-            "date_added": "2026-11-08 05:17:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059843,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059843\/",
-            "url": "http:\/\/182.121.171.41:40525\/bin.sh",
-            "url_status": "online",
-            "host": "182.121.171.41",
-            "date_added": "2026-11-08 05:17:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059844,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059844\/",
-            "url": "http:\/\/182.126.109.255:49378\/i",
-            "url_status": "online",
-            "host": "182.126.109.255",
-            "date_added": "2026-11-08 05:17:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4059833,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4059833\/",
-            "url": "http:\/\/45.198.224.164\/arm",
-            "url_status": "online",
-            "host": "45.198.224.164",
-            "date_added": "2026-11-08 05:02:13 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "ClearlyNotB",
+            "reporter": "BlinkzSec",
             "larted": "true",
             "tags": [
-                "elf",
+                "196-251-107-58",
+                "exe",
                 "ua-wget"
+            ]
+        },
+        {
+            "id": 4061450,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061450\/",
+            "url": "http:\/\/185.9.139.102:34606\/bin.sh",
+            "url_status": "online",
+            "host": "185.9.139.102",
+            "date_added": "2026-11-09 05:32:05 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 4061449,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061449\/",
+            "url": "http:\/\/196.89.162.211:51769\/i",
+            "url_status": "online",
+            "host": "196.89.162.211",
+            "date_added": "2026-11-09 05:29:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4061448,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061448\/",
+            "url": "http:\/\/115.55.255.56:55565\/bin.sh",
+            "url_status": "online",
+            "host": "115.55.255.56",
+            "date_added": "2026-11-09 05:25:15 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4061447,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061447\/",
+            "url": "http:\/\/39.76.134.245:53151\/i",
+            "url_status": "online",
+            "host": "39.76.134.245",
+            "date_added": "2026-11-09 05:23:14 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "arm",
+                "elf",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4061446,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061446\/",
+            "url": "http:\/\/115.55.175.218:37880\/i",
+            "url_status": "online",
+            "host": "115.55.175.218",
+            "date_added": "2026-11-09 05:18:15 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4061445,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061445\/",
+            "url": "http:\/\/123.134.58.23:37110\/i",
+            "url_status": "online",
+            "host": "123.134.58.23",
+            "date_added": "2026-11-09 05:17:10 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 4061444,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061444\/",
+            "url": "http:\/\/222.140.180.16:52728\/i",
+            "url_status": "online",
+            "host": "222.140.180.16",
+            "date_added": "2026-11-09 05:17:07 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 4061443,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061443\/",
+            "url": "http:\/\/27.207.246.212:59860\/i",
+            "url_status": "online",
+            "host": "27.207.246.212",
+            "date_added": "2026-11-09 05:17:06 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "adliwahid",
+            "larted": "true",
+            "tags": null
+        },
+        {
+            "id": 4061442,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4061442\/",
+            "url": "http:\/\/182.126.120.122:33509\/bin.sh",
+            "url_status": "online",
+            "host": "182.126.120.122",
+            "date_added": "2026-11-09 05:16:12 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "geenensp",
+            "larted": "true",
+            "tags": [
+                "32-bit",
+                "elf",
+                "mips",
+                "Mozi"
             ]
         }
     ]
