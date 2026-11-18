@@ -2,196 +2,219 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4067807,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067807\/",
-            "url": "https:\/\/bkktech-thai.com\/jcopnnn.txt",
+            "id": 4068926,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068926\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Afzal-Iqbal\/Lucky-Shrub\/refs\/heads\/main\/public\/fonts\/fa-brands-400.ttf",
             "url_status": "online",
-            "host": "bkktech-thai.com",
-            "date_added": "2026-11-17 07:26:11 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "abuse_ch",
-            "larted": "true",
-            "tags": [
-                "ascii",
-                "Encoded",
-                "PhantomStealer"
-            ]
-        },
-        {
-            "id": 4067806,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067806\/",
-            "url": "https:\/\/bkktech-thai.com\/cmdfdaF.txt",
-            "url_status": "online",
-            "host": "bkktech-thai.com",
-            "date_added": "2026-11-17 07:26:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "abuse_ch",
-            "larted": "true",
-            "tags": [
-                "ascii",
-                "Encoded"
-            ]
-        },
-        {
-            "id": 4067805,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067805\/",
-            "url": "http:\/\/digidonna.ru\/jibsqyf\/xskcv1w\/bfmdejz\/93KMK.ps1",
-            "url_status": "offline",
-            "host": "digidonna.ru",
-            "date_added": "2026-11-17 07:25:06 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:40 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "abuse_ch",
+            "reporter": "real_kaeptnbalu",
             "larted": "false",
             "tags": [
-                "ascii",
-                "Formbook",
-                "powershell",
-                "ps1"
-            ]
-        },
-        {
-            "id": 4067803,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067803\/",
-            "url": "https:\/\/files.catbox.moe\/q9ebhe.js",
-            "url_status": "online",
-            "host": "files.catbox.moe",
-            "date_added": "2026-11-17 07:24:08 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "abuse_ch",
-            "larted": "true",
-            "tags": [
-                "ascii",
+                "DEVPOPPER",
+                "github",
                 "js",
-                "rat",
-                "RemcosRAT"
+                "TxDataHiding",
+                "VSCode"
             ]
         },
         {
-            "id": 4067804,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067804\/",
-            "url": "https:\/\/files.catbox.moe\/fntycb.js",
+            "id": 4068916,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068916\/",
+            "url": "https:\/\/raw.githubusercontent.com\/ahmedmelfay\/geel-al7asob\/refs\/heads\/main\/public\/fonts\/fa-solid-400.woff2",
             "url_status": "online",
-            "host": "files.catbox.moe",
-            "date_added": "2026-11-17 07:24:08 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "abuse_ch",
-            "larted": "true",
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
             "tags": [
-                "ascii",
+                "DEVBOX",
+                "github",
                 "js",
-                "rat",
-                "RemcosRAT"
+                "VSCode"
             ]
         },
         {
-            "id": 4067802,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067802\/",
-            "url": "http:\/\/190.103.69.182:34442\/i",
+            "id": 4068917,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068917\/",
+            "url": "https:\/\/raw.githubusercontent.com\/Dhilsen18\/Web-Dix\/refs\/heads\/main\/public\/fonts\/fa-solid-500.woff2",
             "url_status": "online",
-            "host": "190.103.69.182",
-            "date_added": "2026-11-17 07:17:09 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4067801,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067801\/",
-            "url": "http:\/\/59.96.139.206:33999\/i",
-            "url_status": "online",
-            "host": "59.96.139.206",
-            "date_added": "2026-11-17 07:17:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
-        },
-        {
-            "id": 4067800,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067800\/",
-            "url": "http:\/\/42.230.41.174:46064\/i",
-            "url_status": "online",
-            "host": "42.230.41.174",
-            "date_added": "2026-11-17 07:11:15 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "geenensp",
-            "larted": "true",
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "DEVPOPPER",
+                "github",
+                "js",
+                "TxDataHiding",
+                "VSCode"
             ]
         },
         {
-            "id": 4067799,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067799\/",
-            "url": "http:\/\/42.230.41.174:46064\/bin.sh",
+            "id": 4068918,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068918\/",
+            "url": "https:\/\/raw.githubusercontent.com\/chinedu16\/fintrack-dashboard-test\/refs\/heads\/main\/src\/app\/reports\/public\/fonts\/fa-brand-400.orc",
             "url_status": "online",
-            "host": "42.230.41.174",
-            "date_added": "2026-11-17 07:02:10 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "true",
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
             "tags": [
-                "32-bit",
-                "elf",
-                "mips",
-                "Mozi"
+                "DEVPOPPER",
+                "github",
+                "js",
+                "TxDataHiding",
+                "VSCode"
             ]
         },
         {
-            "id": 4067798,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4067798\/",
-            "url": "http:\/\/115.61.13.191:42524\/bin.sh",
+            "id": 4068919,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068919\/",
+            "url": "https:\/\/raw.githubusercontent.com\/almostengr\/luminary-maestro-fpp\/refs\/heads\/main\/public\/fonts\/fa-solid-400.woff2",
             "url_status": "online",
-            "host": "115.61.13.191",
-            "date_added": "2026-11-17 07:02:08 UTC",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
-            "tags": null
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVBOX",
+                "github",
+                "js",
+                "VSCode"
+            ]
+        },
+        {
+            "id": 4068920,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068920\/",
+            "url": "https:\/\/raw.githubusercontent.com\/abhi-dev78\/strapi-cloud-template-blog-0f64e1d1e9\/refs\/heads\/main\/src\/api\/about\/content-types\/about\/public\/fonts\/fa-brand-400.orc",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVPOPPER",
+                "github",
+                "js",
+                "TxDataHiding",
+                "VSCode"
+            ]
+        },
+        {
+            "id": 4068921,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068921\/",
+            "url": "https:\/\/raw.githubusercontent.com\/abdalmuneim\/http_console\/refs\/heads\/main\/public\/fonts\/fa-solid-400.woff2",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVBOX",
+                "github",
+                "js",
+                "VSCode"
+            ]
+        },
+        {
+            "id": 4068922,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068922\/",
+            "url": "https:\/\/raw.githubusercontent.com\/ammarbinshakir\/k8s-url-shortener-app\/refs\/heads\/main\/public\/fonts\/fa-solid-700.otf",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVPOPPER",
+                "github",
+                "js",
+                "TxDataHiding",
+                "VSCode"
+            ]
+        },
+        {
+            "id": 4068923,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068923\/",
+            "url": "https:\/\/raw.githubusercontent.com\/amomack123\/glassbox\/refs\/heads\/main\/app\/public\/fonts\/fa-brand-400.orc",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVPOPPER",
+                "github",
+                "js",
+                "TxDataHiding",
+                "VSCode"
+            ]
+        },
+        {
+            "id": 4068924,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4068924\/",
+            "url": "https:\/\/raw.githubusercontent.com\/aalkhraissi\/riyadh-municipality-badges\/refs\/heads\/main\/public\/fonts\/fa-solid-400.woff2",
+            "url_status": "online",
+            "host": "raw.githubusercontent.com",
+            "date_added": "2026-11-18 06:52:38 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "real_kaeptnbalu",
+            "larted": "false",
+            "tags": [
+                "DEVBOX",
+                "github",
+                "js"
+            ]
         }
     ]
 }
