@@ -4,8 +4,9 @@ Polls a Telegram bot for new messages in a specific group, looks for
 "/push <domain>" commands from an allow-listed set of Telegram user IDs,
 validates + normalizes the domain, and appends it to
 data/investment-fraud-domains.json if it isn't already there. Who added
-what is only visible in the git commit history and the bot's chat replies,
-not in a separate file.
+what is only visible in the Telegram group itself: this repository is
+public and so are its Actions logs, so nothing here prints a user's name
+or id.
 
 State (last processed Telegram update_id) is kept in
 .github/telegram-offset.json so re-runs never reprocess old messages.
@@ -179,7 +180,6 @@ def main():
         chat_id = str(message.get("chat", {}).get("id", ""))
         user = message.get("from", {})
         user_id = str(user.get("id", ""))
-        username = user.get("username") or user.get("first_name") or user_id
         message_id = message.get("message_id")
 
         if chat_id != str(CHAT_ID):
@@ -191,7 +191,7 @@ def main():
             continue
 
         if user_id not in ALLOWED_USER_IDS:
-            print(f"Ignoring /push from non-allowlisted user {user_id} ({username})")
+            print("Ignoring /push from a non-allowlisted user")
             reply(chat_id, "⛔️ Нямаш права да добавяш домейни. Пробвай /help за повече информация.", message_id)
             continue
 
@@ -214,7 +214,7 @@ def main():
         changed = True
 
         reply(chat_id, f"✅ Добавен: {domain}", message_id)
-        print(f"Added domain: {domain} (by {username}/{user_id})")
+        print(f"Added domain: {domain}")
 
     if changed:
         save_domains(domains)
