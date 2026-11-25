@@ -6,10 +6,8 @@
             ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone,
             MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink,
             ArrowUp, Globe, TrendingUp, ArrowRight,
-            Briefcase, Heart, Users, FileBadge, Coins, Activity, Bug, ServerOff, Fingerprint, FolderLock, Search,
-            ClipboardList
+            Briefcase, Heart, Users, FileBadge, Coins, Activity, Bug, ServerOff, Fingerprint, FolderLock, Search
         } from 'lucide-react';
-        import { REPORT_ENABLED } from './report-config.js';
 
         // --- CONSTANTS ---
 
@@ -21,7 +19,6 @@
                 blog: "Блог",
                 threats: "Бюлетин",
                 contacts: "Контакти",
-                report: "Подай сигнал",
                 headerTitle: "Борба с киберпрестъпността",
                 headerSubtitle: "ГДБОП-МВР",
                 videoTitle: "Видеоканал",
@@ -68,7 +65,6 @@
                 blog: "Blog",
                 threats: "Threat Feed",
                 contacts: "Contacts",
-                report: "Report",
                 headerTitle: "Cybercrime Directorate",
                 headerSubtitle: "General Directorate Combating Organised Crime, Bulgarian Ministry of the Interior",
                 videoTitle: "Video Channel",
@@ -421,7 +417,6 @@
                 { id: 'threat-feed', label: t.threats, icon: Siren },
                 { id: 'phishing-feed', label: t.phishingNav, icon: ShieldAlert },
                 { id: 'investment-fraud.html', label: t.investment, icon: TrendingUp, isLink: true },
-                ...(REPORT_ENABLED ? [{ id: 'https://report.cybercrime.bg', label: t.report, icon: ClipboardList, isLink: true }] : []),
                 { id: 'contacts', label: t.contacts, icon: MapPin },
             ];
 
