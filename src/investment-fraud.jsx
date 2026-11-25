@@ -487,7 +487,7 @@
                         const response = await fetch('data/investment-fraud-domains.json');
                         if (!response.ok) throw new Error('Failed to fetch domains');
                         const data = await response.json();
-                        setDomains(data);
+                        setDomains(Array.isArray(data) ? data.filter((d) => typeof d === 'string') : []);
                     } catch (err) {
                         console.error('Error fetching domains:', err);
                     } finally {
