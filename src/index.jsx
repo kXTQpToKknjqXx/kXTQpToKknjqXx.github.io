@@ -6,8 +6,10 @@
             ShieldCheck, Eye, RefreshCw, HardDrive, Smartphone,
             MessageCircle, CheckCircle, Video, Siren, MapPin, Facebook, Youtube, ExternalLink,
             ArrowUp, Globe, TrendingUp, ArrowRight,
-            Briefcase, Heart, Users, FileBadge, Coins, Activity, Bug, ServerOff, Fingerprint, FolderLock, Search
+            Briefcase, Heart, Users, FileBadge, Coins, Activity, Bug, ServerOff, Fingerprint, FolderLock, Search,
+            ClipboardList
         } from 'lucide-react';
+        import { REPORT_ENABLED } from './report-config.js';
 
         // --- CONSTANTS ---
 
@@ -19,6 +21,7 @@
                 blog: "Блог",
                 threats: "Бюлетин",
                 contacts: "Контакти",
+                report: "Подай сигнал",
                 headerTitle: "Борба с киберпрестъпността",
                 headerSubtitle: "ГДБОП-МВР",
                 videoTitle: "Видеоканал",
@@ -65,6 +68,7 @@
                 blog: "Blog",
                 threats: "Threat Feed",
                 contacts: "Contacts",
+                report: "Report",
                 headerTitle: "Cybercrime Directorate",
                 headerSubtitle: "General Directorate Combating Organised Crime, Bulgarian Ministry of the Interior",
                 videoTitle: "Video Channel",
@@ -417,6 +421,7 @@
                 { id: 'threat-feed', label: t.threats, icon: Siren },
                 { id: 'phishing-feed', label: t.phishingNav, icon: ShieldAlert },
                 { id: 'investment-fraud.html', label: t.investment, icon: TrendingUp, isLink: true },
+                ...(REPORT_ENABLED ? [{ id: 'https://report.cybercrime.bg', label: t.report, icon: ClipboardList, isLink: true }] : []),
                 { id: 'contacts', label: t.contacts, icon: MapPin },
             ];
 
@@ -626,6 +631,27 @@
             );
         };
 
+        // Feed data comes from outside this site (abuse.ch, the detectopod repo): keep only
+        // the fields the tables show, as plain text, so one odd record can't break rendering.
+        const asText = (v) => (typeof v === 'string' || typeof v === 'number' ? String(v) : '');
+
+        // A section that fails to render is hidden instead of blanking the whole page.
+        class SectionBoundary extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { failed: false };
+            }
+            static getDerivedStateFromError() {
+                return { failed: true };
+            }
+            componentDidCatch(err) {
+                console.error('Section failed to render', err);
+            }
+            render() {
+                return this.state.failed ? null : this.props.children;
+            }
+        }
+
         // Threat Feed Component
         const ThreatFeed = ({ lang }) => {
             const t = TRANSLATIONS[lang];
@@ -640,8 +666,13 @@
                         if (!response.ok) throw new Error('Network response was not ok');
                         const data = await response.json();
 
-                        if (data && data.urls) {
-                            setThreats(data.urls);
+                        if (data && Array.isArray(data.urls)) {
+                            setThreats(data.urls.filter(Boolean).map((x) => ({
+                                url: asText(x.url),
+                                date_added: asText(x.date_added),
+                                url_status: asText(x.url_status),
+                                reporter: asText(x.reporter),
+                            })));
                         } else {
                             throw new Error('Invalid data format');
                         }
@@ -765,8 +796,17 @@
                         const response = await fetch('https://raw.githubusercontent.com/georgi-i/detectopod/main/feed/phishing_feed.json');
                         if (!response.ok) throw new Error('Network response was not ok');
                         const data = await response.json();
+                        const items = (Array.isArray(data) ? data : [])
+                            .filter((x) => x && typeof x.domain === 'string')
+                            .map((x) => ({
+                                domain: x.domain,
+                                score: asText(x.score),
+                                detected_at: asText(x.detected_at),
+                                source: asText(x.source),
+                                model: asText(x.llm_analysis?.model),
+                            }));
                         // Sort most recent first
-                        const sortedData = data.sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at));
+                        const sortedData = items.sort((a, b) => new Date(b.detected_at) - new Date(a.detected_at));
                         setFeedData(sortedData);
                     } catch (err) {
                         console.error("Failed to fetch phishing feed", err);
@@ -875,7 +915,7 @@
                                                     </span>
                                                 </td>
                                                 <td className="p-4 hidden md:table-cell text-xs font-mono text-slate-400">
-                                                    {item.llm_analysis?.model || '-'}
+                                                    {item.model || '-'}
                                                 </td>
                                                 <td className="p-4 hidden md:table-cell text-slate-500">
                                                     {item.source}
@@ -1612,8 +1652,8 @@
                         <main className="flex-grow">
                             <CrimeTypesSection lang={lang} />
                             <TipsSection lang={lang} />
-                            <ThreatFeed lang={lang} />
-                            <PhishingFeed lang={lang} />
+                            <SectionBoundary><ThreatFeed lang={lang} /></SectionBoundary>
+                            <SectionBoundary><PhishingFeed lang={lang} /></SectionBoundary>
                             <BlogSection lang={lang} />
                             <TikTokFeed lang={lang} />
                             <CTASection lang={lang} />
