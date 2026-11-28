@@ -2,199 +2,183 @@
     "query_status": "ok",
     "urls": [
         {
-            "id": 4077445,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077445\/",
-            "url": "http:\/\/196.189.3.1:64442\/bin.sh",
-            "url_status": "online",
-            "host": "196.189.3.1",
-            "date_added": "2026-11-27 07:41:15 UTC",
+            "id": 4078646,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078646\/",
+            "url": "http:\/\/153.117.33.228:43747\/Mozi.m",
+            "url_status": "offline",
+            "host": "153.117.33.228",
+            "date_added": "2026-11-28 07:12:28 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
-            "larted": "true",
-            "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
-            ]
-        },
-        {
-            "id": 4077442,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077442\/",
-            "url": "https:\/\/raw.githubusercontent.com\/YayaGSM\/YAy-GSM\/refs\/heads\/main\/misinfer\/YAy-GSM_v1.5.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-11-27 07:41:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 4077443,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077443\/",
-            "url": "https:\/\/raw.githubusercontent.com\/YayaGSM\/YAYAGSM\/refs\/heads\/main\/velvetlike\/YAYAGSM-v3.1.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-11-27 07:41:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 4077444,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077444\/",
-            "url": "https:\/\/raw.githubusercontent.com\/YayaGSM\/YAy-GSM\/refs\/heads\/main\/misinfer\/Ay_Y_GSM_1.9.zip",
-            "url_status": "online",
-            "host": "raw.githubusercontent.com",
-            "date_added": "2026-11-27 07:41:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "wristhulk",
-            "larted": "true",
-            "tags": [
-                "github",
-                "SmartLoader",
-                "zip"
-            ]
-        },
-        {
-            "id": 4077440,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077440\/",
-            "url": "http:\/\/182.113.206.247:59688\/bin.sh",
-            "url_status": "online",
-            "host": "182.113.206.247",
-            "date_added": "2026-11-27 07:33:06 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "not listed",
-                "surbl": "not listed"
-            },
-            "reporter": "adliwahid",
-            "larted": "true",
+            "reporter": "anonymous",
+            "larted": "false",
             "tags": [
                 "Mozi"
             ]
         },
         {
-            "id": 4077441,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077441\/",
-            "url": "http:\/\/42.235.169.168:56647\/i",
-            "url_status": "online",
-            "host": "42.235.169.168",
-            "date_added": "2026-11-27 07:33:06 UTC",
+            "id": 4078647,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078647\/",
+            "url": "http:\/\/153.117.70.195:39484\/Mozi.m",
+            "url_status": "offline",
+            "host": "153.117.70.195",
+            "date_added": "2026-11-28 07:12:28 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
+            "reporter": "anonymous",
+            "larted": "false",
             "tags": [
                 "Mozi"
             ]
         },
         {
-            "id": 4077439,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077439\/",
-            "url": "http:\/\/123.13.138.19:39607\/i",
-            "url_status": "online",
-            "host": "123.13.138.19",
-            "date_added": "2026-11-27 07:32:06 UTC",
+            "id": 4078645,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078645\/",
+            "url": "http:\/\/153.117.28.198:42191\/Mozi.m",
+            "url_status": "offline",
+            "host": "153.117.28.198",
+            "date_added": "2026-11-28 07:12:27 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
+            "reporter": "anonymous",
+            "larted": "false",
             "tags": [
                 "Mozi"
             ]
         },
         {
-            "id": 4077438,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077438\/",
-            "url": "http:\/\/222.141.143.228:34730\/i",
-            "url_status": "online",
-            "host": "222.141.143.228",
-            "date_added": "2026-11-27 07:32:05 UTC",
+            "id": 4078644,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078644\/",
+            "url": "http:\/\/103.213.112.90:46740\/Mozi.m",
+            "url_status": "offline",
+            "host": "103.213.112.90",
+            "date_added": "2026-11-28 07:12:20 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "adliwahid",
-            "larted": "true",
+            "reporter": "anonymous",
+            "larted": "false",
             "tags": [
                 "Mozi"
             ]
         },
         {
-            "id": 4077437,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077437\/",
-            "url": "https:\/\/download.dorku.space\/Eviden%20Pelanggaran.zip",
-            "url_status": "online",
-            "host": "download.dorku.space",
-            "date_added": "2026-11-27 07:26:44 UTC",
-            "threat": "malware_download",
-            "blacklists": {
-                "spamhaus_dbl": "abused_legit_malware",
-                "surbl": "listed"
-            },
-            "reporter": "PierrunoYT",
-            "larted": "true",
-            "tags": [
-                "dll-sideloading",
-                "FakeCaptcha",
-                "zip"
-            ]
-        },
-        {
-            "id": 4077436,
-            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4077436\/",
-            "url": "http:\/\/124.161.116.5:59073\/i",
-            "url_status": "online",
-            "host": "124.161.116.5",
-            "date_added": "2026-11-27 07:26:13 UTC",
+            "id": 4078639,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078639\/",
+            "url": "http:\/\/103.203.45.3:52583\/Mozi.7",
+            "url_status": "offline",
+            "host": "103.203.45.3",
+            "date_added": "2026-11-28 07:12:19 UTC",
             "threat": "malware_download",
             "blacklists": {
                 "spamhaus_dbl": "not listed",
                 "surbl": "not listed"
             },
-            "reporter": "geenensp",
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4078640,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078640\/",
+            "url": "http:\/\/223.123.34.228:37008\/Mozi.a",
+            "url_status": "offline",
+            "host": "223.123.34.228",
+            "date_added": "2026-11-28 07:12:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4078641,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078641\/",
+            "url": "http:\/\/223.123.72.24:43794\/Mozi.a",
+            "url_status": "offline",
+            "host": "223.123.72.24",
+            "date_added": "2026-11-28 07:12:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "Mozi"
+            ]
+        },
+        {
+            "id": 4078642,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078642\/",
+            "url": "https:\/\/lemonbalmstele.net\/tenant\/identity-hook.js",
+            "url_status": "offline",
+            "host": "lemonbalmstele.net",
+            "date_added": "2026-11-28 07:12:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "malware_domain",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "SmartApeSG"
+            ]
+        },
+        {
+            "id": 4078643,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078643\/",
+            "url": "https:\/\/peppermintpylon.net\/auth\/status-module.js",
+            "url_status": "offline",
+            "host": "peppermintpylon.net",
+            "date_added": "2026-11-28 07:12:19 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "malware_domain",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
+            "larted": "false",
+            "tags": [
+                "SmartApeSG"
+            ]
+        },
+        {
+            "id": 4078635,
+            "urlhaus_reference": "https:\/\/urlhaus.abuse.ch\/url\/4078635\/",
+            "url": "http:\/\/204.141.236.157:8092\/csky\/v_01000000.bin",
+            "url_status": "online",
+            "host": "204.141.236.157",
+            "date_added": "2026-11-28 07:12:05 UTC",
+            "threat": "malware_download",
+            "blacklists": {
+                "spamhaus_dbl": "not listed",
+                "surbl": "not listed"
+            },
+            "reporter": "anonymous",
             "larted": "true",
             "tags": [
-                "32-bit",
-                "arm",
-                "elf",
-                "mirai",
-                "Mozi"
+                "mirai"
             ]
         }
     ]
